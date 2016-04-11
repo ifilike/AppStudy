@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AlipaySDK/AlipaySDK.h>
 
 @interface AppDelegate ()
 
@@ -40,6 +41,23 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+//回调
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    NSLog(@"%@",url);
+//    BOOL result = [UMSocialSnsService handleOpenURL:url];
+    BOOL result = FALSE;
+    if (result == FALSE) {
+
+        if ([url.host isEqualToString:@"safepay"]) {//阿里主机为safepay根据这个判断是否为阿里的回调
+            [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+                
+            }];
+            
+        }
+    }
+    
+    return result;
 }
 
 @end

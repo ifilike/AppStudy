@@ -28,3 +28,17 @@ NSArray *array = [[UIApplication sharedApplication] windows];
 UIWindow* win = [array objectAtIndex:0];
 [win setHidden:NO];
 2. 解决ALI64和ALI59 ------> 保证partner，seller 和 privateKey保证一致 三者一致
+
+ （四） 支付完成
+在appdelegate.m中调用方法
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    if ([url.host isEqualToString:@"safepay"]) {//阿里主机为safepay根据这个判断是否为阿里的回调
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+
+        }];
+    }
+}
+回调的放在在支付之后的block
+[[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
+    NSLog(@"reslut = %@",resultDic);//支付完成后回调，可根据成功参数进行下续操作
+}];
