@@ -1,0 +1,34 @@
+//
+//  WXPay.pch
+//  WXPay
+//
+//  Created by babbage on 16/4/11.
+//  Copyright © 2016年 babbage. All rights reserved.
+//
+
+#ifndef WXPay_pch
+#define WXPay_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//微信支付商户号
+#define MCH_ID  @"1300181901"
+//开户邮件中的（公众账号APPID或者应用APPID）
+#define WX_AppID @"wx6331e9f3100a2435"
+//#define WX_AppID @"wxb4ba3c02aa476ea1"
+//安全校验码（MD5）密钥，商户平台登录账户和密码登录http://pay.weixin.qq.com 平台设置的“API密钥”，为了安全，请设置为以数字和字母组成的32字符串。
+#define WX_PartnerKey @"QiuxindeTangrenjie11111120160217"
+//获取用户openid，可使用APPID对应的公众平台登录http://mp.weixin.qq.com 的开发者中心获取AppSecret。
+#define WX_AppSecret @"1f4d84cf1aa2892e0940788bd5bcf928"
+
+
+
+#endif /* WXPay_pch */
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AFNetworking.h"//下载
+#endif
