@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Git Flow / Hg Flow Actions</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="git flow, hg flow, actions, start, finish, feature, release, hotfix" />
+		<meta name="description" content="A description of the actions performed for Git Flow / Hg Flow" />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+			<a name="flow-actions"></a>
+
+		<div id="banner">
+			<div id="machelp">
+				<a name="Bookmarks"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Git Flow / Hg Flow Actions</h1>
+			</div>
+						
+			<p>Once you've <a href="flow_init.html">initialised your repository</a>, you're ready to start using Git Flow / Hg Flow. The actions
+			you'll be performing are associated with <b>features</b>, <b>releases</b> and <b>hot fixes</b>, each of which is described in more detail
+			below.</p>
+			
+			<h2>Starting a feature</h2>
+			<p>You can commit trivial changes direct to the development branch ('develop') if you like, but any time you start on something non-trivial
+			you should explicitly start a new <b>feature</b>. This 'Start Feature' action will be the default action from the toolbar if you don't have 
+			anything currently in progress, or you can explicitly choose it from the Repository > Git Flow / Hg Flow menu. This will give you the following
+			dialog:</p>
+			
+			<div>
+				<img class="icon" src="../shrd/flow_startfeature.png" alt="Flow - Start Feature" />
+			</div>
+			
+			<p>The first thing to note is the 'Preview' section at the bottom, which is present on all of the action dialogs and shows you what will
+			actually happen when you confirm the dialog. In this case, a new feature branch called 'feature/my-new-feature' will be created (I used 
+			the default prefix when I initialised this repository). You commit your feature implementation to this branch. If you want, you can push 
+			the feature branch to your remote while you work on it (your team will decide on whether that's normal practice or not).</p>
+			<p>If at any time you want to switch branches, either to another feature branch (you can have as many as you want on the go) or to somewhere
+			else, just use the normal mechanisms in SourceTree to do that, such as double-clicking a log entry or a branch in the sidebar. Git Flow and
+			Hg Flow determine your context simply from the branch you currently have checked out, so it's fine to jump around if you like.</p>
+			<h2>Finishing a feature</h2>
+			<p>Eventually when you're done implementing your feature, use the 'Finish Feature' action (again, this will be the default action from the 
+			toolbar button if you're on a feature branch):</p>
+			<div>
+				<img class="icon" src="../shrd/flow_finishfeature.png" />
+			</div>
+			<p>Again, the Preview shows you what will happen, which is to merge the feature branch into the main development branch, essentially queueing it
+			for inclusion in the next release. In Git, feature branches are deleted by default but you can opt to retain them if you like. In
+			Mercurial, branches are closed instead since branch deletion isn't allowed.</p>
+			
+
+			<h2>Starting a release</h2>
+			<p>You start a release when you want to start preparing a new release, which also probably means you want to have a feature freeze. 
+			Using the Start Release option from the menu or from the toolbar action selection window brings up the following dialog:</p>
+			<div>
+				<img class="icon" src="../shrd/flow_startrelease.png" />
+			</div>
+			<p>Once again the Preview shows you what will happen, which is to create a new release branch. Most of the time, you want to start the release 
+			from the latest development branch, but
+			you can also choose to base it on another commit if you wish. This essentially freezes the release so it's not affected by subsequent development,
+			but you can also perform preparatory tasks on this branch like updating the version number in source files, updating changelogs, or other tweaks
+			that need to be committed for the release process. Once these tweaks are done, you can finish the release as described below.</p>
+			
+			<h2>Finishing a release</h2>
+			<p>Once all the adjustments required for the release are done and committed, you can finish the release process; as usual if you're on the release
+				branch already then this is the default action from the toolbar button. The dialog is as follows:
+			</p>
+			<div>
+				<img class="icon" alt="Flow - Finish Release" src="../shrd/flow_finishrelease.png" />
+			</div>
+			<p>The preview illustrates that the release branch will be merged into the production branch ('master' or 'default' normally) to indicate an update
+			to the deployed version. A tag will also be created here for the release. The release branch changes will also be merged 
+			back into the development branch to make sure that's kept up to date. You can choose some optional behaviour as shown in the dialog which should
+			be self-explanatory - note that Hg Flow disables a number of the options in this dialog because it does not support them, but the actions are the
+			same.</p>
+
+
+			<h2>Starting a hotfix</h2>
+			<p>What if you need to just fix a bug on the latest release? You don't want to create a new release, because that will pick up the 
+			recent changes from the development branch. So instead, you start a hot fix:</p>
+			<div>
+				<img class="icon" src="../shrd/flow_starthotfix.png" />
+			</div>
+			<p>Hot fixes always start from the latest production code (from the 'master' or 'default' branch), as the preview shows. Other than that, they're
+			basically the same as release branches, and when you're finished they behave the same way as finishing a release branch; the changes are merged
+			back into both the production branch and the development branch, and a tag is created on the production branch for the hot fix release.</p>
+			
+			
+			
+
+
+            <p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<a href="flow_general.html">Introduction to Git Flow / Hg Flow</a><br/>
+						<!-- <a href="flow_init.html">Initialising a repository</a><br/>-->
+						<a href="flow_actions.html">Flow Actions</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Repository Window: The Toolbar</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="File, status, repository" />
+		<meta name="description" content="Repository window toolbar" />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Repository"></a>
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Repository Window: The Toolbar</h1>
+			</div>
+			<p>The repository window has a slightly different toolbar depending on whether you're looking at a Mercurial or Git repository:</p>
+			<p style="text-align: center;">
+			    <b>Mercurial Toolbar</b><br/>
+				<img src="../shrd/repo_hg_toolbar.png" alt="Create repository" /><br/>
+			</p>
+			<p style="text-align: center;">
+			    <b>Git Toolbar</b><br/>
+				<img src="../shrd/repo_git_toolbar.png" alt="Create repository" /><br/>
+			</p>
+			<h2>The View Button</h2>
+			<p>
+			This button allows you to switch between the 3 main views of the repository:
+			<a href="repo_filestatus.html">File Status</a>, <a href="repo_log.html">Log</a>, and 
+			<a href="repo_search.html">Search</a>.
+			</p>
+			<h2>Commit</h2>
+			<p>
+			Opens the Commit dialog so you can commit your changes. In Git, if you're using staging, the default is to open the dialog with the commit of staged changes selected. In Mercurial, or Git with the staging view disabled, the dialog opens with either all pending files selected (if 0 or 1 file is selected in the File Status view, or you're on another view), or with specific files selected (if 2+ files are selected in the file status view). </p>
+			<p>You can also commit specific files by using the context menu version of Commit from the File Status View, or by customising your toolbar to add the 'Commit Selected' button.
+			</p>
+			<h2>Update (Mercurial) / Checkout (Git)</h2>
+			<p>
+			Allows you to switch your local working copy to a different point in history. In Git, this
+			will also move your HEAD (equivalent to git reset followed by git checkout).
+			</p>
+			<h2>Revert (Mercurial) / Reset (Git)</h2>
+			<p>
+			Use this to undo changes in your working copy.
+			</p>
+			<h2>Shelve (Mercurial) / Stash (Git)</h2>
+			<p>
+			Moves any uncommitted changes you have in your working copy to a storage area, and 
+			returns your working copy to a clean state. A entry representing your stashed/shelved changes will appear on the sidebar once complete and you can bring these changes back
+			into your working copy later from the sidebar context menu.
+			</p>
+			<h2>Add</h2>
+			<p>
+			Adds any selected untracked files to source control - the next commit will start to track
+			these files.
+			</p>
+			<h2>Remove</h2>
+			<p>
+			Stops tracking selected files and removes them from the working copy. The next commit will
+			remove these files from being tracked in source control.
+			</p>
+			<h2>Add/Remove</h2>
+			<p>
+			A shortcut to stop tracking all files which are missing from the working folder, and
+			to add any untracked files to source control. In Git, this also stages any modified files.
+			</p>
+			<h2>Fetch (Git only)</h2>
+			<p>
+			Download new commits from your remotes, but don't bring them in to your own branch yet.
+			</p>
+			<h2>Pull</h2>
+			<p>
+			Download new commits from your remotes and bring them in to your current branch, either
+			by merging or rebasing. This icon will show a number over the top of it if there are
+			commits available on the remote for you to pull (updated periodically based on your 
+			Preferences).
+			</p>
+			<h2>Push</h2>
+			<p>
+			Upload new commits to a remote. This icon will have a number superimposed on it if you 
+			have commits which you haven't pushed yet.
+			</p>
+			<h2>Branch</h2>
+			<p>
+			Create a new branch (also includes a tab for removing branches in Git)
+			</p>
+			<h2>Merge</h2>
+			<p>
+			Merge changes into your current branch.
+			</p>
+			<h2>Tag</h2>
+			<p>
+			Create and manage tags.
+			</p>
+			<h2>Create Patch</h2>
+			<p>
+			Create a patch file either from your current uncommitted changes, or from one or more
+			commits that you've already made.
+			</p>
+			<h2>Apply Patch</h2>
+			<p>
+			Apply a patch file either to your working copy or directly to the commit log.
+			</p>
+			<h2>Terminal</h2>
+			<p>
+			Open a Terminal at the selected location (this button may not be displayed in the
+			default toolbar, right-click the toolbar to customise it if you wish to add it).
+			</p>
+			<h2>Settings</h2>
+			<p>
+			Access per-repository settings such as remotes.
+			</p>
+
+			<p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<!-- <a href="repo_toolbar.html">The Toolbar</a><br/> -->
+			            <a href="repo_sidebarfooter.html">The Sidebar and Footer</a><br/>
+						<a href="repo_filestatus.html">The File Status View</a><br/>
+						<a href="repo_log.html">The Log View</a><br/>
+						<a href="repo_search.html">The Search View</a><br/>
+						<a href="repo_draftcommit.html">Drafting a commit message</a><br/>			
+						<a href="repo_submodules.html">Submodules and Subrepositories</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

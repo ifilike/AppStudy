@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Preferences: General</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Preferences, General, user, email" />
+	<meta name="description" content="General preferences." />
+	<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+</head>
+<body>
+	<div id="banner">
+		<div id="machelp">
+			<a name="Bookmarks"></a>
+			<!-- Specify a category in the anchor above; then you can
+				link to listings of every topic in a given category. -->
+			<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+			<!-- The above links back to the index page -->
+		</div>
+		<div id="index">
+			<a class="leftborder" href="../index.html">Index</a>
+		</div>
+	</div>
+	<div id="mainbox">
+		<div id="caticon">
+			<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+		</div>
+		<div id="pagetitle">
+			<h1>Preferences: General</h1>
+		</div>
+		
+		<p style="text-align: center;">
+			<img src="../shrd/prefs_general.png" alt="Prefs view" /><br/>
+		</p>
+		
+		<h2>Allowing SourceTree to modify your Mercurial &amp; Git configuration</h2>
+		<p>When you run SourceTree for the first time, you will be asked whether you will
+		allow it to modify your Mercurial and Git global configuration. The Preferences window
+		contains this option so you can alter your decision later.</p>
+		<p>The changes SourceTree makes to your configuration are non-destructive and are as follows:</p>
+		<ol>
+			<li>Changing your user details if you alter them in this Preferences pane</li>
+			<li>Adding new diff &amp; merge tool configurations for SourceTree to reflect the ones you choose here (existing ones are unaffected)</li>
+			<li>Updating your global ignore lists if you ask.</li>
+		</ol>
+		
+		<h2>Default user information</h2>
+		<p>This section should contain the user name and email you will use to commit to 
+		all repositories by default. You can set these per-repository too in the Settings option in the 
+		repository window, but in the absence of a specific setting this is the one that will be used.</p>
+
+		
+		<h2>Misc</h2>
+		<p><b>Project Folder</b> - The default base folder which will be used as a target for clone operations.</p>
+		<p><b>Terminal App</b> - The application which will be used when you click the Terminal button on the toolbar or Open In Terminal on the menu.</p>
+		<p><b>Language</b> - SourceTree usually picks the language automatically, but if you want to manually change it you can do so here. Requires a
+		restart to take effect.</p>
+		<p><b>Confirm before adding / removing files</b> - Whether to display a confirmation dialog when you use the add or remove functions.</p>
+		<p><b>Keep backups on destructive operations</b> - If supported by the underlying system, whether to keep backup files when performing destructive operations like 'revert'.</p>
+		<p><b>Refresh automatically when files change</b> - If enabled, SourceTree will refresh views automatically when the operating system says a file has changed.</p>
+		<p><b>Check default remotes for updates</b> - If enabled, SourceTree will poll your default remotes at the frequency specified in order to provide updated counts of commits
+		that are awaiting pull / push.</p>
+		<p><b>Re-open project windows on startup</b> - The open windows when you close SourceTree will be saved and re-opened next time you start it.</p>
+		<p><b>Push to default/origin remote when committing</b> - If checked, the 'Push to remote' box will be automatically checked on the commit dialog every time you open it.</p>
+		<p><b>Use fixed-width font for commit messages</b> - By default SourceTree uses a variable width font for displaying commits, and the editable commit message box. Some users like to use fixed-width fonts instead, which are not as compact but can be used with whitespace formatting if desired.</p>
+		<p><b>Display column guide in commit message at character:</b> - this option is only enabled if you've opted for a fixed-width commit
+		font, and when enabled displays a soft line length guide at the position of your choosing (default 72 characters).</p>
+		<p><b>Always display full console output</b> - By default SourceTree displays only a progress bar
+		when performing tasks and you have to use the disclosure triangle to expand the window to see the 
+		full output (unless there's an error, when that's displayed automatically). If you enable this option,
+		all task windows in SourceTree will be expanded by default and will not close automatically, so you
+		can always see the full output.</p>
+		<p><b>Confirm switching branches when the working copy is clean</b> - when switching branches or checking out new branches, if enabled this
+		option will cause the warning to appear only when there are changes in your working copy.</p>
+		<p><b>Offer to create bookmarks for newly owned repositories</b> - when you open repositories which are not bookmarked, SourceTree will by default
+		ask you whether you want to bookmark them. If you don't want that, you can disable this behaviour with this option.</p>
+
+           <p><a href="discover.html">Back Up</a></p>
+
+		<h2 class="seealso">See also</h2>
+		<p class="seealso">
+					<!-- <a href="prefs_general.html">General Preferences</a><br/> -->
+					<a href="prefs_diff.html">Diff Preferences</a><br/>
+					<a href="prefs_hg.html">Mercurial Preferences</a><br/>
+					<a href="prefs_git.html">Git Preferences</a><br/>
+					<a href="prefs_customactions.html">Custom Actions Preferences</a><br/>
+					<a href="prefs_update.html">Update Preferences</a><br/>
+
+			<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+			<!-- The above tag links to an auto-generated list of pages
+				in the specified category ("SOMECATEGORY"). Categories
+				are signified by an anchor tag (see earlier in this
+				page). -->
+		</p>
+	</div>
+</body>
+</html>

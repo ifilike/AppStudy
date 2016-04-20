@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Using Subversion: General Principles</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Subversion, General" />
+	<meta name="description" content="Subversion general principles" />
+	<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+</head>
+<body>
+	<p><a name="general-svn"></a></p>
+
+	<div id="banner">
+		<div id="machelp">
+			<a name="Bookmarks"></a>
+			<!-- Specify a category in the anchor above; then you can
+				link to listings of every topic in a given category. -->
+			<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+			<!-- The above links back to the index page -->
+		</div>
+		<div id="index">
+			<a class="leftborder" href="../index.html">Index</a>
+		</div>
+	</div>
+	<div id="mainbox">
+		<div id="caticon">
+			<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+		</div>
+		<div id="pagetitle">
+			<h1>Using Subversion: General Principles</h1>
+		</div>
+		
+		<p>SourceTree only supports local Mercurial and Git repositories; however it also allows you to work with 
+		Subversion servers too via pre-configured bridging services (hgsubversion and git-svn). Both of
+		these bridges let you 'clone' a Subversion server repository as a local Mercurial or Git repository, 
+		allowing you to work locally with all the performance benefits and most of the flexibility of these distributed systems.</p>
+		<p>Most importantly, this is not a one-way or one-off conversion - you can periodically pull new revisions from
+		the Subversion server which will be converted into local Mercurial changesets or Git commits, 
+		and you can push your local commits back to the Subversion server. Thus you can continue to
+		work with legacy Subversion systems while gaining most of the benefits of newer technology locally.</p>
+		
+		<h2>Getting started</h2>
+		<p>SourceTree cannot use an existing Subversion checkout, because that doesn't contain enough information
+		to construct a full repository. Instead, you will need to clone from the Subversion server - and you 
+		do this in exactly the same way as you clone a Mercural or Git repository from a remote location; just
+		drag &amp; drop a Subversion server URL into your bookmarks window, or click 'Add Repository' and 
+		fill in the Subversion URL in the Clone tab. SourceTree will automatically detect that it's a Subversion 
+		repository, and give you the option of creating a Mercurial or Git repository locally from it. Which one you
+		pick is largely down to your own preference, but please see the links below for specific considerations
+		of using Subversion with each system.</p>
+		
+		<h2>Limitations of Subversion integration</h2>
+		<p>While you can do most things with the Subversion integration, there are limits. Because
+		Subversion is only a linear system and has only very basic support for merging, it is not
+		possible to map the branching and merging of Mercurial and Git back to Subversion. This means
+		that generally you should not try to perform merges in your repositories that are synchronising
+		with Subversion, and SourceTree will warn you about that if you try. Instead, you should
+		use the 'Graft' and 'Cherry Pick' functions to move changes between branches, or 
+		perform merges in Subversion instead.</p>
+        
+        <h2>Troubleshooting</h2>
+        <h3>"This is not a valid source path / URL"</h3>
+        <p>
+            This problem can occur for two reasons. The first is SVN not being installed in which case there
+            are two ways around this. The first is to install the command line tools through Xcode if you're using a Mac OS version
+            before Mavericks. The second is that you'll be prompted to install the command line tools if you're
+            using Mavericks.
+        </p>
+        <p>
+            Once you've installed the command line tools the URL still may not work. First make sure you remove the
+            URL and re-enter it if you've just installed the command line tools so SourceTree can re-verify the URL.
+            If SourceTree still says "This is not a valid source path / URL" then it's most likely due to the
+            server certificate not being accepted. To fix this go to your terminal and enter the following command:
+            "svn info &lt;your_url&gt;" replacing "your_url" with the repository URL. Then make sure you either accept
+            the certificate or accept it permanently. Once you've done this, re-enter the URL in the SourceTree clone
+            dialog again and it should work as expected.'
+        </p>
+		
+
+		<h2 class="seealso">See also</h2>
+		<p class="seealso">
+					<!-- <a href="prefs_general.html">General Preferences</a><br/> -->
+					<a href="svn_hg.html">Using Mercurial with Subversion</a><br/>
+					<a href="svn_git.html">Using Git with Subversion</a><br/>
+
+			<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+			<!-- The above tag links to an auto-generated list of pages
+				in the specified category ("SOMECATEGORY"). Categories
+				are signified by an anchor tag (see earlier in this
+				page). -->
+		</p>
+	</div>
+</body>
+</html>

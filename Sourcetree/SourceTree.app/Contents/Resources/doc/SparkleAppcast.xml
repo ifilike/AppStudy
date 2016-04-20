@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+   <channel>
+      <title>SourceTree's Changelog</title>
+      <link>http://www.sourcetreeapp.com/update/SparkleAppcast.xml</link>
+      <description>Most recent changes to SourceTree with links to updates.</description>
+      <language>en</language>
+	  
+        <item>
+			<title>Version 1.2.7</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.2.7</sparkle:releaseNotesLink>
+			<pubDate>Mon, 22 Aug 2011 14:48:50 +0100</pubDate>
+			<enclosure url="http://downloads.sourcetreeapp.com/SourceTree_1.2.7.dmg" sparkle:version="1.2.7" sparkle:shortVersionString="1.2.7" type="application/octet-stream" length="12162757" sparkle:dsaSignature="MC0CFQCVDtFGVR5SV2llyCEFGDFr90DgsgIUPY7LYz9koqZUSZzsjPpOTbERdxU="/>
+		</item><item>
+			<title>Version 1.2.7.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.2.7.1</sparkle:releaseNotesLink>
+			<pubDate>Tue, 23 Aug 2011 12:32:33 +0100</pubDate>
+			<enclosure url="http://downloads.sourcetreeapp.com/SourceTree_1.2.7.1.dmg" sparkle:version="1.2.7.1" sparkle:shortVersionString="1.2.7.1" type="application/octet-stream" length="12162744" sparkle:dsaSignature="MC0CFClekLO4k1m5wG/Ao6tL1m+C+6m3AhUAph9uyzwrRnehYxFZbNT7Eh9S0lY="/>
+		</item><item>
+			<title>Version 1.2.8</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.2.8</sparkle:releaseNotesLink>
+			<pubDate>Tue, 20 Sep 2011 12:37:48 +0100</pubDate>
+			<enclosure url="http://downloads.sourcetreeapp.com/SourceTree_1.2.8.dmg" sparkle:version="1.2.8" sparkle:shortVersionString="1.2.8" type="application/octet-stream" length="12182411" sparkle:dsaSignature="MC0CFQCq8kKucOVuD0ygTgmPn2iiTdxnpgIUBLP0pi4YP+eTY7OSGZLrjyOpZsE="/>
+		</item><item>
+			<title>Version 1.2.8.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.2.8.1</sparkle:releaseNotesLink>
+			<pubDate>Wed, 05 Oct 2011 18:16:10 +0100</pubDate>
+			<enclosure url="http://downloads.sourcetreeapp.com/SourceTree_1.2.8.1.dmg" sparkle:version="1.2.8.1" sparkle:shortVersionString="1.2.8.1" type="application/octet-stream" length="12389514" sparkle:dsaSignature="MCwCFDiOHVFAqb1qPwny98jvUMh68kkwAhRi5W68nFoK06cW7I/Gjl2p3sNt2Q=="/>
+		</item><item>
+			<title>Version 1.2.9</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.2.9</sparkle:releaseNotesLink>
+			<pubDate>Mon, 31 Oct 2011 10:51:53 +0000</pubDate>
+			<enclosure url="http://downloads.sourcetreeapp.com/SourceTree_1.2.9.dmg" sparkle:version="1.2.9" sparkle:shortVersionString="1.2.9" type="application/octet-stream" length="12294519" sparkle:dsaSignature="MCwCFB3AcEKkijngnOaWHpAif0KfGGrfAhRJryU2gXWzM1C9Q93J7ZXIr0ZF8Q=="/>
+		</item><item>
+			<title>Version 1.2.9.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.2.9.1</sparkle:releaseNotesLink>
+			<pubDate>Fri, 04 Nov 2011 14:44:44 +0000</pubDate>
+			<enclosure url="http://downloads.sourcetreeapp.com/SourceTree_1.2.9.1.dmg" sparkle:version="1.2.9.1" sparkle:shortVersionString="1.2.9.1" type="application/octet-stream" length="12297591" sparkle:dsaSignature="MCwCFGcdKN5DHJ/b9KTBxwhGKQ1rlO15AhRhv9VTwBKPQOedDgjxXS+J8/glyg=="/>
+		</item><item>
+			<title>Version 1.3.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.3.1</sparkle:releaseNotesLink>
+			<pubDate>Fri, 27 Jan 2012 15:01:21 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.3.1.dmg" sparkle:version="1.3.1" sparkle:shortVersionString="1.3.1" type="application/octet-stream" length="18609171" sparkle:dsaSignature="MC4CFQCeeHbiwN4x3wnHzv23LsL1TPi2aAIVAJSH7QZ4kKsdmnFMJ5UFifNf3f9Q"/>
+		</item><item>
+			<title>Version 1.3.1.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.3.1.1</sparkle:releaseNotesLink>
+			<pubDate>Wed, 01 Feb 2012 14:48:57 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.3.1.1.dmg" sparkle:version="1.3.1.1" sparkle:shortVersionString="1.3.1.1" type="application/octet-stream" length="18612930" sparkle:dsaSignature="MCwCFEUIQYtShtSPwZXarsxxIOpHukjRAhRV5rTM0LQvn0IxNE+zmKuYLT0LHg=="/>
+		</item><item>
+			<title>Version 1.3.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.3.2</sparkle:releaseNotesLink>
+			<pubDate>Wed, 15 Feb 2012 16:34:45 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.3.2.dmg" sparkle:version="1.3.2" sparkle:shortVersionString="1.3.2" type="application/octet-stream" length="18635016" sparkle:dsaSignature="MC0CFQCE44XOQlNMcaJEbikgu82PV48cigIUSom8TqQHEm9J04xfdi/yOH0r7Es="/>
+		</item><item>
+			<title>Version 1.3.3</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.3.3</sparkle:releaseNotesLink>
+			<pubDate>Fri, 23 Mar 2012 15:29:15 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.3.3.dmg" sparkle:version="1.3.3" sparkle:shortVersionString="1.3.3" type="application/octet-stream" length="18775210" sparkle:dsaSignature="MC4CFQCKMlA+cJiRwEtZ9tX3lprKan5JBAIVAI7p6cX0rc/l4xSYoyc1tdyxOrJH"/>
+		</item><item>
+			<title>Version 1.4.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.1</sparkle:releaseNotesLink>
+			<pubDate>Tue, 01 May 2012 12:08:24 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.1.dmg" sparkle:version="1.4.1" sparkle:shortVersionString="1.4.1" type="application/octet-stream" length="19254192" sparkle:dsaSignature="MC0CFQCXmewjbYGiIQSGgczLLHNzJmYSiAIUQ3Gys51YCz7zZ0H4lKs+R9DmQwM="/>
+		</item><item>
+			<title>Version 1.4.1.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.1.1</sparkle:releaseNotesLink>
+			<pubDate>Wed, 02 May 2012 16:19:44 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.1.1.dmg" sparkle:version="1.4.1.1" sparkle:shortVersionString="1.4.1.1" type="application/octet-stream" length="19251807" sparkle:dsaSignature="MC0CFGtE04EbBa21fe/dU8fIXKt8HbtoAhUAoto4KIKBKX0Lf/Utt+TRNTuca8U="/>
+		</item><item>
+			<title>Version 1.4.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.2</sparkle:releaseNotesLink>
+			<pubDate>Tue, 08 May 2012 15:18:01 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.2.dmg" sparkle:version="1.4.2" sparkle:shortVersionString="1.4.2" type="application/octet-stream" length="19263906" sparkle:dsaSignature="MC0CFEIXAGSjgeIJXeph5KHJ8XI5MJmwAhUAovIspfLEP61zmWF1W9hg12FEueQ="/>
+		</item><item>
+			<title>Version 1.4.3</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.3</sparkle:releaseNotesLink>
+			<pubDate>Wed, 23 May 2012 15:04:50 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.3.dmg" sparkle:version="1.4.3" sparkle:shortVersionString="1.4.3" type="application/octet-stream" length="19270482" sparkle:dsaSignature="MCwCFBiCfN1NYjcRvSQUi1A93W3Gy9CNAhQM44T8K/b+fDMwuaGivCKJ3l+GIA=="/>
+		</item><item>
+			<title>Version 1.4.3.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.3.1</sparkle:releaseNotesLink>
+			<pubDate>Thu, 24 May 2012 10:59:10 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.3.1.dmg" sparkle:version="1.4.3.1" sparkle:shortVersionString="1.4.3.1" type="application/octet-stream" length="19270879" sparkle:dsaSignature="MC0CFQCXFBB7gfhio8vDp+LEZUmupThGrQIUNZgBvTYrxXKn6CbEiCFMmB+ZEYc="/>
+		</item><item>
+			<title>Version 1.4.4</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.4</sparkle:releaseNotesLink>
+			<pubDate>Wed, 06 Jun 2012 10:06:16 -0700</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.4.dmg" sparkle:version="1.4.4" sparkle:shortVersionString="1.4.4" type="application/octet-stream" length="19025608" sparkle:dsaSignature="MC0CFQCqEtEz+/ViZChsqxTzb3lJwfYVgAIUIhPzAv6myFUn3iZ8AYW4/RWt7Nk="/>
+		</item><item>
+			<title>Version 1.4.4.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.4.1</sparkle:releaseNotesLink>
+			<pubDate>Tue, 12 Jun 2012 16:58:39 -0700</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.4.1.dmg" sparkle:version="1.4.4.1" sparkle:shortVersionString="1.4.4.1" type="application/octet-stream" length="19028767" sparkle:dsaSignature="MCwCFA3/xMtOCp94jZ7I+ANI55+cAYL5AhRudLMESATdRb/Qkx8M9COyN5gr6g=="/>
+		</item><item>
+			<title>Version 1.4.4.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.4.4.2</sparkle:releaseNotesLink>
+			<pubDate>Wed, 13 Jun 2012 20:15:51 -0700</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.4.4.2.dmg" sparkle:version="1.4.4.2" sparkle:shortVersionString="1.4.4.2" type="application/octet-stream" length="19025464" sparkle:dsaSignature="MC0CFHzX14sLezu3IicZ6gChsHD/FOB+AhUAjRCRtFvJNMzpkD+RWkV72C1B6Ns="/>
+		</item><item>
+			<title>Version 1.5.0</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.0</sparkle:releaseNotesLink>
+			<pubDate>Tue, 17 Jul 2012 13:04:12 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.0.dmg" sparkle:version="1.5.0" sparkle:shortVersionString="1.5.0" type="application/octet-stream" length="23507310" sparkle:dsaSignature="MCsCE0eBVwBtksVNM8Qj3F9NyEuBdCcCFA5EivJvA80FD6CUCpe7r84aF2Bv"/>
+		</item><item>
+			<title>Version 1.5.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.1</sparkle:releaseNotesLink>
+			<pubDate>Tue, 24 Jul 2012 11:03:29 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.1.dmg" sparkle:version="1.5.1" sparkle:shortVersionString="1.5.1" type="application/octet-stream" length="23639873" sparkle:dsaSignature="MCwCFEOxJd4ilBQDdehtVsOLYktcIeoFAhR++2I0euN+4Yob+DY5u6M9jEGxrQ=="/>
+		</item><item>
+			<title>Version 1.5.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.2</sparkle:releaseNotesLink>
+			<pubDate>Wed, 01 Aug 2012 11:31:06 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.2.dmg" sparkle:version="1.5.2" sparkle:shortVersionString="1.5.2" type="application/octet-stream" length="23648547" sparkle:dsaSignature="MC0CFQCOCeA4NZU8uhI8lZq0rATrbkggDAIUbOjImkNkCDCU8oDzlLOWmcbkqk0="/>
+		</item><item>
+			<title>Version 1.5.3</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.3</sparkle:releaseNotesLink>
+			<pubDate>Tue, 07 Aug 2012 12:38:21 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.3.dmg" sparkle:version="1.5.3" sparkle:shortVersionString="1.5.3" type="application/octet-stream" length="23794606" sparkle:dsaSignature="MC0CFQCk2gh3Lqt6J5YpnCOZiJ6OO4Bo4QIUfaDQrFzPwiatyUZ+yx8+Hyl7w+I="/>
+		</item><item>
+			<title>Version 1.5.4</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.4</sparkle:releaseNotesLink>
+			<pubDate>Mon, 24 Sep 2012 13:01:37 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.4.dmg" sparkle:version="1.5.4" sparkle:shortVersionString="1.5.4" type="application/octet-stream" length="23812125" sparkle:dsaSignature="MCwCFDwg1rhyG16BkRC9vv27q6fUoTQdAhR9eNBr/iFOmqSY/altDHzoRuL3+A=="/>
+		</item><item>
+			<title>Version 1.5.5</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.5</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
+			<pubDate>Mon, 15 Oct 2012 16:19:17 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.5.dmg" sparkle:version="1.5.5" sparkle:shortVersionString="1.5.5" type="application/octet-stream" length="23866904" sparkle:dsaSignature="MCwCFGc2DB3ORRWin0+m8VVyb4Tn15shAhRnNLth8yVtaqXYa9R2eC8Rx5VujA=="/>
+		</item><item>
+			<title>Version 1.5.5.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.5.1</sparkle:releaseNotesLink>
+			<pubDate>Tue, 16 Oct 2012 12:04:01 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.5.1.dmg" sparkle:version="1.5.5.1" sparkle:shortVersionString="1.5.5.1" type="application/octet-stream" length="23868048" sparkle:dsaSignature="MC0CFAxYNJ3VmfyxHo1ks8AH81yrSxRxAhUAkrGqTPQGYwIVxzqBoTlxRE7RNCI="/>
+		</item><item>
+			<title>Version 1.5.6</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.6</sparkle:releaseNotesLink>
+			<pubDate>Mon, 12 Nov 2012 14:32:13 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.6.dmg" sparkle:version="1.5.6" sparkle:shortVersionString="1.5.6" type="application/octet-stream" length="23866803" sparkle:dsaSignature="MC0CFQCIZOe8iHZ3o3J96TcN1+jYwklZjAIUT0Or4VLOj1QWDEHZciV9EEA2eoU="/>
+		</item><item>
+			<title>Version 1.5.7</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.7</sparkle:releaseNotesLink>
+			<pubDate>Wed, 09 Jan 2013 10:32:31 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.7.dmg" sparkle:version="1.5.7" sparkle:shortVersionString="1.5.7" type="application/octet-stream" length="23871741" sparkle:dsaSignature="MCwCFGkc++0UKNwvq4aDlEepfIN8qFllAhRvaZJXo8QxC99VTdt+f14mt/MhUQ=="/>
+		</item><item>
+			<title>Version 1.5.7.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.7.1</sparkle:releaseNotesLink>
+			<pubDate>Tue, 15 Jan 2013 12:06:18 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.7.1.dmg" sparkle:version="1.5.7.1" sparkle:shortVersionString="1.5.7.1" type="application/octet-stream" length="23871155" sparkle:dsaSignature="MC0CFQCRg4JjO6Zj5aed3YbEqd3M7g0uxAIUUv8OaPpgPzDkyaOg60yGTzQT1VU="/>
+		</item><item>
+			<title>Version 1.5.8</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.5.8</sparkle:releaseNotesLink>
+			<pubDate>Tue, 19 Mar 2013 09:59:07 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.5.8.dmg" sparkle:version="1.5.8" sparkle:shortVersionString="1.5.8" type="application/octet-stream" length="23792297" sparkle:dsaSignature="MC0CFQCYid/f8U0H2NopE6iexEWPLG59WQIUTqqSAZ0ZhVIMXFycidddo6moIyk="/>
+		</item><item>
+			<title>Version 1.6.0</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.0</sparkle:releaseNotesLink>
+			<pubDate>Tue, 07 May 2013 08:22:56 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.0.dmg" sparkle:version="1.6.0" sparkle:shortVersionString="1.6.0" type="application/octet-stream" length="24323821" sparkle:dsaSignature="MC0CFQCjLi1ehKmghlCM3wVNp3sh2e9uFQIUawXDqii0NfgCu6aLULV5uK/GWsY="/>
+		</item><item>
+			<title>Version 1.6.0.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.0.1</sparkle:releaseNotesLink>
+			<pubDate>Thu, 09 May 2013 08:52:10 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.0.1.dmg" sparkle:version="1.6.0.1" sparkle:shortVersionString="1.6.0.1" type="application/octet-stream" length="24323651" sparkle:dsaSignature="MC4CFQCqzz3QFapJl5+cxSfIGRl7ThwLfQIVAJxjljfeBp9M0gPlmasmKe7YQKSZ"/>
+		</item><item>
+			<title>Version 1.6.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.1</sparkle:releaseNotesLink>
+			<pubDate>Wed, 22 May 2013 15:58:47 +0200</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.1.dmg" sparkle:version="1.6.1" sparkle:shortVersionString="1.6.1" type="application/octet-stream" length="24331938" sparkle:dsaSignature="MC4CFQCFUADt1tDqW0kqlniEIFpPySf80gIVAJDay2YY/56DpvlHjSVSdtRMAdtT"/>
+		</item><item>
+			<title>Version 1.6.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.2</sparkle:releaseNotesLink>
+			<pubDate>Tue, 02 Jul 2013 12:49:50 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.2.dmg" sparkle:version="1.6.2" sparkle:shortVersionString="1.6.2" type="application/octet-stream" length="24346393" sparkle:dsaSignature="MC4CFQCC5R69ogrWikdcoHzUSkCRqI6piAIVAIdCbdXvgOSQOEM6/Vi7lx7+jc9p"/>
+		</item><item>
+			<title>Version 1.6.2.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.2.1</sparkle:releaseNotesLink>
+			<pubDate>Wed, 03 Jul 2013 10:37:44 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.2.1.dmg" sparkle:version="1.6.2.1" sparkle:shortVersionString="1.6.2.1" type="application/octet-stream" length="24347224" sparkle:dsaSignature="MC0CFQChc3vkNkJ6wrXV5Hnz7OoiauKxfgIUZH050oqxQ9JoP9WIzO62XGrCXTk="/>
+		</item><item>
+			<title>Version 1.6.2.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.2.2</sparkle:releaseNotesLink>
+			<pubDate>Thu, 04 Jul 2013 09:54:33 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.2.2.dmg" sparkle:version="1.6.2.2" sparkle:shortVersionString="1.6.2.2" type="application/octet-stream" length="24351714" sparkle:dsaSignature="MC0CFA61Yq5Epp6urT7T0CtnA7u4XGXWAhUAhd/QARFkHnx4CGYhDwz+3Qo/ywk="/>
+		</item><item>
+			<title>Version 1.6.3.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.3.1</sparkle:releaseNotesLink>
+			<pubDate>Wed, 14 Aug 2013 10:41:47 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.3.1.dmg" sparkle:version="1.6.3.1" sparkle:shortVersionString="1.6.3.1" type="application/octet-stream" length="24466907" sparkle:dsaSignature="MCwCFD0Ujl84XrpMkIH6F1ZG6PBmQkd7AhR71JKiqqEzDkFaSAU/1Yb77gyVnQ=="/>
+		</item><item>
+			<title>Version 1.6.4</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.4</sparkle:releaseNotesLink>
+			<pubDate>Fri, 30 Aug 2013 10:35:26 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.4.dmg" sparkle:version="1.6.4" sparkle:shortVersionString="1.6.4" type="application/octet-stream" length="24449549" sparkle:dsaSignature="MCwCFAnhIXJzCxWjdRv8e6kPxCPr2UooAhQBIFLMQ8mQ8woYs9nokyomywBKpA=="/>
+		</item><item>
+			<title>Version 1.6.4.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.6.4.1</sparkle:releaseNotesLink>
+			<pubDate>Fri, 30 Aug 2013 10:51:43 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.6.4.1.dmg" sparkle:version="1.6.4.1" sparkle:shortVersionString="1.6.4.1" type="application/octet-stream" length="24450815" sparkle:dsaSignature="MCwCFAHFLgUNnmsyo8ajm0cAeLtvXqp3AhQOAj19ItLqqJ1BEK1FcaPb4Wc16Q=="/>
+		</item><item>
+			<title>Version 1.7.0.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.7.0.1</sparkle:releaseNotesLink>
+			<pubDate>Mon, 16 Sep 2013 12:32:21 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.7.0.1.dmg" sparkle:version="1.7.0.1" sparkle:shortVersionString="1.7.0.1" type="application/octet-stream" length="24948565" sparkle:dsaSignature="MCwCFHwbxc+D2UuEyJHs9Ie8LR9G1Ur1AhR86MzKDItGWcRrkMz4fTBRy/S3CA=="/>
+		</item><item>
+			<title>Version 1.7.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.7.1</sparkle:releaseNotesLink>
+			<pubDate>Thu, 19 Sep 2013 10:29:14 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.7.1.dmg" sparkle:version="1.7.1" sparkle:shortVersionString="1.7.1" type="application/octet-stream" length="24951890" sparkle:dsaSignature="MCwCFFNoIOqtqEbOWzpYsX/WfroNgEZcAhR2RyhjcX1dU0Y3iLwG/AvpwevXbQ=="/>
+		</item><item>
+			<title>Version 1.7.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.7.2</sparkle:releaseNotesLink>
+			<pubDate>Thu, 26 Sep 2013 11:30:16 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.7.2.dmg" sparkle:version="1.7.2" sparkle:shortVersionString="1.7.2" type="application/octet-stream" length="24954477" sparkle:dsaSignature="MCwCFC7q3PPsv8WvDatgQjDALNuVWVIUAhRUxzZZkUkIv2Py6ykB7MIWe/CyWA=="/>
+		</item><item>
+			<title>Version 1.7.3</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.7.3</sparkle:releaseNotesLink>
+			<pubDate>Fri, 04 Oct 2013 15:39:11 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.7.3.dmg" sparkle:version="1.7.3" sparkle:shortVersionString="1.7.3" type="application/octet-stream" length="25025698" sparkle:dsaSignature="MC4CFQChuVleAD9Y9NjwL9Trkw5EXmF7owIVAJ4R9O+7M92sbEtoFxKyd5V6F7pD"/>
+		</item><item>
+			<title>Version 1.7.4</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.7.4</sparkle:releaseNotesLink>
+			<pubDate>Wed, 06 Nov 2013 11:30:25 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.7.4.dmg" sparkle:version="1.7.4" sparkle:shortVersionString="1.7.4" type="application/octet-stream" length="28460293" sparkle:dsaSignature="MC0CFQCW1cFrAOPXac4IjhfGkMxTm5naGAIUAM7pfWkem7rt5PfTjABM21SMBwQ="/>
+		</item><item>
+			<title>Version 1.7.4.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.7.4.1</sparkle:releaseNotesLink>
+			<pubDate>Thu, 07 Nov 2013 11:17:18 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.7.4.1.dmg" sparkle:version="1.7.4.1" sparkle:shortVersionString="1.7.4.1" type="application/octet-stream" length="28483143" sparkle:dsaSignature="MCwCFHnACWmFApJI3huehsKcZjmZFvDxAhQvJr99vTwFEHetPOpp/nOcPQod/A=="/>
+		</item><item>
+			<title>Version 1.8.0</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.8.0</sparkle:releaseNotesLink>
+			<pubDate>Wed, 11 Dec 2013 12:48:27 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.8.0.dmg" sparkle:version="1.8.0" sparkle:shortVersionString="1.8.0" type="application/octet-stream" length="30460494" sparkle:dsaSignature="MCwCFC3a5NqF/FWwNiOeHE73VX7A1eBqAhQPar6Nd73hLyJDLJLpUPbLEp0VYQ=="/>
+		</item><item>
+			<title>Version 1.8.0.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.8.0.1</sparkle:releaseNotesLink>
+			<pubDate>Wed, 11 Dec 2013 13:33:27 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.8.0.1.dmg" sparkle:version="1.8.0.1" sparkle:shortVersionString="1.8.0.1" type="application/octet-stream" length="30460564" sparkle:dsaSignature="MC0CFE+gKaCp5JND2hrIQinh8P20ilCGAhUAqFZV4Ee8s/F1dy2Ne8y7b/cLCm8="/>
+		</item><item>
+			<title>Version 1.8.0.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.8.0.2</sparkle:releaseNotesLink>
+			<pubDate>Wed, 11 Dec 2013 15:24:12 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.8.0.2.dmg" sparkle:version="1.8.0.2" sparkle:shortVersionString="1.8.0.2" type="application/octet-stream" length="30499624" sparkle:dsaSignature="MC4CFQCJQupeowydDQqQDQ1uEa7WrHc0PwIVAIFWJiEBzQLFssQIn05qJcIeMUgC"/>
+		</item><item>
+			<title>Version 1.8.0.3</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.8.0.3</sparkle:releaseNotesLink>
+			<pubDate>Sat, 14 Dec 2013 14:45:13 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.8.0.3.dmg" sparkle:version="1.8.0.3" sparkle:shortVersionString="1.8.0.3" type="application/octet-stream" length="30502741" sparkle:dsaSignature="MC0CFAVdgv3TROAV6vK/Dz1YR6ggAH2tAhUAgoA14PkBgeK0M9dcsXqy1F7Q7wM="/>
+		</item><item>
+			<title>Version 1.8.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.8.1</sparkle:releaseNotesLink>
+			<pubDate>Thu, 30 Jan 2014 14:47:11 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.8.1.dmg" sparkle:version="1.8.1" sparkle:shortVersionString="1.8.1" type="application/octet-stream" length="30492195" sparkle:dsaSignature="MC0CFGukVe7gRo5yLv+RfI8eR+HxplAUAhUAhRCEVZyj/3FfhPczjswXZnsCPWg="/>
+		</item><item>
+			<title>Version 1.9.0</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.0</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 29 Apr 2014 16:06:52 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.0.dmg" sparkle:version="1.9.0" sparkle:shortVersionString="1.9.0" type="application/octet-stream" length="34588346" sparkle:dsaSignature="MC0CFQCqpl9FS/h2r0+BG9ZsBtQ+F0J2lQIUR4R+pFfOvEa4DU3iq0kfEhgX5Ao="/>
+		</item><item>
+			<title>Version 1.9.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.1</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Fri, 02 May 2014 16:04:29 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.1.dmg" sparkle:version="1.9.1" sparkle:shortVersionString="1.9.1" type="application/octet-stream" length="34591424" sparkle:dsaSignature="MC0CFBsHrj93kbQTlqyzjMIj6E+2WGYoAhUAm8/sm17atJu9nOgVFvVk68lUWCw="/>
+		</item><item>
+			<title>Version 1.9.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.2</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Wed, 07 May 2014 15:56:27 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.2.dmg" sparkle:version="1.9.2" sparkle:shortVersionString="1.9.2" type="application/octet-stream" length="34587452" sparkle:dsaSignature="MC0CFGK0+mmfWCKgfc1gvbWyC92B02VDAhUAp95YkmQdkz4gGU6BLf7INiE5Xs8="/>
+		</item><item>
+			<title>Version 1.9.3</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.3</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Fri, 30 May 2014 11:04:00 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.3.dmg" sparkle:version="1.9.3" sparkle:shortVersionString="1.9.3" type="application/octet-stream" length="34351487" sparkle:dsaSignature="MC0CFFFliHhQyC3A05Lc6bgjXDHrzQeiAhUAlqE2MBCtcNsisQjEAFXdgS2ehFs="/>
+		</item><item>
+			<title>Version 1.9.3.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.3.1</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Fri, 30 May 2014 17:41:41 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.3.1.dmg" sparkle:version="1.9.3.1" sparkle:shortVersionString="1.9.3.1" type="application/octet-stream" length="34350765" sparkle:dsaSignature="MCwCFHSt2SnBIe/i+DivXkWcV/AcXUvYAhRH6eGSpjIAygDgQvTXiGKpnAXNDA=="/>
+		</item><item>
+			<title>Version 1.9.4</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.4</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Fri, 06 Jun 2014 14:38:23 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.4.dmg" sparkle:version="1.9.4" sparkle:shortVersionString="1.9.4" type="application/octet-stream" length="34363131" sparkle:dsaSignature="MCwCFBOQneEBqqh1vQFV1aHXUX9WQ1JIAhRk92BSyCJAfJxxhWDDxDbEXyDLxA=="/>
+		</item><item>
+			<title>Version 1.9.4.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.4.1</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Thu, 12 Jun 2014 15:14:16 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.4.1.dmg" sparkle:version="1.9.4.1" sparkle:shortVersionString="1.9.4.1" type="application/octet-stream" length="34364716" sparkle:dsaSignature="MCwCFAJ1w5FVvDuhlVvmtpQ8Hm6ry8c/AhRw8RMD5MUocPQos2WE7VWo5cWvPg=="/>
+		</item><item>
+			<title>Version 1.9.5</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.5</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 08 Jul 2014 15:48:54 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.5.dmg" sparkle:version="1.9.5" sparkle:shortVersionString="1.9.5" type="application/octet-stream" length="34258371" sparkle:dsaSignature="MCwCFCnsIRKWu+GJGIfr4k0A1hX4g44CAhRjSwAo1cXnWQjZNMlUj0uEgEnewA=="/>
+		</item><item>
+			<title>Version 1.9.5.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.5.1</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Thu, 10 Jul 2014 14:35:21 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.5.1.dmg" sparkle:version="1.9.5.1" sparkle:shortVersionString="1.9.5.1" type="application/octet-stream" length="34259770" sparkle:dsaSignature="MCwCFCzXxCVxcoCasAYKgvtmk6hidVO5AhQRg91wmfWctfdSkv9aHrEETAmOJg=="/>
+		</item><item>
+			<title>Version 1.9.5.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.5.2</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Fri, 11 Jul 2014 16:13:01 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.5.2.dmg" sparkle:version="1.9.5.2" sparkle:shortVersionString="1.9.5.2" type="application/octet-stream" length="34337264" sparkle:dsaSignature="MC0CFAibarsXlCW9WAG4zGqx1Az1vS1aAhUAhVOSIfhh/EIlBF7sb1AEtuj2nZI="/>
+		</item><item>
+			<title>Version 1.9.6</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.6</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Wed, 16 Jul 2014 14:51:56 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.6.dmg" sparkle:version="1.9.6" sparkle:shortVersionString="1.9.6" type="application/octet-stream" length="34335388" sparkle:dsaSignature="MCwCFD1ZhEiWHIeIpfOvJfbiol1i+hRNAhRPFukFj/Mgv7KEH2uqjGuFgkJ7gA=="/>
+		</item><item>
+			<title>Version 1.9.7</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.7</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Wed, 30 Jul 2014 12:01:33 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.7.dmg" sparkle:version="1.9.7" sparkle:shortVersionString="1.9.7" type="application/octet-stream" length="34335653" sparkle:dsaSignature="MCwCFF7Lc2uCAMmZGEAKKyHrFsuJesvzAhRYIl7Y1o0LYTQ4y19h86GpbXQC5Q=="/>
+		</item><item>
+			<title>Version 1.9.8</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-1.9.8</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Wed, 27 Aug 2014 15:58:48 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_1.9.8.dmg" sparkle:version="1.9.8" sparkle:shortVersionString="1.9.8" type="application/octet-stream" length="34343093" sparkle:dsaSignature="MCwCFHxJNYE3Ke9or0aaZMh4VCTJwTryAhRqrlF8kk3tqlP42GK/Di0M06BDOA=="/>
+		</item><item>
+			<title>Version 2.0.0</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.0</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Thu, 25 Sep 2014 15:30:09 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.0.dmg" sparkle:version="2.0.0" sparkle:shortVersionString="2.0.0" type="application/octet-stream" length="43868248" sparkle:dsaSignature="MCwCFFA9Pt/dpG9ODTOASHaTM8/4w/E6AhR7hV66SU/wP7ksQvjqHH9eWWjrlg=="/>
+		</item><item>
+			<title>Version 2.0.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.1</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 30 Sep 2014 17:16:00 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.1.dmg" sparkle:version="2.0.1" sparkle:shortVersionString="2.0.1" type="application/octet-stream" length="43900265" sparkle:dsaSignature="MCwCFAOgnZfkgg2nKQc8Hh65kSVZYYPLAhR3sldgvR+tun5n94+POO4xrvf57w=="/>
+		</item><item>
+			<title>Version 2.0.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.2</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 07 Oct 2014 17:31:42 +0100</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.2.dmg" sparkle:version="2.0.2" sparkle:shortVersionString="2.0.2" type="application/octet-stream" length="43946923" sparkle:dsaSignature="MCwCFFHbb/cbnTDHalkiXX4Rgn4i8n+BAhQnVhgbKkxXlx/GcekNeT6iq5tzQQ=="/>
+		</item><item>
+			<title>Version 2.0.3</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.3</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Thu, 06 Nov 2014 10:32:31 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.3.dmg" sparkle:version="2.0.3" sparkle:shortVersionString="2.0.3" type="application/octet-stream" length="44250159" sparkle:dsaSignature="MC0CFD/m2EJL83impZPH/ObpXXWFxJSjAhUAq4wBr2fT1i/e6KJJ5zz82hVC1Sg="/>
+		</item><item>
+			<title>Version 2.0.4</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.4</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Fri, 19 Dec 2014 13:26:46 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.4.dmg" sparkle:version="2.0.4" sparkle:shortVersionString="2.0.4" type="application/octet-stream" length="36955903" sparkle:dsaSignature="MC0CFD0BGix60T9R7rYvNLo8tXMfazGAAhUAh9VPiBKzwPNqa9a5lRDoPP6fqj8="/>
+		</item><item>
+			<title>Version 2.0.5</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 03 Feb 2015 12:37:06 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.dmg" sparkle:version="2.0.5" sparkle:shortVersionString="2.0.5" type="application/octet-stream" length="46973849" sparkle:dsaSignature="MC0CFEvlzFBsCsFrf2zjvqRNhDoBC/LUAhUArIAIGzACO1Tww577D0yQXGxM3bc="/>
+		</item><item>
+			<title>Version 2.0.5.1</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5.1</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 03 Feb 2015 18:23:48 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.1.dmg" sparkle:version="2.0.5.1" sparkle:shortVersionString="2.0.5.1" type="application/octet-stream" length="46094598" sparkle:dsaSignature="MC0CFQCh+dHV0Jce/5qbkC+5AMsit+8dbAIUI0Up4vodRDTv6R8Em93JGlar7LY="/>
+		</item><item>
+			<title>Version 2.0.5.2</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5.2</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 03 Feb 2015 18:34:37 +0000</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.2.dmg" sparkle:version="2.0.5.2" sparkle:shortVersionString="2.0.5.2" type="application/octet-stream" length="46953038" sparkle:dsaSignature="MC0CFQCZoaLnwjsG033kVGv+v2jAFF9UnQIUGt7G7VpuP4je/nPbWa6vnsS02KY="/>
+		</item><item>
+			<title>Version 2.0.5.4</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5.4</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 13 Oct 2015 14:37:22 -0700</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.4.dmg" sparkle:version="2.0.5.4" sparkle:shortVersionString="2.0.5.4" type="application/octet-stream" length="46685978" sparkle:dsaSignature="MC0CFG9W3qjxhiez7Y2XbBo8WRNO9hxJAhUAgXEeC6XgSo8ME/i1tWG2NhYHnQ4="/>
+		</item><item>
+			<title>Version 2.0.5.5</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5.5</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Tue, 13 Oct 2015 16:20:06 -0700</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.5.dmg" sparkle:version="2.0.5.5" sparkle:shortVersionString="2.0.5.5" type="application/octet-stream" length="46685026" sparkle:dsaSignature="MCwCFHPY2pp8nHMwgm//bKID6PiRSk1MAhQ4HIx5TTh2+PsjSqFFBiGNzYsYZg=="/>
+		</item><item>
+			<title>Version 2.0.5.6</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5.6</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Mon, 16 Nov 2015 10:55:49 -0800</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.6.dmg" sparkle:version="2.0.5.6" sparkle:shortVersionString="2.0.5.6" type="application/octet-stream" length="47412846" sparkle:dsaSignature="MC0CFAtHIZmykO1MYFiu17Lsz8kChcuiAhUAhmO4KszuHgmgXDKJ9cMMZZWi1gg="/>
+		</item><item>
+			<title>Version 2.0.5.7</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5.7</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Mon, 23 Nov 2015 11:56:34 -0800</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.7.dmg" sparkle:version="2.0.5.7" sparkle:shortVersionString="2.0.5.7" type="application/octet-stream" length="47160862" sparkle:dsaSignature="MC0CFQCUPO4UbKtusbZzizfUBXMnau5zowIUAtkNwzz4aKKGY4y+YSiwXjMUi/w="/>
+		</item><item>
+			<title>Version 2.0.5.8</title>
+			<sparkle:releaseNotesLink>http://www.sourcetreeapp.com/update/ReleaseNotes.html#version-2.0.5.8</sparkle:releaseNotesLink>
+            <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+			<pubDate>Mon, 30 Nov 2015 12:11:38 -0800</pubDate>
+			<enclosure url="http://downloads.atlassian.com/software/sourcetree/SourceTree_2.0.5.8.dmg" sparkle:version="2.0.5.8" sparkle:shortVersionString="2.0.5.8" type="application/octet-stream" length="47320157" sparkle:dsaSignature="MCwCFFyc9GSSM08re3pddhQFGbkcyvpWAhQX6aZiOvtRrheZbs2+1r+omg1pTg=="/>
+		</item></channel>
+</rss>

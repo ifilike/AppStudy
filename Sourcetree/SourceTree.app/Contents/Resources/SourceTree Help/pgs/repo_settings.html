@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Repository Settings</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="settings, repository, JIRA, Crucible" />
+		<meta name="description" content="Repository Settings" />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Repository"></a>
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Repository Settings</h1>
+			</div>
+			<p></p>
+			<p>You can access the settings which are specific to a single repository by clicking on the 'Settings' button on the right-hand side of the toolbar, or by using the Repository menu.</p>
+			<p>If for any reason you need to edit the config file for this repository manually, you can do so 
+			by using the 'Edit Config File' button at the bottom left of the window.</p>
+			<h1>Remotes</h1>
+			<p style="text-align: left;">
+				<img src="../shrd/repo_settings_remotes.png" alt="Footer" /><br/>
+			</p>
+			<p>This section allows you to configure the remotes that you use to push or pull
+			changes. If you cloned from another repository, there will already be one entry in 
+			here, but you can add more if you wish.</p>
+			<p>When you add or edit a repository, you can either supply the URL manually, 
+			or if your repository is hosted ith Bitbucket, Github or Kiln you can use the 'World'
+			button to access those remotes much more easily. See the <a href="hostedprojects.html">Hosted Projects section</a> for details.</p>
+
+            <h1>Security</h1>
+            <p>See the <a href="repo_gpg.html">GPG help section</a> for a description of the security tab.</p>
+            
+			<h1>Advanced</h1>
+			<p style="text-align: left;">
+				<img src="../shrd/repo_settings_advanced.png" alt="Footer" /><br/>
+			</p>
+			<p>The advanced section includes a number of additional options:</p>
+			<h2>Repository-specific ignore list</h2>
+			<p>You can use the 'Edit' button here to alter the ignore list for this 
+			repository. The path of this file depends on the system but SourceTree will detect it for you.</p>
+			
+			<h2>User Information</h2>
+			<p>By default SourceTree will use the user details you specified in the main <a href="prefs_general.html">Preferences</a>, but if you like you can specify different
+			details for commits to this repository.</p>
+			
+			<a name="committextreplacements"></a>
+			<h2>Commit Text Replacements</h2>
+			<p>Here you can specify ways that the commit messages will be searched for
+			matching patterns, and replacements or markup provided. For example, you might want
+			to change instances of 'SRCTREE-[number]' with a link to a JIRA issue. This is
+			done through regular expression matching and replacement.</p>
+			<p>If you click 'Add' here, SourceTree will provide you with shortcuts to 
+			create linking rules for JIRA and Crucible projects, when you simply need
+			to supply the project name (e.g. SRCTREE) and the URL for the JIRA instance
+			(e.g. https://jira.atlassian.com). From this point on, all mentions of issues
+			for this project will be linked to the correct address on your JIRA / Crucible project.
+			In the examples above, mentions like SRCTREE-1000 would link to https://jira.atlassian.com/browse/SRCTREE-1000, 
+			and so on.</p>
+			<p>Other than JIRA and Crucible link, you can set up any other kind of text replacement in this
+		    section, just by providing a regular expression to match, and a replacement string (which 
+		    will probably want to refer to captures in the regex like $1, $2 etc). The commit message box
+		    is standard HTML, so you can use any replacement you would in a web page.</p>
+		    
+            <h2>Miscellaneous</h2>
+            <p><b>Automatically Refresh</b> controls whether or not this repository refreshes automatically when files change, which can turn off the application-level preference for this repository.</p>
+            <p><b>Refresh remote status in the background</b> controls whether this repository accesses remotes in the background to check on incoming or outgoing changes, which can turn off the application-level preference for this repository.</p>     
+		    
+			
+            
+			<p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<a href="repo_toolbar.html">The Toolbar</a><br/>
+			            <a href="repo_sidebarfooter.html">The Sidebar and Footer</a><br/>
+						<a href="repo_filestatus.html">The File Status View</a><br/>
+						<a href="repo_log.html">The Log View</a><br/>
+						<a href="repo_search.html">The Search View</a><br/>
+						<a href="repo_draftcommit.html">Drafting a commit message</a><br/>			
+						<!-- <a href="repo_settings.html">Repository Settings</a><br/> -->
+						<a href="repo_submodules.html">Submodules and Subrepositories</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

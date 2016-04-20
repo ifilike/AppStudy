@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Repository Window: Log view</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="History, log, repository, graph" />
+		<meta name="description" content="History viewing." />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Bookmarks"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Repository Window: Log view</h1>
+			</div>
+			
+			<p style="text-align: center;">
+				<img src="../shrd/repo_log.png" alt="History view" /><br/>
+			</p>
+			<p>The history view shows you the graph of changes in the repository, and allows you to examine each
+			change to see what happened. The top section is a traditional graph view which shows the progression of 
+			commits, branches and merges. Selecting an item in this table populates the other views, showing you (anti-clockwise from left)
+			the details of the commit, the files that were changed in this commit, and the specific differences that were committed.</p>
+			<p>Branches and tags are shown on the view in boxes with icons which correspond to their type.</p>
+			
+			<h2>Uncommitted changes</h2>
+			<p><img src="../shrd/repo_log_uncommitted.png" alt="Repo Log - Uncommitted" /></p>
+			<p>As well as showing you the history, this view also shows uncommitted changes in your working copy as a grey
+			blob, with a grey ancestry line connecting it to the timeline. While the File Status View is the primary way to view
+			uncommitted changes in your working copy, the advantage of showing them here too is that if you're doing a merge, you 
+			can visualise the effect it is going to have on the graph before you commit.</p>
+			
+			<h2>Jump around</h2>
+			<p><img src="../shrd/repo_log_jump.png" alt="Repo Log - Jump" /></p>
+			<p>If you want to skip quickly to the tip of a branch or to a tag, you can use this convenient drop-down box at the top-right of the 
+			history graph to do that without any scrolling. You can of course also use the <a href="repo_sidebarfooter.html">sidebar</a>.</p>
+
+			<h2>History retrieval</h2>
+			<p>You might notice that there is no interface for controlling how much of the history you see - all you need to do if you want to 
+			see more is to scroll down, or as you use the jump button. SourceTree is actually loading the history entries on demand in the background as you scroll, so there's
+			. It does mean that if you select a branch / tag from the jump button which is quite far down the history, there will be a slight
+			delay while the intervening history is retrieved. But on the whole, it should feel seamless.</p>
+
+			<p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+			            <a href="repo_toolbar.html">The Toolbar</a><br/>
+			            <a href="repo_sidebarfooter.html">The Sidebar and Footer</a><br/>
+						<a href="repo_filestatus.html">The File Status View</a><br/>
+						<!-- <a href="repo_log.html">The Log View</a><br/> -->
+						<a href="repo_search.html">The Search View</a><br/>
+						<a href="repo_draftcommit.html">Drafting a commit message</a><br/>			
+						<a href="repo_settings.html">Repository Settings</a><br/>
+						<a href="repo_submodules.html">Submodules and Subrepositories</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

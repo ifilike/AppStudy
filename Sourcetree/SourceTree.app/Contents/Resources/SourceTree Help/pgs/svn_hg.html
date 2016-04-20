@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Using Mercurial with Subversion</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Subversion, Mercurial, hg" />
+		<meta name="description" content="Subversion with Mercurial principles" />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<p><a name="hg-svn"></a></p>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Bookmarks"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Using Mercurial with Subversion</h1>
+			</div>
+			
+			<p>The bridge to Subversion in Mercurial is provided by <a href="http://bitbucket.org/durin42/hgsubversion/wiki/Home">hgsubversion</a>.</p>
+			<h2>Supported Features</h2>
+			
+			<ul><li>Cloning a Subversion server repository to local Mercurial</li>
+			<li>Progressive pull of new revisions from remote Subversion into local Mercurial changesets</li>
+			<li>Progressive push of new local Mercurial changesets to remote Subversion server revisions</li>
+			<li>Working within existing Subversion branches</li>
+			</ul>
+			
+			<h2>Unsupported Features</h2>
+			<p>The following features are <b>not</b> supported by hgsubversion:</p>
+			<ul>
+			<li>Creating new Subversion branches</li>
+			<li>Creating new tags</li>
+			<li>Merging branches</li>
+			</ul>
+			
+			<h2>Cloning Subversion To Mercurial</h2>
+			<p>When you clone a Subversion URL, you have a choice - you can either clone a single branch of the repository (or the trunk), 
+			represented in Subversion by unique URLs, or you can clone from the root of the repository, and if the repository is
+			in the standard Subversion layout (branches, trunk and tags folders in the root), then the conversion will
+			pick up the branches and tags and convert them appropriately.</p>
+			
+			<h2>Pushing and Pulling</h2>
+			<p>Subversion only allows a linear history, compared to Mercurial which allows parallel development (resolved by rebasing or
+			merging). Therefore when pulling and pushing changesets from/to Subversion, the history has to be 'flattened' in each branch.</p>
+			<p>For this reason, only the active branch that your local repository is on is pushed or pulled, as opposed to the entire history
+			as you are used to in Mercurial. And on doing this, if there has been any parallel development, hgsubversion will use 'Rebase' to 
+			re-sequence your commits into a single linear path. If there are any conflicts during this process, you'll have to resolve them and re-commit
+			before trying the operation again.</p>
+			<p>Bear in mind that when you push changesets to Subversion, they will actually get 'rewritten' to reflect the actual Subversion
+			commits once the push is completed. So commit dates will change, and the user names will change to what Subversion sees.</p>
+			
+			<h2>Working with Branches</h2>
+			<p>hgsubversion cannot create new branches on Subversion. Therefore, you are limited to working with the
+			branches that currently exist in the repository. If you've cloned from the root and your Subversion server
+			has a standard layout (branches, tags and trunk) then you will have Mercurial branches corresponding to those
+			and you are free to switch branches and commit to each separately (remember that only the active branch is pushed / pulled though).</p> 
+			<p>If you cloned only a single branch (or the trunk), then you obviously will only be working with a single
+			branch anyway in your local repository.</p>
+			<p>You should not create any Mercurial branches in your local repository. SourceTree will warn you about this if you 
+			try to do it, but will not ultimately stop you if you insist. The effect of Mercurial branches with Subversion servers
+			can vary - if the branch has a linear history with an existing Subversion branch, the Mercurial branch will disappear when 
+			you commit and only the Subversion branch will remain. If development has deviated, then you will not be able to 
+			push the Mercurial branch to Subversion; you will have to transplant the changes to a Subversion branch. It gets messy, which 
+			is why it's not recommended. If you need a new branch, create it in Subversion and pull it into your Mercurial repository instead.</p>
+			
+			<h2>Merging is not Supported</h2>
+			<p>hgsubversion currently doesn't support converting Mercurial merges into Subversion 1.5 compatible merge info. If you
+			do perform a merge, you will find that you cannot push to your Subversion repository anymore. SourceTree will warn you if
+			you try to perform a merge on a repository that is using Subversion to avoid this, although if you force it, it will still 
+			do it.</p>
+			<p>hgsubversion also does not pick up merge info from merges that have occurred in Subversion already, so the log view will 
+			not show any merges.</p>
+			
+			<h2>Migrating away from Subversion</h2>
+			<p>One of the side benefits of using the Subversion interoperability is that effectively you've converted your
+			repository to Mercurial just by cloning it. If you wanted to move away from Subversion later, you can use your local
+			Mercurial repository as a base. Just remember that merge information is not present so you may wish to just
+			convert a single branch at an opportune moment in time.</p>
+			<p>If you no longer intend to use Subversion, delete the remote that refers to it in the Repository Settings view, 
+			and also delete the svn metadata which lives inside the .hg/svn folder in your local repository. From that point on, 
+			the repository will just be a regular Mercurial repository.</p>
+			
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<a href="svn_general.html">Using Subversion: General Principles</a><br/>
+						<!-- <a href="svn_hg.html">Using Mercurial with Subversion</a><br/> -->
+						<a href="svn_git.html">Using Git with Subversion</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Hosted Projects</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Hosted Projects" />
+		<meta name="description" content="Learn about hosted projects." />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Bookmarks"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Hosted Repositories</h1>
+			</div>
+			
+			<p>
+				<img src="../shrd/hosting_providers.png" alt="GitHub, Bitbucket and Kiln" /></p>
+			<p>SourceTree integrates with <a href="http://www.bitbucket.org">Bitbucket</a>, <a href="http://github.com">GitHub</a> and <a href="http://www.fogcreek.com/kiln/">Kiln</a> to enable you to easily view your repositories that are
+			hosted on these services, clone them, navigate to their project pages on the web, and create new repositories 	on those services if you wish too.</p>
+			
+			<p>You can access the Hosted Projects view several ways:</p>
+			<ul>
+				<li>Click the 'Hosted Projects' button on the Bookmarks window toolbar, or</li> 
+				<li>Use the 'Show Hosted Repositories' menu option</li> 
+				<li>Press Shift-Cmd-H</li>
+				<li>When you need to complete an URL and you see this button next to the field: <img  src="../shrd/hostedprojects_remote_button.png" alt="remote button"/></li>
+			</ul>
+
+			<h3>The Hosted Repositories View</h3>
+			<p style="text-align: center;">
+				<img src="../shrd/hostedProjects_list.png" alt="projects list" /><br/></p>
+			<p>	
+				The hosted repositories view collects together all the repositories you have on all
+				the services you have configured. It shows you the names and descriptions, the service
+				on which the project is hosted, and optionally a 'padlock' symbol which indicates that
+				the repository is private (not publicly visible). 
+			</p>
+			<p>To begin with, your list will be blank, so you will want to click the 'Edit Accounts' 
+			button at the top-right to configure your accounts.</p>
+			
+			<h3>The Accounts List</h3>
+			<p style="text-align: center;">
+				<img src="../shrd/hostedprojects_accounts.png"  alt="hosted projects"/></p>
+			<p>This is where you configure all your hosting accounts. You can configure as many as
+			you like, there is no limit, and you can configure more than one account per service if
+			you have multiple identities. You can set one of these accounts to be the default using
+			the Set Default button, so that when you choose to create a new hosted repository, that account is pre-selected. The default account is shown in bold text.</p>
+
+			<h3>Creating / editing Accounts</h3>
+			<p style="text-align: center;">
+				<img src="../shrd/hostedprojects_editaccount.png" alt="hosted projects - edit account" /></p>
+			<p>After clicking Add Account or editing an existing entry, you will see the sheet above. It's fairly self-explanatory; for GitHub and Bitbucket only a username is required (and
+			you can wait to be prompted for the password on first use or click the 'Set Password' button yourself - also useful for changing the password). For Kiln, you also need
+			to provide the 'Host URL' of your Kiln installation, since each one is uniquely assigned to you.</p>
+			<p>The 'Preferred Protocol' option determines which type of remote URL is used when you
+			clone from repositories on this account; either HTTPS or SSH.</p>
+			<p>Finally, the 'Show Private Repositories' option determines whether you want to
+			authenticate against this account to see private repositories. If you uncheck this box
+			you can actually add other people's accounts to your list (and set no password), in
+			order to see their public repositories in your list.</p>
+			
+			<h3>Cloning a Hosted Repository</h3>
+			<p>You can clone from any hosted repository simply by double-clicking on the entry in 
+			the list. Alternatively, you can right-click on the entry and select 'Clone...'. Also 
+			notice that on this context menu there are various other options, to navigate to the 
+			project on the web or to copy URLs to the clipboard for example.
+			</p>
+			
+			<h3>Using a Hosted Repository as a remote</h3>
+			<p>As mentioned earlier, you can open the hosted repositories list whenever you see a button that looks like this: <img  src="../shrd/hostedprojects_remote_button.png" alt="hosted projects - remote button"/></p>
+			<p>One such place is in the remote configuration in the Settings pane for a given 
+			local repository. You can use that to select a hosted repository as a remote and get the
+			URL automatically, instead of having to enter it or copy/paste it manually.</p>
+
+			<h3>Creating a new Hosted Repository</h3>
+			<p>You can create a new repository from the Hosted Repositories list just by clicking the 
+			'Create New Repository' button at the bottom-left. You can do this anywhere that you 
+			can launch the list from, so for example to create a new hosted version of a new local
+			repository, you'd simply have to open the Settings, click Add in the remotes section, click the 'world' button and Create New Repository from there. You never have to even leave the SourceTree repository view!</p>
+			
+			<p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<a href="bookmarks_addwc.html">Adding your existing local source folders</a><br/>
+						<!--<a href="bookmarks_clone.html">Cloning a repository</a><br/> -->
+						<a href="bookmarks_newrepo.html">Creating a blank repository</a><br/>
+						<a href="bookmarks_organise.html">Organising your bookmarks</a><br/>
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

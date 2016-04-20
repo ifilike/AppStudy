@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Repository Window: The Sidebar and footer</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="File, status, repository" />
+		<meta name="description" content="Repository window toolbar" />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Repository"></a>
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Repository Window: The Sidebar and footer</h1>
+			</div>
+			<p></p>
+			<h1>The Sidebar</h1>
+			<p>The sidebar will look something like shown below, depending on whether it's a Git 
+			or Mercurial repository:</p>
+			<p style="text-align: center;">
+				<img src="../shrd/sidebar.png" alt="Sidebar" /><br/>
+			</p>
+			<h2>The File Status Section</h2>
+			<p>
+			Selecting the "Working Copy" item behaves the same way as if you click on the <a href="repo_filestatus.html">File Status</a> button
+			on the View control on the toolbar.
+			</p>
+			<h2>The Branches section</h2>
+			<p>
+			This displays all your branches (local branches in Git). In Mercurial, if you close a 
+			branch it will no longer appear on this list unless you re-open it. Selecting a branch
+			will open the Log view and jump to that branch in the list. You can also right-click
+			on the branch to get a number of context-sensitive options such as updating to/checking out the branch, merging it into your current branch, diffing that branch against your
+			current branch, and more (on git there are also individual pull/push and tracking options). Double-clicking a branch will switch your current branch (after a confirmation dialog).
+            </p>
+            <p>Your current branch is indicated with bold text and a 'tick badge' 
+            on the branch icon. In Git, the number of commits that your branch is ahead or behind
+            the remote branch that it's tracking is displayed alongside the name, with an up arrow
+            for ahead, and a down arrow for behind. In Mercurial, this is not necessary since these
+            counts are not tracked per branch (just see the numbers on the Pull / Push toolbar icons).</p>
+            <p>Note: if you create a branch with a name which includes a '/' character, SourceTree will display the branch as nested within a folder. This can help you group branches
+            if you wish (this is also supported on tags and remote branches in Git).</p>
+			
+			<h2>The Tags section</h2>
+			<p>This section is not expanded by default but if you expand it you'll see one entry
+			for each tag. Selecting one will jump to that tag in the Log view, and there are
+			options available in the context menu such as updating to the tag, deleting the tag or
+			diffing your current working copy against it.</p>
+			
+			<h2>The Remotes section</h2>
+			<p>This is where you find a list of remotes configured for this repository. You can pull from or push to a specific remote from the context menu on each item.</p>
+			<p>On Git, you will also find a list of remote branches, and you can perform actions on 
+			these via the right-click context menu or double-clicking to checkout.</p>
+			
+			<h2>The Stashes / Shelved section</h2>
+			<p>Whenever you use the Stash (Git) or Shelve (Mercurial) function, a new item is created in this section, each one representing a set of changes that have been stored away for
+			future use. You can click on these items to see a diff view of the changes they
+			represent, and right-click an item to either apply it (unshelve it) back to your
+			working copy, or to delete it if you don't want it anymore.</p>
+
+			<h2>The Submodules / Subrepositories section</h2>
+			<p>If your project has nested repositories within it, called submodules in Git or subrepositories in Mercurial, 
+			they will appear here. See the <a href="repo_submodules.html">submodules and subrepositories</a> section for
+			more details.</p>
+
+            <h1>The Footer</h1>
+            <p>The footer at the bottom of every repository window summarises the current state of the
+            repository in one simple line. For example:</p>
+			<p style="text-align: center;">
+				<img src="../shrd/footer.png" alt="Footer" /><br/>
+			</p>
+            <p>You'll see here the name of the current branch, followed by either a 'Clean' marker if
+            there are no local changes, or a summary of the number of files outstanding in 
+            each state if there are local changes. You will also see information here relating to 
+            any outstanding merges and conflicts, if those apply.</p>
+
+			<p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<a href="repo_toolbar.html">The Toolbar</a><br/>
+			            <!-- <a href="repo_sidebarfooter.html">The Sidebar and Footer</a><br/> -->
+						<a href="repo_filestatus.html">The File Status View</a><br/>
+						<a href="repo_log.html">The Log View</a><br/>
+						<a href="repo_search.html">The Search View</a><br/>
+						<a href="repo_draftcommit.html">Drafting a commit message</a><br/>			
+						<a href="repo_settings.html">Repository Settings</a><br/>
+						<a href="repo_submodules.html">Submodules and Subrepositories</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

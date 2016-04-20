@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Introduction to Git Flow and Hg Flow</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="git flow, hg flow" />
+		<meta name="description" content="Introduction to git-flow and Hg Flow" />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+			<p><a id="flow-general" name="flow-general"></a></p>
+
+		<div id="banner">
+			<div id="machelp">
+				<a name="Bookmarks"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Introduction to Git Flow and Hg Flow</h1>
+			</div>
+			
+			<p style="text-align: center;">
+				<img src="../shrd/flow.png" alt="git-flow" /><br/>
+			</p>
+			
+			<h1>What is Git Flow / Hg Flow?</h1>
+			
+			<p>In short, they're higher level tools to standardise how you use multiple branches effectively in Git or Mercurial.</p>
+			
+			<p>In early 2010, an article entitled <a href="http://nvie.com/posts/a-successful-git-branching-model/">"A successful Git branching model"</a> 
+			was published by Vincent Driessen, describing a standardised approach to using git branches in your development cycle. The idea was to 
+			formalise the branching and merging actions that you perform when developing features, handling releases and managing hot fixes, so that every
+			developer on a project took the same approach. In addition to promoting a consistent workflow, it also had the potential to reduce the
+			training a new developer would need before they were developing with git in a way which leveraged the power of git (specifically its granular 
+			branching and merging). However, the problem was you needed to remember the rules to this system.</p>
+			<p>So, shortly after that, a series of scripts called <a href="https://github.com/nvie/gitflow">git-flow</a> provided a higher-level way to perform
+			 those actions so that you wouldn't have to remember how to manually do them. Subsequently, a Mercurial extension called 
+			 <a href="https://bitbucket.org/yujiewu/hgflow/wiki/Home">Hg Flow</a> implemented the same idea for Mercurial.</p>
+			 <p>SourceTree now makes it even simpler by integrating this automation and presenting it to you in a friendly, easy to use way.</p>
+			 
+			 <h2>Summary of the concept</h2>
+			 <p>The general idea is that you use the following branches in your repository:</p>
+			 <ul>
+			 	<li><b>Development branch</b> (usually called 'develop')<br/>
+			 		This is your main development branch where all the changes destined for the next release are placed, either by committing
+			 		directly for small changes, or by merging other branches (e.g. feature branches, discussed later)</li>
+		 		<li><b>Production branch</b> (usually called 'master' in Git, 'default' in Mercurial)<br/>
+		 			This branch represents the latest released / deployed codebase. Only updated by merging other branches into it.</li>
+		 		<li><b>Feature branches</b> (usually prefixed with 'feature/')<br/>
+		 			When you start work on anything non-trivial, you create a feature branch. Later on, you'll merge this back into the development branch
+		 			to queue it for the next release.</li>
+		 		<li><b>Release branches</b> (usually prefixed with 'release/')<br/>
+		 			When you're about to package a new release, you create a release branch from the development branch. You can make more commits to it during
+		 			your preparation for release, and when it's ready to be deployed you merge it back into both the development branch, and the master branch 
+		 			(to indicate it's deployed).</li>
+		 		<li><b>Hotfix branches</b> (usually prefixed with 'hotfix/') <br/>
+		 			If you need to patch the latest release without picking up new features from the development branch, you can create a hotfix branch
+		 			from the latest master branch (which is the latest deployed code). Once you've made your changes, the hotfix branch is then merged back
+		 			into both the master branch (to update the released version) and the development branch (to make sure the fixes go into the next 
+		 			release too)</li>
+		 		</ul>
+		 			
+			 <h1>How to use Git Flow / Hg Flow in SourceTree</h1>
+			 <p>There are two ways to perform 'flow actions' in SourceTree:</p>
+ 			 <p><b>From the Repository toolbar:</b></p>
+			<p><img src="../shrd/flow_toolbar.png" alt="git-flow" /><br/>(this is labelled 'Hg Flow' in Mercurial)</p>
+			<p>This toolbar button gives you a selection of actions based on the current state of the repository. So if you're currently on a feature
+			branch, the default action it will offer you is to finish your current feature. You can also get to other actions from here, but most of the
+			time the default one is the one you'll want to use. If your repository is currently not set up to use Git Flow / Hg Flow, then the toolbar
+			button will bring up the <a href="flow_init.html">initialisation window</a>.</p>
+			 <p><b>Alternatively, from the Repository menu bar:</b></p>
+			 <p><img src="../shrd/flow_menu.png" alt="git-flow" /></p>
+			<p>This menu lets you access all the possible actions that you can perform (the special case is the 'Next Action' option which does the same thing as
+			the toolbar button). Each action is covered in more detail in the <a href="flow_actions.html">Flow Actions</a> section.
+</p>
+            <p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<!-- <a href="flow_general.html">Introduction to Git Flow / Hg Flow</a><br/> -->
+						<a href="flow_init.html">Initialising a repository</a><br/>
+						<a href="flow_actions.html">Flow Actions</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

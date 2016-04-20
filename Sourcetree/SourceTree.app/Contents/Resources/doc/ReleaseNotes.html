@@ -1,0 +1,2221 @@
+<!doctype html><head><title>SourceTree Release Notes</title></head>
+
+<body style="font-family: arial, sans-serif; font-size: medium">
+
+    <a name="version-2.1" />
+    <h2>SourceTree 2.1 - Minor Release [15 December 2015]</h2>
+    <b>Changes</b>
+    <ul>
+      <li><a href="https://support.atlassian.com/browse/SRCTREEDEV-221">SRCTREEDEV-221</a> - Switch to CocoaLumberjack for logging</li>
+	  <li><a href="https://support.atlassian.com/browse/SRCTREEDEV-225">SRCTREEDEV-225</a> - Set minimum OS to 10.9+</li>
+	  <li><a href="https://support.atlassian.com/browse/SRCTREEDEV-205">SRCTREEDEV-205</a> - Embed git-lfs along with embedded git (Mac)</li>
+	  <li>Minor UI tweaks</li>
+    </ul>
+        
+    <a name="version-2.0.5.8" />
+    <h2>SourceTree 2.0.5.8 - Bug fix release [30 November 2015]</h2>
+    <b>Bugfixes</b>
+    <ul>
+      <li><a href="https://support.atlassian.com/browse/STSP-2661">STSP-2661</a> - Repeated crashes - BUG in libdispatch client: kevent[EVFILT_WRITE] delete</li>
+    </ul>
+    
+    <a name="version-2.0.5.7" />
+    <h2>SourceTree 2.0.5.7 - Bug fix release [23 November 2015]</h2>
+    <b>Bugfixes</b>
+    <ul>
+      <li><a href="https://jira.atlassian.com/browse/SRCTREE-3260">SRCTREE-3260</a> - SourceTree crashes a couple of seconds after start</li>
+      <li><a href="https://jira.atlassian.com/browse/SRCTREEDEV-232">SRCTREEDEV-232</a> - Rationalize the format of the MAU GAS events between Mac and Windows</li>
+    </ul>
+    
+    <a name="version-2.0.5.6" />
+    <h2>SourceTree 2.0.5.6 - Bug fix release with updates to analytics [16 November 2015]</h2>
+    <b>Enhancements</b>
+    <ul>
+      <li>SRCTREEDEV-208 - update embedded git to 2.6.2</li>
+      <li>SRCTREEDEV-202 - Updated analytics pipeline to use REST services</li>
+      <li>SRCTREE-3255 - Invalid char in json during registration process</li>
+      <li>Updated translations for localized content</li>
+    </ul>
+    
+    <a name="version-2.0.5.5" />
+    <h2>SourceTree 2.0.5.5 - Resolving signing issues [13 October 2015]</h2>
+    
+    <a name="version-2.0.5.4" />
+    <h2>SourceTree 2.0.5.4 - Bugfix release [13 October 2015]</h2>
+    <b>Bugfixes</b>
+    <ul>
+      <li>SRCTREE-3185: SourceTree freezes during startup in OS 10.11 (El Capitan)</li>
+      <li>SRCTREE-3182: Unable to clone from Bitbucket Server 4.0.2</li>
+      <li>SRCTREE-3166: Cloning Bitbucket Server 4.0 repositories via Hosted Repositories is not possible due to error in the URL</li>
+    </ul>
+    
+    <a name="version-2.0.5.3" />
+    <h2>SourceTree 2.0.5.3 - Bugfix release [24 September 2015]</h2>
+    <b>Bugfixes</b>
+    <ul>
+      <li>SRCTREEDEV-85 corrected the MAU heartbeat url to be HTTPS and fixed the active flag to be boolean not binary</li>
+      <li>SRCTREEDEV-147 rebranded â€Stash" to "Bitbucket Server"</li>
+      <li>SRCTREEDEV-164 Updated build to continue to use SDK 10.10</li>
+    </ul>
+    
+    <a name="version-2.0.5.2" />
+    <h2>SourceTree 2.0.5.2 - Bugfix release [3 February 2015]</h2>
+    <b>Bugfixes</b>
+    <ul>
+      <li>Fixed issue where if SourceTree was set to anything but English it could crash on startup</li>
+    </ul>
+    
+    <a name="version-2.0.5" />
+    <h2>SourceTree 2.0.5 - Bugfix release [3 February 2015]</h2>
+    <b>Bugfixes</b>
+    <ul>
+      <li>SRCTREE-2882: Use git-2.2.1-intel-universal-snow-leopard.dmg for the embedded Git version to support Lion onwards for SourceTree users</li>
+      <li>SRCTREE-2834: Handle Stash authentication error so user is presented with a dialog, and subsequent API calls attempts aren't made.</li>
+      <li>SRCTREE-2903: Fixed subtree by updating the embedded extension</li>
+      <li>SRCTREE-2661: Allow users to push if they have tags and branches with the same name by using the fully qualified refs, e.g. refs/heads/branch_name or refs/tags/tag_name</li>
+      <li>SRCTREE-2907: Fix the hgsubversion extension so users can use and interact with their hg-svn repos without receiving errors even if hgsubversion and hgattic are both turned on. Both extensions now work. Also updated the guide on CAC in case user intervention is required: https://confluence.atlassian.com/pages/viewpage.action?pageId=285840840</li>
+      <li>SRCTREE-2710: Fix for the 'dataCell' crash bug users on Yosemite were experiencing</li>
+      <li>SRCTREE-2815: Fix a crash bug users were receiving when using 'Commit Selected'</li>
+      <li>SRCTREE-2850: Stop using the current language's push preferences as the text to persist out to the user git config, it should always use the English variant.</li>
+      <li>SRCTREE-2859: Disable push branches drop-down if modification of Git/Mercurial config option is disabled on the general tab</li>
+      <li>SRCTREE-2734: Add/link subtree dialog now generates a relative path when using the folder selector and warns you if you're using an absolute path</li>
+    </ul>
+    
+    <a name="version-2.0.4" />
+    <h2>SourceTree 2.0.4 - Bugfix release [19 December 2014]</h2>
+    <b>Bugfixes</b>
+    <ul>
+      <li>Update embedded Git to version 2.2.1 and embedded Mercurial to version 3.2.3 to address the <a href="http://article.gmane.org/gmane.linux.kernel/1853266">CVE-2014-9390</a> vulnerability</li>
+      <li>SRCTREE-2796: Top-level domains of '.technology' can now be used to register Atlassian accounts through SourceTree</li>
+    </ul>
+    
+    <a name="version-2.0.3" />
+    <h2>SourceTree 2.0.3 - Bugfix release [06 November 2014]</h2>
+    <b>Enhancements</b>
+    <ul>
+      <li>SRCTREE-2732: Instead of cloning master by default, clone what the remote refs/HEAD points to if unspecified</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+      <li>SRCTREE-2749: Fix crash bug a small number of users were occasionally experiencing</li>
+      <li>SRCTREE-2751: If a merge fails use a scrollable error panel in case the message is large</li>
+      <li>SRCTREE-2718: Fix rendering artefact in the scope bar when toggling between full mode</li>
+      <li>SRCTREE-2739: Stop long paths from making the push/pull sheet larger</li>
+      <li>STSP-1429: Safety check to prevent reported crash</li>
+    </ul>
+
+    <a name="version-2.0.2" />
+    <h2>SourceTree 2.0.2 - Bugfix release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>Expand / collapse bookmark groups on double-click</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix restoration of repo browser window position when not using Mac OS-level app window restoration (SRCTREE-2695)</li>
+        <li>Fix layout issue with log selected window not using full height</li>
+        <li>Fix a few more cases of custom action shortcuts having Shift modifier incorrectly added &amp; therefore binding to wrong key combination</li>
+        <li>Fix detection of custom action keyboard shortcut clashes with menu items when Shift is involved (SRCTREE-2722)</li>
+        <li>Fix disabled Custom Actions in bookmarks pane (SRCTREE-2721)</li>
+        <li>Slightly change rendering of repo icon so as not to clip the border circle &amp; cause aliasing</li>
+        <li>Workaround for random crash when switching sidebar content (SRCTREE-2714)</li>
+        <li>Fix using 'stree' command line tool on a non-repo folder when app was closed &amp; bookmarks was not open on last close (SRCTREE-2703)</li>
+        <li>Translation updates</li>
+    </ul>
+
+    <a name="version-2.0.1" />
+    <h2>SourceTree 2.0.1 - Bugfix release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>Added a 'Compact View' option to bookmarks window for people who want less layout space &amp; smaller icons. You'll find it in the 'Gear' menu in the top-right of the window.</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix excessive CPU usage when application is hidden with Cmd+H &amp; potentially other cases</li>
+        <li>Fix problem opening some repositories &amp; missing toolbar icons on Yosemite Developer Preview</li>
+        <li>Fix locked UI after 'Add to Bookmarks' window is closed with Cmd-W or window close button instead of Cancel</li>
+        <li>Don't make repo browser full screen when activated from a full screen repo window</li>
+        <li>Fix custom action shortcuts having Shift modifier incorrectly added</li>
+        <li>Translation updates</li>
+    </ul>
+
+    <a name="version-2.0.0" />
+    <h2>SourceTree 2.0.0 - Major Release</h2>
+    <b>Features</b>
+    <ul>
+        <li><b>New repository browser</b>
+        <ul><li>Replaces the old Bookmarks and Hosted Projects windows in one (use Local / Remote switch at top left)</li>
+        <li>New cleaner visual style; if you need the path or the detailed status, press Space to see more detail on the selected repo.</li>
+        <li>Repository avatars - displays your Bitbucket repo avatars, and will also look for logo/icon.png|tiff|jpg|gif locally.</li>
+        <li>More optimised bookmark status refreshing, faster for large numbers of bookmarks</li>
+        <li>One button to create new repositories</li>
+        <li>You can now create a new remote repository on Bitbucket/Stash/GitHub when creating a local repository. Also use 'Publish to remote' context option to 
+        publish existing repos to remote services easily.</li>
+        <li>Cloning now takes place inside a 'pending' bookmark instead of a separate floating window, with a progress bar. If you try to open an in-progress clone, you get the full task dialog.</li>
+        </ul></li>
+        <li><b>New languages added</b>: German, Spanish, Dutch, Chinese (Simplified), Portuguese (BR), Russian and Ukrainian are new in this release, joining the existing French and Japanese translations.</li>
+        <li><b>Icon updates</b> Application icon and other in-app icons have been updated &amp; flattened; now Yosemite friendly!</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>When diff is suppressed for a file, include text to explain this and a button to open the preferences to change it</li>
+        <li>A few bugfixes for edge case crashes &amp; hangs</li>
+    </ul>
+
+
+    <a name="version-1.9.8" />
+    <h2>SourceTree 1.9.8 - bugfix release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix beachball condition when confirming a commit just as the 'push to' branch list was refreshing</li>
+        <li>Fix a rare crash in certain timing conditions (SRCTREE-2605)</li>
+        <li>Don't prevent committing when in interactive rebase edit state</li>
+        <li>Fix crash bug when registering on Mac OS X 10.7 (SRCTREE-2622)</li>
+    </ul>
+
+    <a name="version-1.9.7" />
+    <h2>SourceTree 1.9.7 - bugfix release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fixed several intermittent crash issues</li>
+        <li>Re-implement support for git commit templates which was accidentally omittied in 1.9 (SRCTREE-2586)</li>
+    </ul>
+    <a name="version-1.9.6" />
+    <h2>SourceTree 1.9.6 - bugfix release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix failure to auto-refresh in the case where 2 file events are raised while the app is in the background, one which should be ignored and one which shouldn't (SRCTREE-2531)</li>
+        <li>Rename context menu 'Commit' to 'Commit Selected' for clarity (SRCTREE-2556)</li>
+        <li>Fix crash when pushing a git-svn repository to an alternate Git repository (SRCTREE-2554)</li>
+        <li>Fix a crash if a repository window is closed while a binary diff preview is being generated(SRCTREE-2552)</li>
+        <li>Fix tree view not maintaining checkbox state across refreshes and also reporting 'No files selected' when there are (SRCTREE-2558)</li>
+        <li>Fix diff hanging on lines with several hundred thousand characters; diffs are now limited to max 10k characters per line (SRCTREE-2533)</li>
+        <li>Updated translations</li>
+    </ul>
+
+    <a name="version-1.9.5.2" />
+    <h2>SourceTree 1.9.5.2 - hotfix</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>A couple more compatibility fixes for OS X Lion (10.7) which were missed in the last hotfix</li>
+    </ul>
+
+    <a name="version-1.9.5.1" />
+    <h2>SourceTree 1.9.5.1 - hotfix</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix compatibility issues with OS X Lion (10.7)</li>
+        <li>Fix problem with authentication prompt when using HTTPS URL on private git repos</li>
+        <li>Fix missing right-click menu on files within a commit when viewing in tree view</li>
+    </ul>
+
+    <a name="version-1.9.5" />
+    <h2>SourceTree 1.9.5 - optimisation &amp; bugfix release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>Support git 2.0's new default push.branch mode of 'simple' rather than 'matching'. SourceTree will detect what version of git you're running and will reflect
+        the default for that version if you haven't explicitly chosen a mode.</li>
+        <li>SourceTree will no longer auto-refresh when changes are detected inside ignored directories. For this to work the directory itself needs to be ignored rather than the file that changed, since the Mac FSEvents notifier only includes directory information. Both the global ignore and the root repository-specific .gitignore/.hgignore are used to filter auto-refresh events.</li>
+        <li>Memory optimisations; SourceTree should now use less memory and release it faster as windows are closed.</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix random crash in NSFileHandle which would occur with variable frequency depending on the user</li>
+        <li>Fix garbled characters in log when a commit has been made with Cyrillic 866 encoded characters (probably on Windows) in the message or author, which previously broke decoding hard and caused a backup non-UTF decoder to be used which garbled all other commit lines in that batch. Now we manually sanitise that broken commit so other rows can be decoded as valid UTF</li>
+        <li>Also deal with another case of bad encoding which could cause single commits to be omitted from the log</li>
+        <li>Make sure log refreshes immediately after creating a tag</li>
+        <li>In the rare case that a TTY could not be created, avoid hanging &amp; report properly in the log. Should never occur really but there is a possible resource starvation case.</li>
+        <li>Fix for git credential helper not saving the password when core git credential helper isn't present. Reworked in such a way it doesn't cause constant user prompts to access keychain like previous fix did.</li>
+        <li>Fix incorrect date format in command output history pane (SRCTREE-2501)</li>
+        <li>Fix inability to close Preferences window if both the Full Name and Email Address fields are left blank (SRCTREE-2491)</li>
+        <li>When defaulting the push destination in git with push.branch set to 'matching', prefer origin over other remotes (SRCTREE-2489)</li>
+        <li>Fix sorting problems in log view, including sort by filename and tree view sorting</li>
+        <li>Prevent very long branch names from overlapping the buttons in the Commit panel (SRCTREE-2496)</li>
+        <li>Do not reset Hide Remote Branches option when simply selecting a local branch. (SRCTREE-2469)</li>
+        <li>Don't reset the branch filter when the branch you clicked on is the branch already being filtered by.</li>
+        <li>Fix using 'Current Branch' option in log view on a detached HEAD causing a git error (SRCTREE-2475)</li>
+        <li>Fix the display of HEAD in the sidebar in more recent versions of git when on a detached HEAD</li>
+        <li>When double-clicking to switch branch, don't reset the filter away from 'Current Branch' (SRCTREE-2461)</li>
+        <li>Clicking 'Details' button on a failed clone URL detection now provides output in a scrollable sheet, not a window which might be too big (SRCTREE-2452)</li>
+        <li>Fix split view errors in log when restoring a small window, hopefully fixes intermittent splitview size issues</li>
+        <li>Fix stuck refresh in file list</li>
+        <li>Double-clicking folders in the tree view now opens in Finder, as in 1.8</li>
+        <li>Support double-clicking files &amp; folders in the tree view when viewing a commit</li>
+        <li>Sanitise git remote names more strictly than just spaces, don't allow other characters like : ^ etc (SRCTREE-2518)</li>
+        <li>Disallow creating duplicate remote names</li>
+        <li>Fix some GitHub API error messages not being displayed in full in the hosted repositories login error dialog</li>
+        <li>Better preservation of tree view expanded state when staging/unstaging (SRCTREE-2485)</li>
+    </ul>
+
+    <a name="version-1.9.4.1" />
+    <h2>SourceTree 1.9.4.1 - hotfix</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix being unable to use SourceTree on Mac OS X 10.7 (Lion) after a fresh install</li> 
+        <li>Fix French &amp; Japanese translations missing one of the diff optimisations</li>    
+        <li>Fix clipped text on the 'Add account' page of the welcome wizard on some macs</li>
+    </ul>
+    
+
+    <a name="version-1.9.4" />
+    <h2>SourceTree 1.9.4 - minor release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>The commit details file list now supports all 3 view modes (single col, multi-col and tree) just like the file status view</li>
+        <li>When the current selected file disappears from the file status list (staging/unstaging/deleting), select the file after or before it on next refresh, rather than reset to the first item (SRCTREE-2427). This is more intuitive when staging one file after another in longer lists.</li>
+        <li>The diff view scrolling behaviour is now faster &amp; smoother</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix staging by spacebar hanging on refresh sometimes, especially in large repos with many files</li>
+        <li>File searching now works when in tree view mode (SRCTREE-2423)</li>
+        <li>Allow a blank email to be used as a global user preference (SRCTREE-1904)</li>
+        <li>Fix occasional blank file lists when switching between log &amp; file status views when not fully initialised (SRCTREE-2425)</li>
+        <li>Speed up the re-refresh when switching view modes if another refresh was in flight when you changed it</li>
+        <li>Fix view option tip pop-up being able to be vertically compressed so not displaying full message on some setups</li>
+        <li>Fix error reporting when a failure occurs during staging/unstaging (SRCTREE-2442)</li>
+        <li>Fix disabling the analytics in the welcome wizard not correctly disabling the option in Preferences (SRCTREE-2447)</li>
+    </ul>
+
+    <a name="version-1.9.3.1" />
+    <h2>SourceTree 1.9.3.1 - hotfix release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix crash when dragging item from tree view with fluid staging mode or no staging mode enabled (SRCTREE-2414)</li>
+        <li>Make 'Sort by path' more intuitive; search by folder, then filename within rather than by full path
+        This means that items in higher folder levels get listed together, instead of with subfolders potentially in between</li>
+        <li>Fix HTTPS authentication in git constantly prompting for access to the keychain even if Always Allow is clicked (SRCTREE-2422)</li>
+    </ul>
+    <b>Enhancements</b>
+    <ul>
+        <li>Use multi-column view for commit file list by popular demand</li>
+    </ul>
+    <a name="version-1.9.3" />
+    <h2>SourceTree 1.9.3 - UX feedback update &amp; bugfix release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li><b>New file view options: </b>Based on user feedback we've added additional options to customise the file status view, which are available from a new button in the scope bar:
+            <ul>
+                <li>Flat list (single column) - display files as a flat list with the full path (previously the only option in 1.9)</li>
+                <li>Flat list (multiple columns) - still a flat list but split the file name and path into separate columns (1.8 flat style)</li>
+                <li>Tree view - display the files &amp; containing folders as a tree</li>
+            </ul>
+        </li>
+        <li><b>New staging options:</b>
+            <ul>
+                <li>No staging - don't use staging</li>
+                <li>Fluid staging - files are in one list with headers for staged / unstaged, previously the only option in 1.9</li>
+                <li>Split view staging - staged/unstaged files are in 2 separate lists with a vertical split, and you can drag/drop between them</li>
+            </ul>
+        </li>
+        <li><b>Commit selected</b> is back: if you're not using staging this just flips the right checkboxes for you, but if you're using git staging then you'll be temporarily switched to 'No staging' mode so you can commit checked files separate to your index, and then returned to your staging view afterwards.</li>
+        <li>Allow blank email to be set in repo preferences if user requires it (SRCTREE-1904)</li>     
+        <li>Selection of lines in the diff pane is now preserved over refreshes, provided that part of the diff didn't change</li>   
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fixed a case where refreshing of file list got 'stuck' intermittently</li>
+        <li>Fixed authentication issues for people who didn't have an entry in their keychain for a given host</li>
+        <li>Fix not refreshing log after the push element of a commit &amp; push operation fails (SRCTREE-2346)</li>
+        <li>Fix tab navigation when editing remotes (SRCTREE-2344)</li>
+        <li>Ignore hg-checklink- files in auto-refresh</li>
+        <li>Fix not being able to commit if global preference is set to push but repo has no remotes (SRCTREE-2335)</li>
+        <li>Don't display "(null)/master" as push target in commit popup when no remotes exist. </li>
+        <li>When switching from file status to log view uncommitted &amp; back, make sure filter is synced as well as content so mismatch can't happen (SRCTREE-2351)</li>
+        <li>Make sure draft commit message is saved if application / window is closed while commit panel is still expanded (SRCTREE-2356)</li>
+        <li>Make sure uncommitted line is included in log when only change is a missing file (SRCTREE-2381)</li>
+        <li>Fix internal exception when clearing the text in the git flow start dialog (SRCTREE-2375)</li>
+    </ul>
+
+
+
+
+
+
+    <a name="version-1.9.2" />
+    <h2>SourceTree 1.9.2 - Bugfix release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix clone and web URLs for Bitbucket repositories from Hosted Repositories if they had spaces in the name</li>
+        <li>Remember the last filter used in the file status &amp; default to that</li>
+        <li>Save sorting preferences on file status view</li>
+        <li>Fix extremely long filenames pushing the diff pane too wide (SRCTREE-2303)</li>
+        <li>Don't automatically flip to staging mode from commit selected mode when added/removed files are detected (SRCTREE-2310)</li>
+        <li>Add tooltip to diff file header to provide more details especially about renamed files (SRCTREE-2311)</li>
+        <li>Allow blank name or email to be specified in git repo settings if people really want (SRCTREE-2313)</li>
+        <li>Fix 'Commit' button not being enabled when committing selected if default state was all unchecked and you checked boxes only in the log view before engaging commit mode (SRCTREE-2302)</li>
+        <li>Fix not displaying more than 25 repositories for any one Stash project (SRCTREE-2308)</li>
+        <li>Staging using the header checkbox now only stages the currently filtered files, instead of staging all files (SRCTREE-2321)</li>
+
+    </ul>
+
+    <a name="version-1.9.1" />
+    <h2>SourceTree 1.9.1 - Bugfix release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Restored the Shift-Cmd-L keyboard shortcut for Pull. The 'Show Sidebar' shortcut had accidentally replaced it, it's now Shift-Cmd-K</li>
+        <li>Fixed Actions > Commit menu option</li>
+        <li>Fixed scrollbar overlapping final line of diff hunks, especially a problem if you'd set scrollbars to 'Always show' (SRCTREE-2228)</li>
+        <li>Fixed file list quick access menu pop-over sizing problems on non-Retina machines like iMacs (SRCTREE-2225)</li>
+        <li>Truncate file names at start rather than middle, so file name is more likely to be unaffected on narrow views (SRCTREE-2232, SRCTREE-2240).</li>
+        <li>Fix not being able to perform actions on moved/renamed files. (SRCTREE-2231)</li>
+        <li>Automatically flip 'Use the staging area' on if you view a repository with staged changes to avoid confusion</li>
+        <li>Auto-refresh the 'push to' label in the commit pane if open while user switched branches (SRCTREE-2250)</li>
+        <li>The 'Push changes immediately' option in git commits now correctly picks up tracked branches on forks if the push mode is 'upstream' or derivatives (SRCTREE-2272)</li>
+        <li>When adding previous commit messages, move duplicate messages to the top (SRCTREE-2275)</li>
+        <li>Fix switching back to binary side-by-side diff after switching to Before view (SRCTREE-2283)</li>
+    </ul>
+
+    <a name="version-1.9.0" />
+    <h2>SourceTree 1.9.0 - Major Release!</h2>
+    <p><b>Note:</b> OS X 10.6 is no longer supported. SourceTree now only works on OS X 10.7 or higher.</p>
+    <b>Enhancements</b>
+    <ul>
+        <li><b>New &amp; improved commit experience</b>
+        <ul>
+            <li>Commit experience is now embedded right in the file status view, no separate sheet</li>
+            <li>Default git view for new users is now 'commit selected' for simplicity but view switches to staging when that feature is used</li>
+            <li>One-click staging / unstaging in file list</li>
+            <li>Streamlined pop-out commit pane with keyboard shortcuts on all options like push, signing, previous commit messages etc</li>
+            <li>Quick-access '...' button for most common operations</li>
+            <li>Amend last commit is now available in Mercurial as well as Git</li>
+            <li>File search now automatically switches to the 'All Files' filter (and back) when no more matches are found, allowing you to more quickly find files in your codebase</li>
+        </ul>
+        </li>
+        <li><b>New &amp; improved diff view</b>
+        <ul>
+            <li>New cleaner look! The boundaries of files and hunks is now clearer and the visual style is easier on the eyes</li>
+            <li>Source code scrolls separately per hunk and from the rest of the view, keeping controls more accessible</li>
+            <li>Dynamic buttons for hunk/line operations to cut down on UI complexity</li>
+            <li>Side-by-side binary diffs</li>
+        </ul></li>
+        <li><b>Hosted Repositories</b> now automatically lists ALL repositories in your teams / organisations / projects that are accessible from your account, not just the ones you follow. Use the filter if your company is large to quickly drill down.</li>
+        <li><b>Improved Setup Wizard</b> for new users</li>
+        <li>The Working Copy sidebar entry now has an indicator of the number of files uncommitted</li>
+        <li>Subtree support now includes a squash option when adding</li>
+        <li>Scope bar at the top of the log view has a new style to fit better with latest UI changes</li>
+        <li>New DMG backdrop for first installers</li>
+        <li>When opening a repo window, if there's nothing to display in the file status view AND there's at least one commit, default to showing the log</li>
+        <li>Began the process of externalising translations through Transifex, when this is complete we'll be able to add more languages.</li>
+
+    </ul>
+
+    <b>Bugfixes</b>
+    <ul>
+        <li>The git --set-upstream option is no longer used (deprecated)</li>        
+        <li>Improvements to the git credential helper which should result in fewer user prompts when using 'usernameless' HTTPS URLs</li>
+        <li>Using duplicate / empty git stash names no longer causes problems</li>
+        <li>Double clicking stashes/shelves behaves like other items in the sidebar and performs that action, i.e. to unshelve/unstash.</li>
+        <li>Fixed issues with ambiguous tag names in git</li>
+        <li>Fix incorrect selection tracking in the file list view if the log view had been viewed first but the Uncommitted line had never been clicked</li>
+        <li>File names containing '->' now show their full file name instead of just the file extension.</li>
+        <li>Fix staging last hunk in a file where the unidiff format omits the latter part (comma onwards) of the header</li>
+        <li>Fix for occasional white line rendering artefacts between red/green background in diff when scrolling slowly</li>
+        <li>Fix invalid archive validation text</li>
+
+    </ul>
+
+
+    <a name="version-1.8.1" />
+    <h2>SourceTree 1.8.1 - Minor Release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-2064">SRCTREE-2064</a>: Log view's branch filter now works in Git</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-2066">SRCTREE-2066</a>: File list in the log view can no longer be completely hidden</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1930">SRCTREE-1930</a>: Changed the window collection behaviour to default so it’ll take you to the space the bookmarks window is active on</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1835">SRCTREE-1835</a>: Now completely disable the GPG checkbox if no GPG keys are available</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-2038">SRCTREE-2038</a>: Fixed a problem with file descriptors running out when SourceTree was longing for long periods of time</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-2030">SRCTREE-2030</a>: Disable the substitution of double-dashes and quotes with special characters by default</li>
+        <li>Updated SVN documentation to include troubleshooting in the event SVN URLs don't work</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-2029">SRCTREE-2029</a>: Replaced the recursive option for submodules so it instead updates them all as authentication fails when using recursive flag on new authentication model</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1833">SRCTREE-1833</a>: Ensure the checkboxes are aligned on the Git commit sheet. Pretty sure they already were, but re-aligned to be certain.</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1992">SRCTREE-1992</a>: Crash bug in viewing a diff on a particular file format</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1080">SRCTREE-1080</a>: Correct Japanese translations for the subtree feature</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1998">SRCTREE-1998</a>: Saving of subtrees now work on newly cloned repositories</li>
+    </ul>
+    
+    
+    
+    <a name="version-1.8.0.3" />
+    <h2>SourceTree 1.8.0.3 - Hotfix Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1997">SRCTREE-1997</a>: Fixed a subtree bug causing a '-n' to appear in commit messages after they had been pushed to remotes <a href="https://github.com/git/git/commit/a5203a3f044ced7904800f3f233451474c1d5120#diff-59f70cbe935ec223e3df413b94cab740">caused by subtree itself in this changelog</a>.</li>
+        <li><a href="https://jira.atlassian.com/browse/SRCTREE-1998">SRCTREE-1998</a>: Fixed a bug where adding a subtree may not persist the subtree metadata in SourceTree itself.</li>
+    </ul>
+    
+    <a name="version-1.8.0.2" />
+    <h2>SourceTree 1.8.0.2 - Hotfix Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fixed an edge case which could cause SourceTree to crash on startup</li>
+        <li>The analytics preference wasn't being remembered when being set in the SourceTree preferences</li>
+    </ul>
+    
+    <a name="version-1.8.0.1" />
+    <h2>SourceTree 1.8.0.1 - Hotfix Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>A bug on startup would cause an instant crash in some cases</li>
+    </ul>
+    
+    <a name="version-1.8.0" />
+    <h2>SourceTree 1.8.0 - Major Release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>Subtree support now added!</li>
+        <li>Updated embedded Git version</li>
+        <li>Usage statistics recorded with user consent</li>
+        <li>SRCTREE-1946: Further help for when using GPG in the event the user specifies the wrong path</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>STSP-797: Rare crash caused by old Bitbucket accounts in hosted repositories with older internal state</li>
+        <li>SRCTREE-1821: Fixed an issue when bookmarks are resized very small causing layout to display incorrectly</li>
+        <li>SRCTREE-1802: The patch sheet now has borders around it to be more consistent with other screens</li>
+        <li>SRCTREEWIN-1198: Respect the user’s init.templatedir configuration when creating / cloning repos</li>
+        <li>SRCTREE-1928: Fixed a crash bug some users were experiencing</li>
+        <li>SRCTREE-1434: You can no longer specify a message with lightweight tags</li>
+    </ul>
+    
+    <a name="version-1.7.4.1" />
+    <h2>SourceTree 1.7.4.1 - Minor Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix font size in file status views, had accidentally been increased by 2pt in 1.7.4</li>
+    </ul>
+
+    <a name="version-1.7.4" />
+    <h2>SourceTree 1.7.4 - Minor Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix crashes on Mavericks which only some users experienced.</li>
+        <li>Fix git commit errors of the form 'unable to create temp file' which some people encountered</li>
+        <li>Fix clone from BB/Stash link trying hg instead of git if you actioned the dialog before the 'checking URL' spinner stopped</li>
+        <li>Fix looking up the wrong gpg install instead of the user-specified one. For those users who had 'gpg' and 'gpg2' which weren't symlinked meant it wouldn't work if they had older installs of gpg.</li>
+        <li>Force push checkbox now sticks to the bottom left of the push sheet.</li>
+        <li>When committing a missing file in ‘selected files’ mode, should behave like the inverse of unknown files i.e. remove the file</li>
+    </ul>
+    <a name="version-1.7.3" />
+    <h2>SourceTree 1.7.3 - Minor Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fixed a bug in Git Rebase Interactive sheet where checking the 'amend' checkbox then clicking 'edit' caused a UI bug blocking the application (SRCTREE-1828)</li>
+        <li>Mercurial patching failed meaning users couldn't use custom Mercurial versions - we've now removed this method completely and replaced it with a more robust solution using extensions (SRCTREE-1599)</li>
+    </ul>
+    
+    <a name="version-1.7.2" />
+    <h2>SourceTree 1.7.2 - Minor Release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>Added 'Create pull request' checkbox to commit dialog so you can proceed directly to creating a pull request after committing.</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix french translation for Create pull request on main menu</li>
+        <li>Improved Japanese translations</li>
+    </ul>
+
+    <a name="version-1.7.1" />
+    <h2>SourceTree 1.7.1 - Minor Release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>Add a 'Changeset' option to the Mercurial pull dialog to replace the removed 'Revision' field (SRCTREE-1847)</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fix an authentication bug that would cause the new Mercurial pull sheet to always display 'No changes' from a private repo with HTTPS (SRCTREE-1855)</li>
+        <li>Fix search with File Changes option selected in git (SRCTREE-1856)</li>
+    </ul>
+
+    <a name="version-1.7.0.1" />
+    <h2>SourceTree 1.7.0 - Major Release</h2>
+    <b>Enhancements</b>
+    <ul>
+        <li>Create pull requests via SourceTree!</li>
+        <li>Major cloning improvements</li>
+        <li>Sign commits and tags in Git and Mercurial</li>
+        <li>Command output history introduced to discover what actions you recently carried out</li>
+        <li>Incoming/outgoing full diff in Mercurial</li>
+        <li>Bundling when pulling changes in Mercurial to reduce bandwidth usage by up to 100%</li>
+        <li>Improved searching in hosted repositories</li>
+        <li>New "fetch" indicator in the footer when a fetch is in progress</li>
+        <li>Reorder custom actions by dragging and dropping to set the desired order (SRCTREE-763)</li>
+        <li>Vastly improved Japanese translations</li>
+        <li>Branch indicator lozenge on commit sheets is now right aligned and transparent</li>
+        <li>Improved documentation, including a list of all shortcuts available in the application</li>
+        <li>Three window restoration options are now available: do not open, always open, or use OS preference</li>
+        <li>Keyboard shortcut Cmd+B will both open and close the bookmarks window and will bring it to your active desktop</li>
+        <li>New repository option to disable recursive submodule operations</li>
+        <li>Duplicate bookmarks are detected in add repository screen</li>
+        <li>Drag and drop patches onto SourceTree and it will automatically open the apply patch sheet</li>
+        <li>Force push supported as a checkbox if enabled from preferences</li>
+        <li>The commit sheet now allows you to resize the commit message against the diff</li>
+        <li>"Askpass" authentication hook now called "SourceTreeLogin" so it's easier to identify</li>
+        <li>Mercurial commit sheet now shows author and allows you to modify the author at commit time (git already supported this)</li>
+        <li>Cmd+F or Cmd+Shift+F for searching now works from various contexts in the application (Bookmarks, Log etc.)</li>
+        <li>Personal repositories are now supported for Stash in hosted repositories</li>
+        <li>"Show in Finder" icon now retina ready</li>
+        <li>Log view now uses case insenstive ordering like Finder</li>
+        <li>Can 'Format to Guidelines' (hard wrap) the commit text by command clicking the commit text</li>
+        <li>A new warning appears if the user tries to delete a bookmark which has outstanding changes or untracked non-ignored files. (SRCTREE-1550)</li>
+        <li>If you hit a branch in the sidebar and click "Push To... &lt;branch name&gt;" it will auto-open the advanced view and auto-select the branch you wish to push (SRCTREE-460)</li>
+        <li>Added "Push revision X" to the context menu on the log view and "Push &lt;branch&gt;" menu items to Mercurial repositories only. (SRCTREE-460)</li>
+        <li>Added Cmd+F shortcuts to bookmarks view to immediately take you to the search input box (SRCTREE-1610)</li>
+        <li>Add support for "simple" option to git push.default in preferences</li>
+        <li>Added tooltips to the push options in preferences which are more descriptive</li>
+        <li>Localisations improved on the pull sheet (SRCTREE-1387)</li>
+    </ul>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fixed bug where the window pane split was wrong on startup</li>
+        <li>File list can't be hidden against the diff view as you couldn't tell where it had gone. (SRCTREE-1700)</li>
+        <li>Git Rebase Interactive fixes so core.editor settings don't override SourceTree's interaction with rebase editors.</li>
+        <li>Fix window restoration bug causing windows not to be restored correctly</li>
+    </ul>
+    
+    <a name="version-1.6.4.1" />
+    <h2>SourceTree 1.6.4.1 - Minor Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Fixes for crash bugs users were experiencing when trying to interactively rebase.</li>
+        <li>When using the fetch extension you can no longer specify a branch on checkout as the extension doesn't allow this. (SRCTREE-1672)</li>
+        <li>Fixed a bug where even when the 'Check default remotes for updates every...' option is disabled  connections to remotes were still being made (SRCTREE-1684)</li>
+        <li>Visual bug in the file status view headers which caused the table rows to seep through. Forced a background colour to render to stop the table from rendering behind the label.</li>
+        <li>Sorting is now case insensitive just like Finder now (SRCTREE-1440)</li>
+        <li>Some support for tabbing to move across columns in the column view (SRCTREE-373)</li>
+        <li>Sync the remote branch after you've changed your tracking branch for a local one (SRCTREE-1695)</li>
+        <li>Interactive rebase now works in submodules. Also fixed a bug with submodules not recognising they're in a rebase state due to Git 1.8+ changing the .git file format for paths to be relative instead of absolute. (SRCTREE-1698)</li>
+    </ul>
+    
+    <a name="version-1.6.3.1" />
+    <h2>SourceTree 1.6.3.1 - Minor Release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li>A warning in Git appears when creating a stash with the same name to say you're creating a stash with the same name and a warning appears in Mercurial to say that your shelve with the same name will be overwritten (SRCTREE-1666)</li>
+        <li>New window restoration options to support 10.6+ (options are different if you're on 10.6). A drop-down is now available to either always re-open windows on startup or to use the OS preferences. (SRCTREE-1612)</li>
+        <li>New SourceTree credential helper for Git now deals with all authentication from Git version 1.7.10+ (replaces Askpass).</li>
+    </ul>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fixed an issue where repositories in the symlink folder /private wouldn't work (SRCTREE-1669)</li>
+        <li>If the branches required for hg/git flow didn't already exist when initialising a repository then it silently fails, but will still 'semi-initialise' (creates config, doesn't 'init' the repo for git flow). A warning is now shown if the required branches don't exist and the process will not continue (SRCTREE-1696)</li>
+        <li>Bookmarks window will now open if no other windows are open on startup (SRCTREE-1717)</li>
+    </ul>
+    
+    <a name="version-1.6.2.2" />
+    <h2>SourceTree 1.6.2.2 - Hotfix Release</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fixed a bug when pulling from your remote tracking branch caused a message warning you that you're not pulling from your tracking branch. This occurred when pulling from the sidebar.</li>
+    </ul>
+    
+    <a name="version-1.6.2.1" />
+    <h2>SourceTree 1.6.2.1 - Hotfix Release</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Crash bug when context-clicking files/folders in the column view of Mercurial.</li>
+        <li>Stash repositories were reporting as being Mercurial repositories.</li>
+    </ul>
+    
+    <a name="version-1.6.2" />
+    <h2>SourceTree 1.6.2 - Minor Release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li>When pulling from a non-tracked branch to your local branch a warning will be shown to confirm this is the desired action.</li>
+        <li>New Mercurial preference asks if you want to see the revision or the changeset in the log view.</li>
+        <li>Added a new branch indicator on the Git commit sheet to tell you which branch you're currently on before committing to it.</li>
+        <li>Using "Cmd+B" (View -> Bookmarks) will cause the window to be brought to your current desktop.</li>
+    </ul>
+    
+    <b>Bugfixes:</b>
+    <ul>
+        <li>When the user has a local branch named differently to the remote branch, but is still tracking it, and selects 'upstream' as the push default in Preferences, the branch should be automatically selected in the Push dialog</li>
+        <li>Stopped allowing the git branch sheet from being resizable as the contents weren't docked in any way on either sheet.</li>
+        <li>Created the full screen menu items and fixed the shortcuts so it's correctly set as Ctrl+Cmd+F</li>
+        <li>Disable "Show in Finder" and other equivalents for files/folders that are no longer in the file system of a specific repository or if the repository folder has been removed and you use the bookmarks view to "Show in Finder".</li>
+        <li>Mercurial repositories no longer ask to checkout a tag if there's no working copy changes.</li>
+        <li>Added support for "--autosquash" in Git Rebase Interactive.</li>
+        <li>The return key now closes the full console output sheet when a git/hg command has executed.</li>
+        <li>Window restoration for the bookmarks view has been fixed to adhere to Apple guidelines.</li>
+        <li>Disabled the re-open windows preference for anyone using 10.6 (Snow Leopard) or below.</li>
+        <li>Option to keep or delete your branch on finishing a git flow feature now works in French and Japanese translations.</li>
+        <li>Removed the SourceTree warning asking the user to upgrade their Mac OS X version if the minor OS version is 10.7.4.</li>
+        <li>Now correctly sets the rebase prefs in the pull dialog upon pulling a tracked branch from a remote in the sidebar.</li>
+    </ul>
+    
+    <a name="version-1.6.1" />
+    <h2>SourceTree 1.6.1 - Minor Release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li>You can now undo/redo in Git rebase interactive. Also added a 'Date' column for the commit date, deleted commits are shown with a strikethrough and you can now restore deleted commits</li>
+        <li>You can now force fetch tags in Git from the fetch dialog by using the "Fetch and store all tags locally" option</li>
+        <li>A new preference allows users to enable/disable desktop notifications right from within SourceTree</li>
+        <li>Spaces are now disallowed when entering a new feature name in the new feature dialog for git flow</li>
+        <li>New preference to select all files of a commit in the log view rather than selecting the first file by default</li>
+    </ul>
+    
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fixed a git submodules bug where dots in the submodule name caused a major problem when deleting the submodule</li>
+        <li>Fixed a bug where if you select a range of commits in the log view and then click on the first row of that range of commits it won't refresh the diff/log view.</li>
+        <li>Naming convention in git/hg flow allowed spaces in feature names which would fail. Now we auto-replace with underscores instead.</li>
+        <li>Stopped allowing a user to interactively rebase against an uncommitted line, this would cause an error</li>
+        <li>Fixed the borders not showing on the footer of git repositories</li>
+    </ul>
+    
+    <a name="version-1.6.0.1" />
+    <h2>SourceTree 1.6.0.1 - Hotfix Release</h2>
+    <b>Bugfixes</b>
+    <ul>
+        <li>Override the "core.editor" setting so default Git settings are overriden when using interactive rebase</li>
+        <li>The new Mountain Lion window restoration process could happen out of expected order causing SourceTree to crash</li>
+        <li>Users upgrading from App Store version (1.5.6) to 1.6.0 could have experienced some issues in the update process</li>
+    </ul>
+    
+    <a name="version-1.6.0" />
+    <h2>SourceTree 1.6 - Major Release</h2>
+    
+    <b>Enhancements</b>
+    <ul>
+        <li>Git rebase interactive introduced allowing you to interactively rebase right from within SourceTree.</li>
+        <li>Atlassian ID integration allows users to register SourceTree with Atlassian directly from within the application.</li>
+        <li>"Log Selected" context menu option now allows you to select multiple files</li>
+        <li>The menu option "File &gt; New" now shows as "File &gt; New / Clone" to make it clearer what you can do from the sheet for users who don't understand where to clone from.</li>
+        <li>Borders in all views are now cleaner by reducing their width. Also introduced borders into views that had them missing.</li>
+        <li>You can now have passwords that are up to 75 characters long instead of 50 characters for GitHub, Bitbucket, Kiln and Stash.</li>
+        <li>The latest Araxis diff/merge tool now works with SourceTree</li>
+        <li>Git remembers previously selected options in the merge/pull dialogs and sheets.</li>
+        <li>The "commit merged changes immediately" checkbox is now remembered between pulls</li>
+        <li>Notification support for new commits compatible with 10.6+ (Growl required for Mac OS 10.6/7)</li>
+        <li>The push sheet in Mercurial now shows if you're pushing a new branch to a remote.</li>
+        <li>New preferences option to change pull counts to reflect the currently checked out branch in Mercurial.</li>
+        <li>Git-svn repositories now show the "Revision Number" in the commit metadata as a field</li>
+    </ul>
+    
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Repositories in bookmarks now refresh if they were children of a folder that was previously collapsed once expanded again.</li>
+        <li>External diff wasn't working correctly with "ignore whitespace" when selected lines were being staged.</li>
+        <li>Two options for the merge tool were being set simultaneously in SourceTree preferences.</li>
+        <li>Set a minimum size on the File Log window as you could reduce it to whatever you wanted. This caused a view bug if you reduced it to nothing and expanded it back out again.</li>
+        <li>When closing the entire branches tree, upon a manual refresh it won't auto-expand the branches tree against your will</li>
+        <li>Help pages now work when clicking the "?" buttons on dialogs that provide help</li>
+    </ul>
+    
+    <a name="version-1.5.8"/>
+    <h2>SourceTree 1.5.8</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Git commit error handling wasn't properly handled in the case where a remote was invalid but the commit worked fine. This is now dealt with and appropriate user feedback is given.</li>
+        <li>The Git patch format changed causing a problem for people trying to apply patches from valid patch files. SourceTree now deals with the new patch format correctly.</li>
+        <li>Fixed a log view auto-refresh problem when the repository state goes from clean to having untracked files outside of SourceTree it wouldn't show the uncommitted line unless manual refresh was done.</li>
+    </ul>
+    <b>Enhancements:</b>
+    <ul>
+        <li>New icon set!</li>
+    </ul>
+
+    <a name="version-1.5.7.1"/>
+    <h2>SourceTree 1.5.7.1 - Hotfix</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fix default branch selection in git push dialog when only a subset of branches should be selected,
+        for example when using the 'current' branch push option.</li>
+    </ul>
+    <a name="version-1.5.7"/>
+    <h2>SourceTree 1.5.7 - Minor Release</h2>
+    <b>Enhancements:</b>
+    <ul>
+		<li>Kaleidoscope 2 now supports merging. Added support for use as an external merge tool.</li>
+		<li>Allow adding of ignored files when user requests it</li>
+		<li>When selecting 'Current Branch' in the log view, allow user to specify 'First Parent Only' to not follow merges back to their originating branches.</li>
+		<li>Added an option for Git commits to "bypass commit hooks" which uses the --no-verify flag to the commit. This is activated on the commit sheet by checking a check box at the bottom of the sheet.</li>
+		<li>You can now remove remotes directly from the sidebar context menu.</li>
+    
+    </ul>
+    
+    <b>Bugfixes:</b>
+    <ul>
+		<li>When committing and pushing, if the commit succeeds but the push fails, close the commit dialog rather than return to the commit dialog.</li>
+		<li>Some more Japanese translations updated</li>
+		<li>Fix 'Select All' checkbox being checked on re-opening the Push dialog (Git)</li>
+		<li>Now when you checkout a branch the sidebar will expand to display it if necessary</li>
+		<li>Correctly deal with the case of a commit message with a '[*]' prefix, which could previously break detection of remote branch</li>
+		<li>In Gitflow/Hgflow Next Action dialog, buttons can be navigated via the keyboard now if System Preferences are set to tab through buttons.</li>
+		<li>Fix not automatically refreshing remotes when a user manually edits their .hg/hgrc file outside of SourceTree.</li>
+		<li>Disable the version prefix option in Hgflow because it is not supported by the current stable version of hgflow</li>
+		<li>Fix the Branches list in Mercurial Push dialog advanced section sometimes including invalid characters</li>
+		<li>Clear the revision field when re-opening the Mercurial Pull sheet.</li>
+		<li>Fix support for Kaleidoscope diff when updated to version 2.0+</li>
+		<li>Fix not being able to use both the custom git and custom git-flow at the same time.</li>
+		<li>Display a more informative message when Stash login fails.</li>
+		<li>Fix not being able to drag and drop folders onto SourceTree dock icon in the Mac App Store version (always worked in direct download version)</li>
+    </ul>
+    
+    <a name="version-1.5.6"/>
+    <h2>SourceTree 1.5.6 - Minor Release</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fix an obscure crash bug when re-selecting a range of log rows and fromRow > endRow (and from is across a load boundary)</li>
+        <li>Add new keyboard shortcut (Cmd-Alt-R) for Revert/Reset Selected
+            You used to be able to do Shift-Cmd-R but this was supposed to be the toolbar revert, i.e. a dialog, when this was fixed you lost the ability to do a keyboard-only revert of the current selection, so add a new shortcut</li>
+        <li>Task window progress bar should turn solid blue on completion instead of remaining striped</li>
+        <li>Only enable 'Diff against current' if selecting a different branch, or uncommitted changes exist</li>
+        <li>Fix bug opening the create new hosted repository sheet if no hosted account is set as the default</li>
+        <li>Fix layout of French &amp; Japanese Create New Hosted Repository sheet</li>
+        <li>Fix sizing issue in git/hg-flow preview panel that could cause unnecessary scroll bars, which were intrusive on Snow Leopard</li>
+        <li>Update outgoing count immediately when finishing a feature / release / hotfix in hg-flow</li>
+        <li>Fix crashing when Mac OS 9 carriage returns added before commit message</li>
+        <li>Improve handling of 'Resolve using mine' and 'Resolve using theirs' in rebase scenarios</li>
+        <li>Enable 'Resolve Using Mine/Theirs' in more cases now that the underlying action is more robust. In particular this now works for cases where you pull in hg into uncommitted changes and there's a conflict</li>
+        <li>Automatically replace spaces in remote names with underscores in git, which doesn't allow them</li>
+        <li>Deal with git ambiguity caused by having a file called HEAD in the root of the file system</li>
+    </ul>
+    
+    <a name="version-1.5.5.1"/>
+    <h2>SourceTree 1.5.5.1 - Minor Release</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fix startup crash on Mac OS 10.6</li>
+        <li>Properly cope with filenames which are escaped in git status such as "____".txt</li>
+    </ul>
+    
+    <a name="version-1.5.5"/>
+    <h2>SourceTree 1.5.5 - Minor Release</h2>
+    <b>Enhancements:</b>    
+    <ul>
+        <li>Log view now maintains its contents rather than clearing them when refreshing, except when explicitly triggered by Cmd-R, a filter/sort option change, or following an explicit action (like Commit). This leads to a better user experience when there are outside changes causing
+            SourceTree to re-check the log.</li>
+        <li>Updated the Bitbucket icon in the setup wizard, and added Stash support</li>
+        <li>Add extra 'Show Modified' file status filter which excludes untracked files. This can
+            be a good optimisation for general use on very large repositories, particularly in git,
+            since finding untracked files can take most of the time.</li>
+        
+    </ul>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Updated Japanese translations</li>
+        <li>Safety check to prevent crash with badly formed remote entries in .git/config</li>
+        <li>Fix a couple of account saving problems in the Setup Wizard</li>
+        <li>Updated hgsubversion to fix compatibility with hg 2.3</li>
+        <li>Fix keyboard text input in strip field on apply patch dialog</li>
+        <li>Fix 'rebase is not a git command' error on Mountain Lion  when finishing a git-flow feature with rebase</li>
+    </ul>
+    <a name="version-1.5.4"/> 
+    <h2>SourceTree 1.5.4 - Minor Release</h2>
+    <b>Enhancements:</b>
+
+    <ul>
+        <li>Added the option to use custom git-flow install (note: must include some recent fixes, details
+        available when selecting the option).</li>
+        <li>Added a menu option 'Open Selected Version' to log views so you can view a historical snapshot of a 
+            file more easily. Previously this was available only via the Quick Look dialog.</li>
+    </ul>
+    <b>Bugfixes:</b>
+    
+    <ul>
+        <li>Change description of the --keep-index option in the Git stash dialog to be clearer</li>
+        <li>Fix inability to install command-line tools if a version prior to Mountain Lion certificate change was already installed</li>
+        <li>Fix bug invoking custom actions with multiple commit SHAs</li>
+        <li>Fix bug detecting current git-flow feature in the case of multiple open features</li>
+        <li>Translations for custom git-flow use (SRCTREE-1149)</li>
+        <li>Fix Reset and Stash options being incorrectly disabled when only renamed files</li>
+        <li>Fix resetting renamed file in git</li>
+        <li>Do not set permanent --no-ff option based on last merge; instead treat it as a once-off in this dialog and use Preferences to set permanently</li>
+        <li>Fix inability to access Pull option on sidebar context menu for nested branch tracking a remote branch</li>
+        <li>Make the 'Rebase instead of merge' option on the top-level Git merge sheet work: behave like sidebar right-click rebase</li>
+        <li>Make sure full task output is displayed if user requests it even if the intention of the function is to close even on failure (to perform special failure processing)</li>
+        <li>Fix git-flow finish feature with rebase option; need to add git-flow to PATH to deal with recursive calls in script</li>
+        <li>Fix using tildes in paths when creating a patch</li>
+        <li>Fix a problem where Safari login context was overriding the user name for REST API calls to Bitbucket if different</li>
+        <li>Fix instability of disabled commit checkboxes when opening git commit with 'commit selected' then switching to 'commit staged' and refreshing</li>
+        <li>Fix context menu bookmark options when right-clicking when app doesn't have the focus</li>
+        <li>Fixed Actions > Open menu action in Bookmarks opening hovered bookmarks instead of selected bookmarks when using the keyboard shortcuts</li>
+
+    </ul>
+    
+    <a name="version-1.5.3"/> 
+    <h2>SourceTree 1.5.3 - Minor Release</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Do not allow git/hg flow to be initialised with blank prefixes for feature, release, hotfix</li>
+        <li>Make sure scroll bars reset to top when switching files in diff view</li>
+        <li>Preserve symlinks when selecting a system Git version (e.g. homebrew)</li>
+        <li>Fix error messages when GitHub v3 API login fails</li>
+        <li>Eliminate cases of annoying repeat password prompting when keychain retrieval fails for some reason (usually temporarily until the next app restart, appears to be down to conflicting update scenarios).</li>
+        
+    </ul>
+
+    <a name="version-1.5.2"/> 
+    <h2>SourceTree 1.5.2 - Minor Release</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fix start-up crash specific to Mac OS X 10.7.2 (10.7.3+ and 10.6 were not affected)</li>
+        <li>Fix incorrect display of the Hg Flow warning message when initialising Git flow</li>
+        <li>Fix inability to launch a file-based custom action from the context menu on the log view when the uncommitted line was selected</li>
+        <li>Fix failure to restore sidebar expansion state when there are multiple nested branches</li>
+        <li>Fix not displaying more than 30 owned GitHub repositories</li>
+        
+    </ul>
+
+    <a name="version-1.5.1"/> 
+    <h2>SourceTree 1.5.1 - Minor Release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li><b>Retina display upgrade</b> - SourceTree now includes higher resolution icons and  other tweaks to improve the appearance on MacBook Pros with Retina displays.</li>
+        <li>Display both the author date and commit date in commit details for Git if different</li>
+        <li>Added a Preferences option in Git to choose between author date and commit date in log table.</li>
+
+    </ul>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Repository window titles now instantly update when bookmarks are renamed.</li>
+        <li>When unstaging a file deletion in Git, don't automatically restore the file, leave it in the 'Missing'
+            state so that it's the exact inverse of staging a Missing file as expected. The 'Reset' option is still
+            available to undo the deletion and restore the file at the same time.</li>
+        <li>Make sure base path &amp; strip options are correctly used in the Apply Patch sheet when manually entered and not tabbed out of</li>
+        <li>Fix the error message when opening an invalid working copy so that it does not imply that local Subversion repositories are supported.</li>
+        <li>Search %include files referenced in user .hgrc for extensions to ensure they are correctly recognised</li>
+        <li>In clone sheet, make sure error details button is hidden when clearing the clone source field after an error</li>
+        <li>Ensure that Bitbucket hg repo URLs don't get reported as Subversion in the event that Mercurial fails for some reason</li>
+        <li>Fix bug in launching custom actions whose script name is less than 3 characters</li>
+    </ul>
+
+    <a name="version-1.5.0"/> 
+    <h2>SourceTree 1.5 - Major Release</h2>
+    <p><i>For Snow Leopard users:</i> 1.5 fixes your auto-update problems for future updates, but you will need to manually <a href="http://www.sourcetreeapp.com">download this update</a> to get the fix.</p>
+    <b>Enhancements:</b>
+    <ul>
+        <li><b>git-flow and hg-flow support</b> - use git-flow and the Mercurial equivalent directly in 
+            SourceTree to formalise your use of feature branches and organise releases/hotfixes. Intelligently defaults the next likely workflow action, and lets you preview the branch changes which will occur at each stage.</li>
+        <li><b>Reverse granular changes from previous commits</b> - there are now 'Reverse' buttons in 
+            the diff pane of the log view allowing you to reverse changes from previous commits at a file, 
+            hunk and even line level. This gives you more flexibility over backing out an entire commit.</li>
+        <li><b>Git:</b> 
+            <ul><li>Added support for default push options other than 'matching branches'. You can change this in Preferences now to other defaults (e.g. 'current').</li>
+                <li>Added global preference to disable fast-forward merges, takes effect on context menu merges too</li>
+                <li>Support creating a branch at a commit other than HEAD (right-click in log)</li>
+                <li>You can now view extra tag details like the message and GPG signature via the sidebar
+                    context menu for a tag</li>
+                <li>Optionally allow skipping of submodules during clone</li>
+                <li>Embedded Git updated to 1.7.11.1</li>
+            </ul>
+        </li>
+        
+        <li><b>Mercurial:</b>
+            <ul><li>Support 'default-push' remote for push if it exists, so for example you can pull from upstream 'default' and push to your own fork called 'default-push'.</li>
+                <li>Embedded Mercurial updated to 2.2.2</li>
+            </ul>
+        </li>
+        <li>When using a fixed-width font in the commit window, a line length guide is now available (72
+            characters by default)</li>
+        <li>In fullscreen mode it's now easier to identify repositories due to the title being displayed in the bottom right.</li>
+        <li>Support creating new repositories under team / organisation accounts in Bitbucket</li>
+        <li>Optimised start-up behaviour and bookmarks refresh to prevent too many threads being spawned on 
+            resource-limited machines.</li>
+        <li>Support dragging &amp; dropping bookmarks to other apps (passing the repository paths)</li>
+        <li>Retina friendly main application icon. Icons within the app will be updated for Retina displays soon.</li>
+        <li>Updated to new official git icon. Used a monochrome version in most cases though because early testers reported that the
+	        orange version looked too much like an error/warning icon when it appeared in the UI.</li>
+        
+        
+        
+    </ul>
+    <b>Bug fixes:</b>
+    <ul>
+        <li>Fixed auto-update failure on Mac OS 10.6 (note, you will need to manually download 1.5
+            on Mac OS 10.6 at least once in order to get the update which then fixes future auto-updates)</li>
+        <li>Fixed log view not refreshing on pull/strip/reverse operations when auto-refresh (based on file events) is disabled</li>
+        <li>Fixed git revision details being completely blank in the log view when created with "git commit --allow-empty"</li>
+        <li>Maintain the display of the bookmarks view under refresh behaviour more often for usability</li>
+        <li>Changed default log ordering in Git to 'Ancestor Ordering' to avoid problems with out of order commits.</li>
+        <li>Fixed submodules no being updated when checking out a remote branch in Git</li>
+        <li>When typing into the 'Specific commit' box, automatically select that option in tag/start flow</li>
+        <li>Fixed an inaccessible git remote preventing other remotes on the same repo having their in/out figures updated</li>
+        <li>Default search 'to' date to 1 year forward instead of 1 day - if user leaves window open for more than one day then this would exclude recent commits incorrectly</li>
+        <li>Fix bug in repo settings where new remote name would be empty when default checkbox automatically checked</li>
+        <li>Fix trailing space sneaking in to per-repo user settings</li>
+        <li>Handle the relocation of opendiff in recent versions of Xcode more elegantly without requiring user to resolve themselves</li>
+        <li>Better unicode support for Japanese Dakuten characters and similar composed characters</li>
+        <li>Correctly respond to branch clicks on the sidebar even when it doesn't result in a selection change</li>
+        <li>Deal more gracefully with broken git-svn configurations</li>
+        <li>SourceTree icon now displays at a better resolution in Quicksilver</li>
+        <li>Translation refinements</li>
+        
+        
+        
+        
+    </ul>
+    <a name="version-1.4.4.2"/> 
+    <h2>SourceTree 1.4.4.2 Hotfix release</h2>
+    <b>Bug fixes:</b>    
+    <ul>
+        <li>Fix listing watched repositories with the GitHub v3 API</li>
+        <li>Use new private/public option correctly when creating repositories via GitHub v3 API</li>
+        <li>Fix focussing issues on create repo sheet when changing types</li>
+    </ul>
+    
+    <a name="version-1.4.4.1"/> 
+    <h2>SourceTree 1.4.4.1 Hotfix release</h2>
+    <b>Bug fixes:</b>    
+    <ul>
+        <li>Fix GitHub API integration, problem was caused by API v2 being removed on github.com</li>
+        <li>Note: SourceTree now uses GitHub API v3, which currently does not appear to support listing watched repositories (outside of your user / organisations), so these will 
+            no longer be listed.</li>
+    </ul>
+
+    <a name="version-1.4.4"/> 
+    <h2>SourceTree 1.4.4 Maintenance release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li>Switched to Developer ID code signature for compatibility with Mac OS X 10.8 Mountain Lion (<a href="http://www.apple.com/macosx/mountain-lion/security.html">Gatekeeper</a>)<br/>
+            <b>Please note:</b> you will be prompted to permit SourceTree access to your keychain etc again because of the unavoidable change to SourceTree's code signing identity.</li>
+    </ul>
+    
+    <b>Bug fixes:</b>    
+    <ul>
+        <li>Fix missing label text on delete git tag dialog for English translation</li>
+        <li>Fix unable to remove remote tag in Git if deleting the tag via the toolbar</li>
+        <li>Fix checkout from toolbar button not pre-selecting the current selection on the second time opening</li>
+        <li>File log window now remembers its size/position</li>
+        <li>Blame window now remembers its size/position</li>
+        <li>When cloning, ignore any 'git clone' or 'hg clone' prefix that might get copied/pasted in from command-line hints or documentation</li>
+        <li>Fix bookmarks window always opening when using stree to open a repo even if it was closed last time</li>
+        <li>When performing operations on a list of files which starts to get into the thousands, detect when the command line is getting too long and split into multiple tasks automatically</li>
+        <li>Add missing refresh suppression during some tasks which can become long (add, pull) to avoid thrashing </li>
+        <li>Fix git summary status reporting a non-zero untracked items count for a dangling submodule when the file status detail already filtered it out</li>
+        <li>When pulling in git, make sure we deal with merge conflicts more explicitly so user doesn't have to unintuitively cancel the dialog afterwards to get out to resolve them</li>
+    </ul>
+
+
+    <a name="version-1.4.3.1"/> 
+    <h2>SourceTree 1.4.3.1 Hotfix</h2>
+    <ul>
+        <li>Fix a problem with Git subrespositories in a Mercurial repository</li>
+    </ul>
+    
+    <a name="version-1.4.3"/> 
+    <h2>SourceTree 1.4.3 Maintenance release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li>Offer to delete remote tags in git when deleting them locally</li>
+        <li>Support renaming branches from the sidebar in git</li>
+        <li>Save &amp; restore a default window frame for non-bookmarked repositories</li>
+        <li>Offer the option to disable the SSL cert check in Git</li>
+    </ul>
+    <b>Bug fixes:</b>    
+    <ul>
+        <li>Undo / redo now works correctly in commit message drafting pop-up</li>
+        <li>Fix amending a previous commit and changing the author back to the current committer settings</li>
+        <li>Fix default destination path when clone source has a colon in its name and no path e.g. SSH aliases</li>
+        <li>Deal more explicitly with SSL self-signed certificate errors, offer more helpful advice</li>
+        <li>Japanese translation fixes</li>
+        <li>Fixed issues with saving passwords to keychain when an incorrect entry already existed.</li>
+        <li>If a keychain entry for a specific protocol is not found, try any general protocol before asking the user again - can eliminate an unnecessary prompt where a host is used via multiple protocols.</li>
+        <li>Fix editing GitHub and Bibtucket account details if edited after a Stash / Kiln account.</li>
+        <li>Synchronise the draft commit message with the commit dialog contents when cancelling so any changes are preserved</li>
+        <li>Fix auto-refresh behaviour if hg bookmarks are changed outside SourceTree</li>
+        <li>Handle [subpaths] entries in .hgsub correctly</li>
+        <li>Fix clipping of lines in the diff preview if the longest line is far down within a single hunk</li>
+        <li>Reset the scroll position of of the diff pane back to the top when changing the list of files being diffed, or the commit(s).</li>
+        <li>A few memory optimisations</li>
+    </ul>
+    
+    <a name="version-1.4.2"/> 
+    <h2>SourceTree 1.4.2 Maintenance release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li>Add Add/Remove keyboard shortcut</li>
+        <li>Add the ability to change some view options in the Bookmarks Window context menu</li>
+        <li>Add Mercurial preferences option to allow user to choose whether to show multiple heads for a branch in the sidebar</li>
+        <li>Honour the commit.template setting in git if user has set it by defaulting the contents of the commit window.</li>
+        
+    </ul>
+    <b>Bug fixes:</b>
+    <ul>
+        <li>When pulling from Subversion, don't change the global post-pull action to rebase, just change it for that pull</li>
+        <li>Fix failure to properly save hosted accounts in the setup wizard on a clean machine</li>
+        <li>Fix using main menu External Diff on log view when a range of revisions is selected</li>
+        <li>Fix a problem with determining tracking branch when local branch is not tracking anything but commit message includes square brackets</li>
+        <li>Gracefully handle the case of the system running out of file descriptors instead of crashing</li>
+        <li>Don't manually sort the branches / tags in the sidebar, use the sorting from hg/git which already deals with version numbering sorting better e.g. 1.10 after 1.2</li>
+    </ul>
+
+    <a name="version-1.4.1.1"/> 
+    <h2>SourceTree 1.4.1.1 Hotfix release</h2>
+    <b>Bug fixes:</b>
+    <ul>
+        <li>Fix sourcetree:// links in Bitbucket and Stash not working if 1.4 was obtained via auto-update rather
+            than installing via Finder (LaunchServices refresh issue). </li>
+        <li>Fix git commit message box not getting initial focus if user has enabled keyboard navigation for all controls in system preferences</li>
+        <li>Fix log view not loading any extra rows beyond the first 200 if Uncommitted Changes line was displayed for only untracked files.</li>
+        <li>Display an obvious spinner when the log is loading new rows in order to display the requested selection</li>
+    </ul>
+
+    <a name="version-1.4.0"/> 
+    <a name="version-1.4.1"/> 
+    <h2>SourceTree 1.4 - Major Release</h2>
+    <b>New features:</b>
+    <ul>
+        <li><b>Bookmarks window overhaul!</b>
+            <ul><li>New improved visual style; more compact and easier on the eyes</li>
+                <li>Live searching</li>
+                <li>Sorting by name / type at any level</li>
+                <li>New menus let you get to lots of functions without opening the full repo window, including Custom Actions you've defined</li>
+            </ul>
+        </li>
+        <li><b>Atlassian Stash support</b> The Hosted Projects view now supports Atlassian's new DVCS behind the firewall enterprise solution: Stash.</li>
+        <li><b>Clone from web links</b> Bitbucket and Atlassian Stash now expose 'Clone in SourceTree' links which can 
+            be used to automatically launch or switch to SourceTree and begin the clone operation. You can also
+            use the GitHub 'Clone in Mac' links to drive SourceTree if you enable it in Preferences.</li>
+        <li><b>New setup wizard</b> leads new users through their initial configuration, setting up Bitbucket and GitHub accounts, searching for local repositories etc.</li>
+        <li><b>Mercurial Bookmarks</b> are now fully supported (akin to local branches in Git). Previously these were displayed in the log but you could not manipulate them. Mercurial Bookmarks are now displayed in the sidebar and you can define them inside SourceTree.</li>
+        <li><b>The Log View uncommitted line mode</b> has been significantly enhanced, meaning all the features available in the File Status view are now also available when selecting the uncommitted line in the Log View (previously you could only perform a subset of the actions).</li>
+        <li><b>Commit message drafting</b> - you can now draft commit messages well before you actually commit by clicking the icon at the bottom-left of the repository window or pressing Cmd-Shift-D.</li>
+        <li><b>Custom URL protocol support</b> - SourceTree will now respond to URLs of the form "sourcetree://cloneRepo/&lt;CLONE_URL&gt;" so websites can expose clickable links to clone in SourceTree. Also SourceTree will optionally handle github-mac:// URLs if GitHub for Mac isn't installed (or if the user sets Preferences to prefer SourceTree).</li>
+        <li><b>Archive support</b> exports a copy of your source code to a compressed archive, minus the repository metadata.</li>
+        <li><b>Miscellaneous improvements:</b></li>
+            <ul><li>Improved support for handling multiple heads per branch in Mercurial</li>
+                <li>Repository-level custom actions are now available on file/log context menus too and not just on the main menu bar</li>
+                <li>Support for ignoring multiple individual files/folders at once rather than only via a pattern</li>
+                <li>Commit text views now remember and share changes to their spell checking / correction settings</li>
+                <li>Add the option not to display the 'Add Bookmarks' window when opening unbookmarked repositories</li>
+                <li>Prune the log view more in Git when 'Current Branch' is selected when 'Show Remote Branches' is still enabled</li>
+                <li>Dragging plain (non-repository) folders into SourceTree now defaults to creating a new repository in that folder</li>
+                <li>Clickable parent links in commit details pane in log &amp; search views</li>
+            </ul></li>
+        </li>
+    </ul>
+    <h2>SourceTree 1.4.1 - Changes since 1.4.0/1.4.0b2</h2>
+    <b>Enhancements:</b>
+    <ul><li>Automatically create hyperlinks for (full) SHAs embedded in commit text</li>
+        <li>Support git commit '--signoff' and '--author' options</li>
+    </ul>
+    <b>Bugfixes:</b>
+    <ul><li>Fix diff &amp; staging when user enables diff.mnemonicprefix option in their global config</li>
+        <li>Commit parent links should cope with git octopus merges</li>
+        <li>Fix git commit sheet displaying selected files mode instead of staging mode if launched from the log view when a previous commit is selected</li>
+        <li>When installing command line tools, deal gracefully with missing /usr/local/bin </li>
+    </ul>
+
+
+    <a name="version-1.3.3"/> 
+    <h2>SourceTree 1.3.3 - Patch Release</h2>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Prevent 'git stash show' diff view being broken by user options like diff.external and colours</li>
+        <li>Allow any file to be brought in as a patch file, since the Lion open dialog doesn't allow file type filters to be overridden easily</li>
+        <li>Suppress refreshes while applying patch files to avoid thrashing on large patches.</li>
+        <li>Optimised processing of command output, particularly large outputs like large stashes / diffs</li>
+        <li>Optimisation of memory consumption when dealing with edge cases like viewing very large stashes</li>
+        <li>Fix SourceTree reporting SSL errors for self-signed certs in Mercurial when command line just displayed warnings</li>
+        <li>Change confirmation message on Git delete remote branch to make it clearer that the change affects the remote</li>
+        <li>Git push dialog now respects manually configured push settings, for example those used by Gerrit, while still not needing to check remote. Wildcard matching is also supported.</li>
+        <li>Prevent the rare case of the repository refresh causing the sidebar selection to override the log view selection, jumping the view elsewhere.</li>
+        <li>Improved handling of inconsistently formatted responses from some hosting APIs.</li>
+        <li>Sync 'Select All' checkbox with manual selection changes in Git push dialog</li>
+        <li>Don't fail when unshelving changes in hg if the same shelf had been unshelved previously without deleting and then reverted</li>
+        <li>Stop hgattic overriding the commit behaviour when you apply a shelved change but don't delete it, causing it to try in vain to open Vim</li>
+
+    </ul>
+    
+    <a name="version-1.3.2"/> 
+    <h2>SourceTree 1.3.2 - Patch Release</h2>
+    <b>Enhancements:</b>
+    <ul>
+        <li>Git pull &amp; push sheets no longer query for remote branches unless prompted to do so, or you use a custom remote path. This speeds up the dialogs considerably; you can click the 'Refresh' button to see any branches you haven't fetched yet on the pull sheet.</li>
+        <li>You can now stop a branch from tracking any remote branch from the sidebar, rather than just being able to set it to another branch. </li>
+        <li>Unchecking the 'Track?' option in the git push dialog now untracks the branch;
+            previously this only stopped the tracking relationship being set up. The 'Track?' checkbox is now mixed-state, where 'on' means set the tracking relationship, '-' means no change, and 'off' disables tracking on that branch.</li>
+        <li>Allow confirmation dialog on branch switch to be disabled in preferences when working copy is clean</li>
+        <li>Add extra keyboard shortcuts for log/blame selected</li>
+        <li>Diff colours are now configurable in Preferences for accessibility.</li>
+        <li>Add an explicit manual refresh button to hosted projects view (View > Refresh / Cmd-R also works)</li>
+
+    </ul>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fix gravatar display for emails with +/- in them</li>
+        <li>Disallow email addresses as user name for Bitbucket/GitHub, require real user name to avoid invalid clone URLs</li>
+        <li>Fix JIRA links consuming superstring references to same-named Crucible project</li>
+        <li>Display uninitialised submodules in git. Allow uninitialised git submodules to be automatically initialised when you double-click on their sidebar entry</li>
+        <li>When submodules require login and are on a different host, make sure any request for user details is clear about which one is being asked for.</li>
+        <li>Automatically synchronise git submodules on pull/checkout, to pick up new submodules and changes in tracked commit without user intervention</li>
+        <li>Add '--recursive' option to git submodules update in case you like submodules in your submodules</li>
+        <li>Fix items in the sidebar sometimes being cut off so the annotations were not visible.</li>
+        <li>Fix problem with using '#' characters in regex commit replacements</li>
+        <li>When using 'Discard' or 'Reset' specifically on a working copy change in git, *only* undo the changes in the working copy (git checkout), keep the index. This was potentially confusing.</li>
+        <li>Fix conflict between hgsubversion &amp; subrepositories with hg 2.0.1+ which could cause cloning with subrepos to fail.</li>
+        <li>Remove defaulting of destination path in clone dialog on App Store version, Apple object to it and say we must remove it. It remains in the direct version.</li>
+        <li>Extra safety checking to make sure keycode isn't ever nil on custom actions.</li>
+        <li>Always use git config setting core.quotepath to deal with filenames which include utf8.        Previously this had to be set in the gitconfig by the user</li>
+        <li>Add an author map file option to cloning from Subversion.</li>
+        <li>Fix crash when using 'Current Branch' filter in hg on a newly created uncommitted branch. Also fix content display in this case since hg won't filter on that branch until it's committed.</li>
+        <li>Fix incorrect git pull default branch selection when config manually changed to branch.master.rebase=true</li>
+        <li>Suppress error messages from git log before the first commit on an empty repo</li>
+        <li>Allow 'unstage' to work on added files in git before the first commit has been made in a blank repo</li>
+
+    </ul>
+            
+    
+    <a name="version-1.3.1.1"/> 
+    <h2>SourceTree 1.3.1.1 - Patch Release (1.3.1 in App Store)</h2>
+    <b>Changes since 1.3.1:</b>
+    <ul>
+        <li>Fix hgattic getting stuck if you applied a shelf without deleting, then deleted manually</li>
+        <li>Fix git authentication when a private remote URL included no username (git 1.7.8 changed the prompts which broke this in 1.3.1)</li>
+        <li>Fix linking multiple JIRA / Crucible issues if they were adjacent in the text. Note: requires re-saving the JIRA link to update the regex</li>
+        <li>Update help index for better searching</li>
+    </ul>            
+    
+    <a name="version-1.3.0"/>
+    <a name="version-1.3.1"/> <!-- because this is the first public direct release -->
+    <h2>SourceTree 1.3.0 - New Major Release!</h2>
+    <ul>
+        <li><b>New application icon!</b> the SourceTree icon has a brand new look for 2012, hope you like it!</li>
+        <li><b>Submodule and subrepository support</b>
+            <ul>
+                <li>Configure subrepositories and submodules inside SourceTree</li>
+                <li>See what submodules/subrepos have outstanding changes to be committed or pushed, and manage those
+                    at the same time as managing the parent repository. </li>
+                <li>Explicitly set the commit message for any submodules / subrepositories that you commit while committing the parent. No more accidental recursive commits in Mercurial, or accidentally missed submodule commits in Git!</li>
+                <li>Easily switch the commit you're tracking and commit that change upstream, or revert before committing as simply as you would revert a file change.</li>
+                <li>Inside a Mercurial repository, support Git, Mercurial and Subversion subrepositories (Git can only have Git submodules)</li>
+                <li>Respects the slight differences between Mercurial and Git (e.g. in Mercurial you <i>must</i> commit/push subrepo changes before the parent, in Git you have a choice), while making them both
+                    more intuitive and user-friendly.</li>
+            </ul>
+        </li>
+        <li><b>Command-line tool</b> - use the 'stree' command from a terminal to jump straight into SourceTree, install via 'SourceTree > Install Command Line Tools' (NB: Apple's rules don't allow us to install helper tools in the App Store version, please download the <a href="http://downloads.atlassian.com/software/sourcetree/SourceTreeAppStoreCmdLineToolInstaller.pkg" target="_blank" >supplementary installer package</a> if you wish to use this feature).</li>
+        <li>Configure <b>custom actions</b> so you can launch any tool or command you like from within SourceTree; your actions will appear in context depending on what parameters you reference (file, SHA etc).</li>
+        <li>Commit comments can now link <b>JIRA and Crucible issue numbers</b> to their URLs simply, and you can configure any other system with a regular expression replacement.</li>
+        <li><b>Full screen support</b> on 10.7 Lion</li>
+        <li><b>Mercurial 'Graft' is now supported</b>, and replaces 'Transplant' by default</li>
+        <li><b>Git 'Reset branch to commit'</b> added so you can re-point your branches more easily and use the soft/mixed/hard options as you see fit.</li>
+        <li><b>Mercurial 'Strip' support</b> added - strip a revision and all its descendents, and choose whether to keep your current working copy state or not while you do it (allowing you to replace commits with new ones, but with the same base file changes.</li>
+        <li><b>Launch SourceTree direct from Finder</b> via the 'Open in SourceTree' item in the Services menu.</li>
+        <li><b>'Show in Finder'</b> toolbar button now available (find it under Customize... toolbar context menu)</li>
+        <li><b>Many performance improvements</b>, especially in the log view</li>
+        <li><b>Mercurial 2.0</b> compatibility (default embedded version is now 2.0.1).</li>
+        <li><b>Git 1.7.7.3</b> now embedded</li>
+        <li>Updates to French &amp; Japanese translations</li>
+        <li>System Mercurial / Git installations can now be sourced from custom locations.</li>
+        <li>When invoking 'Blame' or 'Log Selected' in the log / search views, the subsequent view is now presented
+            from the point of view of the selected commit, and not the working copy.</li>
+        <li>When pushing while committing in git, only push the current branch and not all tracking branches.</li>
+        <li>Git push / pull of tracking branches no longer forces user to wait for remote query</li>
+        <li>Added a Preferences option to always show the full console output of tasks</li>
+        <li>Added explicit menu options for Continue / Abort of both rebase and graft, instead of needing to hit commit / pull to be prompted to do so.</li>
+        <li>You can now override the language used just for SourceTree from Preferences. </li>
+        <li>"Add" button in the Log view for Uncommitted changes now works like the file status view</li>
+        <li>Git push can now be set to not push all tags by default, and you can push single tags from the sidebar instead.</li>
+        <li>Hide 'HEAD' tag in Git log and use branch indicator only, unless repo is on a detached HEAD.</li>
+        <li>Display an entry for a detached Git HEAD in the sidebar for easier navigation.</li>
+        <li>Fixed 'Ancestor order' option in git log and remember the preference</li>
+        <li>Fix file list &amp; diff omitting working copy changes when you range select in the log view on a Mercurial repo including the Uncommitted Changes line</li>
+        <li>Fixed 'Ancestor order' option in git log and remember the preference</li>
+        <li>Fix file list &amp; diff omitting working copy changes when you range select in the log view on a Mercurial repo including the Uncommitted Changes line</li>
+        <li>Fix log view context menu items being disabled incorrectly on first row after uncommitted line has been removed</li>
+    </ul>
+    
+    <h3>Changes in 1.3.1 (since 1.3.0)</h3>
+    <ul>
+        <li>Default the commit text to the previous commit if the 'Amend previous commit' checkbox is enabled</li>
+        <li>Allow suppression of empty commit warning</li>
+        <li>Clone: default the destination path (and by derivation, the bookmark name) from the clone source if the user hasn't altered it manually</li>
+        <li>Fix being unable to close the Preferences window if you blanked the global ignore list field</li>
+        <li>When detecting git-svn, look for .git/svn/refs and not just .git/svn</li>
+        <li>Display all remote branches when using git-svn</li>
+        <li>Support pushing branches other than the current HEAD to Subversion under git-svn</li>
+        <li>Fix Git 'push to tracking branch' dialog refresh shortcut when used the second time for a different branch</li>
+        <li>Add '--' delimiters to git tasks to better support unusual filenames like dash prefix</li>
+        <li>Fix display of uncommitted line in git when the last commit is a merge</li>
+        <li>Support display of git octopus merges in log view</li>
+        <li>Add 'Stop Tracking' menu option for files</li>
+        <li>Ensure that when the Main Menu 'Update To…' / 'Checkout…' item is used, the update sheet selects the current selection if you were on the log view.</li>
+        <li>Cope with Git repositories which use a .git file (not folder) with a 'gitdir' clause to redirect the location of the actual git repo content (Git 1.7.8 creates submodules like this)</li>
+        <li>Embedded Git updated to 1.7.8.3</li>
+        <li>Fix pushing a single branch in Mercurial via the advanced section of the push sheet</li>
+        <li>Fix a failure to add a git submodule when manual authentication was required on the clone source</li>
+        <li>Fix mercurial subrepo commit tracking changes not showing up in the file status view</li>
+        <li>When retrieving the SHA of the current commit in Mercurial, force it to return the full version, not the short version (permanent)</li>
+        <li>Fix display of blank keyboard shortcuts in Custom Actions</li>
+        <li>Handle unexpected git/hg failures better by alerting the user more explicitly instead of just logging</li>
+    </ul>
+    <h3>Changes in 1.3.0 (since 1.3 beta 3)</h3>
+    <ul>
+        <li>Fix hg strip not being available on the latest commit, it should have been disabled for the uncommitted line only</li>
+        <li>Make rebase menu item on sidebar more descriptive</li>
+        <li>Deal with exceptions caused by custom actions pointing at invalid binaries/scripts more cleanly</li>
+        <li>Updates to French &amp; Japanese translations</li>
+        <li>New icon!</li>        
+    </ul>
+    
+    <a name="version-1.2.9.1"/>
+    <h2>SourceTree 1.2.9.1</h2>
+    <p>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fix inability to commit a git merge when there are no remaining file changes</li>
+        <li>Fix revision field on Mercurial pull sheet needing to be defocussed before bindings were updated</li>
+        <li>Fix 'Current Branch' filter in Mercurial log view not displaying enough when current branch is very old</li>
+        <li>Fix display of user info in repo settings if user manually updated .git/config and only set one of name/email instead of both</li>
+        <li>Fix global ignore being overridden incorrectly because tildes were not being expanded before checking to see if the file existed</li>
+        <li>Fix editing global ignore file from Preferences if path included a tilde</li>
+        <li>Fix wrong branch getting bold font on the sidebar</li>
+        <li>Remember the last repository type when creating a new repo (local or hosted) and default to that in future</li>
+    </ul>
+
+
+    <a name="version-1.2.9"/>
+    <h2>SourceTree 1.2.9</h2>
+    <p>
+    <b>Bugfixes:</b>
+    <ul>
+        <li>Fix a parameter problem with using p4merge to resolve conflicts for Mecurial</li>
+        <li>Fix a diff panel bug which meant that in the log view, when all the files in the selection had their diffs suppressed by the preferences, the entire diff for the commit was displayed instead.</li>
+        <li>Change text in Git push window for Subversion remotes to 'Current Branch' instead of 'All Tracked Branches' to reflect what really happens with 'git svn dcommit'</li>
+        <li>Revert to Revision / Reset to Commit should be disabled when the uncommitted changes line is selected in the log</li>
+        <li>Display outstanding rebases (caused by mid-rebase conflicts) more conspicuously in the status bar and bookmark summary</li>
+        <li>Some performance improvements particularly on Lion during startup</li>
+        <li>Find system git in manual installer locations before the core system paths.
+        Lion now comes with git installed by default so we need this to pick up user-installed versions of Git.</li>
+        <li>Better diagnostics in a few hg failure cases</li>
+        <li>Speed up git file status in pending view when numbers of files increase</li>
+        <li>Fix pull/push counts for hgsubversion repositories</li>
+        <li>Display a friendlier message when trying to use system Mercurial >= 1.9 (not supported yet due to extension compatibility)</li>
+    </ul>
+    
+<a name="version-1.2.8.1"/>
+<h2>SourceTree 1.2.8.1</h2>
+SourceTree has been acquired by <a href="http://www.atlassian.com">Atlassian</a>!
+<a href="http://www.sourcetreeapp.com/acquisition-faq/">More information...</a>
+<p>
+<b>Bugfixes:</b>
+<ul>
+<li>Fix Git remote branches looking temporarily 'behind' when pulling a brand new change without explicitly fetching.</li>
+<li>Fix 'Show Ignored' sometimes not displaying all ignored files in git</li>
+<li>Display correct icon for Git repositories on Bitbucket in Hosted Projects view.</li>
+<li>Add drop-down box to Bitbucket create project window so you can create Git or Mercurial projects</li>
+<li>Use new preferred URL format for Git repositories on Bitbucket</li>
+<li>UI standards: fix a couple of instances of 'Ok' that should be 'OK'</li>
+<li>Tweaked app icon - now slightly clearer and hand-tuned for all sizes.</li>
+</ul>
+<a name="version-1.2.8"/>
+<h2>SourceTree 1.2.8</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Fix Bitbucket URLs when selecting a repository you're following that's owned by someone else</li>
+<li>Fix views not refreshing when auto-refresh is disabled but when you perform a known state-altering operation inside SourceTree</li>
+<li>Accessibility improvements:
+<ul>
+<li>keep keyboard focus on sidebar when navigating entries in it</li>
+<li>remove debug description of log graph, which gets read out by Voice Over</li>
+<li>add custom VoiceOver description to sidebar items so type/context is clearer</li>
+<li>add help text to the show/hide sidebar button</li>
+<li>add voice over descriptions to status images</li>
+</ul>
+</li>
+<li>When performing a manual refresh with Cmd-R, always clear any cached data and don't 
+rely on file events having marked things as needing reload</li>
+<li>Make sure new (uncommitted) branch in Mercurial shows nested sidebar folders correctly even before it's committed</li>
+<li>Fix using external diff on a conflicted file in git. Most of the time you want to Resolve > Resolve In Merge Tool but this should still work.</li>
+<li>Allow 'Resolve Using Theirs' when resolving a rebase conflict.</li>
+<li>Make merge conflicts summary message appear during rebase conflict</li>
+<li>When continuing a conflicted rebase, if a further conflict occurs then behave the same as the first rebase conflict (custom notification instead of command output)</li>
+<li>When continuing a conflicted rebase on git and you have resolved it so that no changes are left to commit, use 'rebase --skip' since 'rebase --continue' will fail</li>
+</ul>
+
+<a name="version-1.2.7.1"/>
+<p><b>Note:</b> if you experience a crash during update under Mac OS X Lion (non Mac App Store), 
+please try again or if that repeatedly fails, download the latest manually from 
+<a href="http://www.sourcetreeapp.com">the web site</a>. This was a bug with Sparkle on Lion 
+which has now been fixed in 1.2.7, but you may still encounter it while trying to 
+update from 1.2.6 or earlier.</p>
+
+<h2>SourceTree 1.2.7.1</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Fix a validation problem on the diff preferences page which could prevent the text/binary thresholds from being set correctly.</li>
+</ul>
+
+
+<a name="version-1.2.7"/>
+<h2>SourceTree 1.2.7</h2>
+
+<b>Enhancements:</b>
+<ul>
+<li>When Apply Patch window is opened, if a *.diff or *.patch file is selected, pre-populate the patch file field with this file</li>
+<li>Add menu option File > Bookmark Open Repositories; allows you to easily add open repositories that are not already bookmarked to your bookmarks</li>
+<li>Remember which view is open for each repository (file status / log / search) on close and re-open that view by default in future.</li>
+<li>Add preferences options to control the file size limits of the internal diff (in new Diff tab)</li>
+<li>Add preferences options to control internal diff view by file pattern (in new Diff tab)</li>
+<li>When failing to detect the repository type of a clone source, provide a button to see the details of the failure in case there's something other than user error.</li>
+<li>Enable the 'Amend Last Commit' option for git-svn repositories, so long as the last commit hasn't already been pushed to Subversion (was previously always disabled for git-svn for safety)</li>
+</ul>
+
+<b>Bugfixes:</b>
+<ul>
+<li>Fix the branches section in the Push dialog for the Subversion remote in a git-svn repository when there are git remotes as well</li>
+<li>Fix auto-refreshing not working if repository is open in a window but not bookmarked</li>
+<li>Avoid problems with git output if user had configured options like 'color.branch=always' (instead of 'auto') in their gitconfig</li>
+<li>Fix a problem with log view not picking up a changed HEAD if modified outside SourceTree, particularly if you had auto-refresh disabled.</li>
+<li>Fix a problem in Sparkle which was causing crashes during update in Lion (non Mac App Store).</li>
+<li>Fix log view not changing when 'Current Branch' was selected as a filter and the current branch was changed</li>
+<li>When refreshing the log view, preserve the file selection wherever possible</li>
+<li>Fix 'Resolve Conflicts' actions performed on the uncommitted line of the log view picking up the selection from the File Status view instead</li>
+<li>Replace tabs with spaces when rendering the diff view to ensure that tabbing within the line (rather than as a prefix) is correctly displayed</li>
+<li>Fix a problem with staging/discarding lines if the before context was dependent on a special patch prefix line (e.g. '\ No newline at end of file')</li>
+<li>Stop re-trying authentication more quickly when user cancels auth prompt (https or hg ssh).
+Unfortunately SSH itself will always re-prompt 3 times regardless so we can't avoid that.</li>
+<li>When removing a bookmark where the folder is already deleted, don't offer the option to move it to the trash</li>
+<li>A few performance tuning changes for responsiveness when opening a lot of windows</li>
+</ul>
+
+
+<a name="version-1.2.6"/>
+<h2>SourceTree 1.2.6</h2>
+<b>Enhancements:</b>
+<ul>
+<li>Display hg bookmarks in log view</li>
+<li>Warn before adding large files (>=10MB), give user the chance to avoid bloating their repository.</li>
+<li>Added support for iTerm2 as terminal option</li>
+<li>Hosted Repositories view now shows the projects you're following/watching on Bitbucket/GitHub as well as your own projects</li>
+<li>Support ignore on folders</li>
+</ul>
+
+<b>Bugfixes:</b>
+<ul>
+<li>Suppress inline diff for excessively large files. Prevents performance problems if people have very large modified files; external diff is still available.</li>
+<li>Embedded git-svn patched to support keychain authorisation cache, fixes login errors if you've only accessed this Subversion server directly with svn before. See <a href="http://git.661346.n2.nabble.com/PATCH-git-svn-enable-platform-specific-authentication-td6376961.html">this thread</a> if you want to patch your system Git.</li>
+<li>Fix unresponsiveness in tree / column view when selecting a folder which has a very large number of files underneath it</li>
+<li>When selectively committing a renamed file in Mercurial, make sure the previous file removal is also committed</li>
+</ul>
+
+<a name="version-1.2.5"/>
+<h2>SourceTree 1.2.5</h2>
+<b>Enhancements:</b>
+<ul>
+<li>Add 'Open In Terminal' menu option (Ctrl+Cmd+T) and toolbar button (customise to add it to your toolbar); opens on the parent folder
+of selected file, or the repository root if no file is selected. Supports Terminal and iTerm.</li>
+<li>Add 'Copy Path to Clipboard' option in all file views</li>
+<li>Add 'Copy SHA-1 to Clipboard' to context menu in log/search views</li>
+<li>Eliminate intermediate dialog for 'Revert to Revision' / 'Reset to Commit' on log and search views when applying it to a file selection.</li>
+<li>Remember the setting of 'Show All Branches' and 'Show Remotes' in the log view</li>
+<li>Display the current branch label in the log with a different icon, consistent with the one in the sidebar/footer</li>
+<li>Help files updated</li>
+<li>Allow Mac App Store receipt to be used as a valid license file for direct download version, so long as MAS version (with this update) has 
+been run at least once on this Mac.</li>
+</ul>
+
+<b>Bugfixes:</b>
+<ul>
+<li>Fix display of merges in single file log window if there were changes on both sides of the merge</li>
+<li>Fix being unable to close Preferences window with blank user/email when disallowing SourceTree to update your config files</li>
+<li>When encountering very large clean/untracked text files, only read the first part of the file for the diff preview to save memory</li>
+<li>Incorrect passwords were not being overwritten in Keychain when 'Set Password' button was used in Hosted Projects account section</li>
+<li>Improved selectable toolbar eliminates some positioning problems with some multi-tab sheets &amp; looks better when defaulting to 
+tabs other than the first. Also tab behaviour is improved.</li>
+<li>Files/hunks/lines can now be staged/unstaged/discarded in the diff view while in the commit sheet (and others showing current status);
+previously some actions appeared to be available but did not work in these places.</li>
+<li>Make git push dialog resizable</li>
+<li>Allow 'Show In Finder' to work with no file selection, show repo folder.</li>
+<li>Fix embedded Git not working on non-64bit capable Macs.</li>
+<li>Fix a couple of small layout issues that didn't look quite right on Lion.</li>
+
+</ul>
+
+
+<a name="version-1.2.4.1"/>
+<h2>SourceTree 1.2.4.1</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Fix authentication problem on push with git-svn repository</li>
+</ul>
+<a name="version-1.2.4"/>
+<h2>SourceTree 1.2.4</h2>
+<b>Enhancements:</b>
+<ul>
+<li>Support general rebase of current changes - right-click on branches in the sidebar and on entries in the log</li>
+<li>When trying to commit during a rebase conflict resolution, you are now given a prompt so that you can continue/abort the rebase immediately.</li>
+</ul>
+
+<b>Bugfixes:</b>
+<ul>
+<li>Fix font in commit details pane on Lion</li>
+<li>Fix auto-refresh of bookmarks status line when a repository is newly cloned but not opened into a window yet</li>
+<li>When fetching for incoming/outgoing in git, also fetch from Subversion for git-svn</li>
+<li>Additional safety checks to prevent errors when git-svn tracking information has been lost (e.g. inappropriate rebase)</li>
+<li>Prevent bug if user leaves git clone depth or svn checkout depth blank</li>
+<li>Additional safety checks to try to avoid crash reported on 10.7 DP4</li>
+<li>Fix a possible crash bug when using the system git to clone via SSH on Lion</li>
+<li>Don't use the home directory when needing a placeholder working directory, in case temp files are created there. Use temp folder instead.</li>
+<li>If anything goes wrong with a single remote in the background incoming/outgoing update, always continue to process subsequent remotes</li>
+<li>Relax validation on the background remote update frequency, allow intervals down to 1 minute</li>
+</ul>
+
+
+<a name="version-1.2.3"/>
+<h2>SourceTree 1.2.3</h2>
+<b>Enhancements:</b>
+<ul>
+<li>Support GitHub organisation projects in Hosted Projects views as well as owned projects</li>
+<li>Display file mode/permission changes in diff view as well as content changes. Also omit 'lines added/removed' where count is zero to save space.</li>
+<li>When selecting Create Patch on toolbar and active view is log, pre-select the revision(s) on patch from commit tab</li>
+<li>Improved rename handling in file log view (new checkbox to follow history over renames).</li>
+<li>Added global option to enable / disable automatic refresh on file system changes for all repositories</li>
+</ul>
+
+<b>Bugfixes:</b>
+<ul>
+<li>Update/Checkout and Merge toolbar buttons now default the sheet to the selected log item if the log view is active.</li>
+<li>Update tooltip on Add/Remove button for Git to make it clear it adds (stages) modified files too.</li>
+<li>On opening the commit window in tree view mode, display the pre-checked items as expanded only</li>
+<li>Respond better when user changes the selection for the diff view rapidly and many times in succession</li>
+<li>Fix autorefresh after a repository folder is moved &amp; re-connected</li>
+<li>Fix race condition that could cause incorrect diff to appear in log/search view if selected commit was changed rapidly several times in succession</li>
+<li>Create patch from log should default to current selection</li>
+<li>Convert git commit to a 'git commit -a' if committing from tree rather than index and all files (ignoring untracked) are selected. This allows you to commit a merge without using staging - previously you would get the 'partial commit' error otherwise.</li>
+<li>Update the git file views dynamically if the Preferences option 'Use the staging area' is changed</li>
+<li>Adjust the file log window so it's a little bigger by default so diff isn't over-compressed</li>
+<li>Fix bugs with manually refreshing views when automatic refresh is disabled, some summaries were not always updating</li>
+<li>Remember the setting of 'Prune tracking branches' in git fetch sheet</li>
+</ul>
+
+
+<a name="version-1.2.2.1"/>
+<h2>SourceTree 1.2.2.1</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Make sure uninitialised variables can't affect git commit mode.</li>
+</ul>
+
+<a name="version-1.2.2"/>
+<h2>SourceTree 1.2.2</h2>
+<b>Enhancements:</b>
+<ul>
+<li>Add git pickaxe search option ("File Changes")</li>
+<li>Darken diff view colours so they're more visible on a wider variety of screens</li>
+<li>Provide a 'Set Password' button in the hosting account detail sheet so users can correct a wrong hosting account API password more easily.</li>
+</ul>
+<b>Bugfixes:</b>
+<ul>
+<li>Fix crash when trying to access Kiln API if login had failed</li>
+<li>Display Bitbucket / Github / Kiln API errors to the user rather than just logging</li>
+<li>Remove the 'svn+' prefix on svn+http[s] URLs if they are copied from a hgsubversion configuration, when checking the URL for validity and when cloning in Git
+(better compatibility)</li>
+<li>Make EULA text non-editable</li>
+<li>Use the web.cacerts config option if user has specified it for self-signed SSL certs</li>
+<li>Allow Kiln site URL to use http as well as https, if local server config has been chosen that way.</li>
+<li>Don't try to load sidebar width if repository doesn't have a named bookmark, could end up reading an incorrect width</li>
+<li>Fixed git stash dialog only picking up the description if you tabbed out of the field before clicking OK</li>
+<li>Fix display of abbreviated hash in git log detail</li>
+<li>Fix using system git which places libexec in a non-standard place (e.g. homebrew)</li>
+<li>Fix git commit sheet locking open when user confirms they do not want to enter a commit message</li>
+<li>Fix possible infinite loop in diff parser on an added file with no contents</li>
+<li>Fix several resizing bugs in the scope bars that could cause search box and external diff buttons to overlap or be pushed out of view unnecessarily.</li>
+<li>Standardise the font usage in the commit details window so it doesn't pick up global webkit settings and uses the diff font choice for the fixed width option</li>
+</ul>
+
+<a name="version-1.2"/>
+<h2>SourceTree 1.2 - New Major Release!</h2>
+<b>Enhancements:</b>
+<ul>
+<li><b>GitHub, Bitbucket and Kiln integration</b> - now you can enter your account details and
+immediately access your hosted projects (public and private) within SourceTree, and even the public repositories 
+of other users you like to follow. You can also create new repositories on these services directly within SourceTree.</li>
+<li><b>Stashing and shelving</b> - store your working copy changes away and return your working copy to a clean state,
+then bring them back again when you need them. Supports many stashed / shelved changes at once.</li>
+<li><b>New sidebar</b> allows quick navigation to your working copy, branches, tags, remotes and stashed / shelved changes. 
+You can perform common operations on them easily and more quickly directly from here.</li>
+<li><b>Performance boost</b> - SourceTree has been further optimised and concurrent processing has been tuned
+to give a snappier overall experience</li>
+<li><b>User experience improvements</b> - layout, colours and icons have all been refined to make the user experience
+better, and many common workflows have been optimised when accessed in context (such as merging a branch from the sidebar)</li>
+<li>Customise Git and Mercurial - you can now use your system Git / Mercurial instead of SourceTree's standard versions (which have been updated), and
+enable additional Mercurial extensions (at your own risk).</li>
+<li>Lots and lots of other refinements such as being able to copy text from the diff panel, 'git commit --amend' support, 
+close branches in Mercurial, and more!</li>
+</ul>
+
+
+<a name="version-1.2.1"/>
+<h2>Changes in version 1.2.1:</h2>
+<ul>
+<li>Fix changing tracking branch when local branch was 'nested' style (git)</li>
+<li>Fix pushing branch from the sidebar when local branch was 'nested' style (git)</li>
+<li>Fix some menu text &amp; messages to display entire qualified branch name of 'nested' branches for clarity</li>
+<li>Fix deleting remote branch in git on a remote that authenticates with manual login rather than ssh keys</li>
+<li>Display spinner on sidebar while waiting for the first set of data to come in</li>
+<li>When refreshing the log view in-situ, don't scroll the view back to the selected row, maintain the previous scroll position.</li>
+<li>Default the 'push' checkbox on the tag sheet based on user preferences as with commit</li>
+<li>Fix bookmarks display when adding / removing items under certain conditions</li>
+<li>Autosave the column widths in the file status section of the log view</li>
+<li>Re-open bookmarks window if dock icon is clicked and no windows are open</li>
+<li>Fix display of the uncommitted changes line in log view in Git, it was incorrectly parented from HEAD's ancestors</li>
+<li>Don't display more than 100 lines for each unchanged file in the diff view to maintain performance on multi-selections</li>
+<li>Allow double-click to work on folders in tree / column views, and open special folders like .xcodeproj</li>
+<li>Fix a bug in restoring the previous selection to a folder in tree / column views</li>
+<li>Allow right-clicking on folders in tree/column views to add, remove, commit, revert nested files</li>
+<li>Add "Don't tell me again" option to warning message about adding files during commit</li>
+</ul>
+
+<a name="version-1.2.0"/>
+<h2>Changes in version 1.2.0 (since 1.2.0b5):</h2>
+<ul>
+<li>Allow svn conversion from local file:// path, so long as it's a repository and not a working copy
+Turns out that 'svn info' can already differentiate between the two so long as file:// is used.</li>
+<li>Fix bug with deleting / closing branches with nested names</li>
+</ul>
+
+<a name="version-1.1.11"/>
+<h2>Changes in version 1.1.11:</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Detect conflicts during pull with git-svn better and advise the user on resolution actions</li>
+<li>Discourage the use of Commit while in the middle of a rebase, advise user on how to continue / abort the rebase</li>
+<li>Properly deal with the case where output data from command is not utf8 even when the entire output is read (most likely symptom was blank diff on non-utf8 text files with extended characters)</li>
+<li>When performing a backout in Mercurial, use the changeset in the generated message and not the local revision number so it's relevant to all repositories</li>
+</ul>
+
+<a name="version-1.1.10"/>
+<h2>Changes in version 1.1.10:</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Fix rare but randomly occurring decoding problems when a multibyte character is partially flushed to stdout from hg/git tasks</li>
+<li>Fix picking up incorrect files on drag if flat file status view has been re-sorted. </li>
+<li>Fix never displaying clean status on Mercurial closed branches </li>
+<li>Fix log graph rendering for merges from a continuing branch which also changes column in the same row due to packing </li>
+<li>In Mercurial, allow committing of merges and new branches even if there are no file changes </li>
+<li>Make file actions on the resolve sheet support recursive selection in the tree/browser view </li>
+<li>Remove error message about not being able to find a log entry when the previously selected item is not in the log display anymore</li>
+</ul>
+
+
+<a name="version-1.1.9"/>
+<h2>Changes in version 1.1.9:</h2>
+<b>Enhancements</b>
+<ul>
+<li>Added context menu option to expand / collapse all in file status tree view</li>
+<li>Remember if the bookmarks view is open or not at launch</li>
+<li>Allow Mercurial URLs with embedded passwords (previously disallowed), but warn strongly against it</li>
+</ul>
+
+<b>Bugfixes:</b>
+<ul>
+<li>Fix detecting when the diff content needed to be refreshed, it was refreshing unnecessarily when other files were updated.</li>
+<li>Fix adding new lines to the hgrc when there wasn't a newline at the end</li>
+<li>Fix saving of manual login details in the keychain for ssh URLs without the ssh:// prefix</li>
+<li>Fix some log refresh rendering glitches caused by some performnce short-cuts that were not correct in some cases.</li>
+<li>Refresh log immediately after push in Git to make sure branch annotations are updated</li>
+<li>Display files that use Windows CRLF line endings correctly in the diff view</li>
+<li>Stage / unstage / discard on hunks and selected line ranges now works on files with Windows CRLF line endings</li>
+<li>Provide an escape hatch in the rare case where .hg/rebasestate file is left over even though there is nothing more to rebase</li>
+<li>Confirm before overwriting patch file if it wasn't picked from the 'Browse...' dialog</li>
+<li>Preserve selection and expansion state over refreshes in file status tree views</li>
+<li>After transplanting / cherry-picking, refresh remote status immediately since push counts will have changed</li>
+<li>Fix typo 'Lanch' instead of 'Launch'</li>
+</ul>
+
+
+<a name="version-1.1.8.1"/>
+<h2>Changes in version 1.1.8.1:</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Fix Mercurial SSH cloning bug caused by tilde processing</li>
+</ul>
+
+<a name="version-1.1.8"/>
+<h2>Changes in version 1.1.8:</h2>
+<b>Bugfixes:</b>
+<ul>
+<li>Fixed hanging on branch list when pushing to / pulling from GitHub private repositories using HTTP</li>
+<li>Fix accidentally stripping user field from incoming / outgoing text in Mercurial</li>
+<li>Refresh more quickly after a transplant / cherry-pick</li>
+<li>Refresh more quickly after git pull</li>
+<li>Add return key binding to OK on git push/pull sheets</li>
+<li>Fix failure to refresh when stage/unstage are performed in very quick succession (&lt; 3 seconds)</li>
+<li>Fix push immediately option in git commit dialog</li>
+<li>Fix external diff keyboard shortcut and main menu option in log &amp; search views</li>
+<li>Push / pull sheets and using 'Custom' remote: refresh incoming / outgoing when you press return on the custom path field</li>
+<li>Update contents of 'Custom' path immediately in pull/push dialogs so they apply even if user doesn't press return</li>
+<li>In user confirmation dialogs, limit the number of filenames displayed to make sure the dialog never grows too large</li>
+<li>Fix HTTP login on GitHub private repositories when username is not included in the URL</li>
+<li>Clone / add repo now handles tilde character correctly</li>
+<li>Make clone / add / create buttons respond to return key in add repo sheet</li>
+<li>When dragging a folder from the file status view to another application, provide the folder itself in the pasteboard and not the files contained within it</li>
+</ul>
+
+<a name="version-1.1.7"/>
+<h2>Changes in version 1.1.7:</h2>
+<b>Enhancements</b>
+<ul>
+<li>Include line number in blame window</li>
+<li>Support fetch extension in Mercurial (pull, update, merge &amp; commit)</li>
+<li>Support continuing or aborting a rebase in Mercurial if it was used during pull but there was a conflict.</li>
+<li>Navigation between blame, file log, search and main log views is now possible directly via right-click or double-click</li>
+<li>Add ability to navigate from a result in the search view to the same commit in the log view (double-click or context menu)</li>
+<li>Implement jumping to commit sha (inc. partial) or revision number from log window jump button</li>
+<li>Provide a drop-down on Git remote branches in the push dialog to assist with pushing to alternate remote branches that already exist</li>
+<li>Gravatar images added to commit detail views</li>
+<li>Remember the last used view mode (flat/tree/column) in file status view and default to it</li>
+<li>Allow repo folders to be dragged to the SourceTree dock icon to open them directly. Detect any that aren't in the bookmarks already
+and give user the option to create bookmarks for them, including names and folder locations.</li>
+<li>You can now drag &amp; drop files from file status view to other applications to open them</li>
+</ul>
+
+<b>Bugfixes:</b>
+<ul>
+<li>Fix changing folder when repo is has been moved; previously kept prompting you until restart</li>
+<li>Change all instances of "Ok" to "OK"</li>
+<li>Fix number of incoming changes being incorrect when other output is received from Mercurial</li>
+<li>Fix display of log view when refreshing after aborting a merge</li>
+<li>Fix Dropbox not picking up patch file contents if you created the patch directly inside a Dropbox folder</li>
+<li>Use fallback encoding techniques to read patch files, in case NSString can't figure it out</li>
+<li>Ignore the .hg/dirstate file as a metadata change since it's only relevant to working dir changes which we already pick up</li>
+<li>When refreshing the log view, if the selection didn't change and it's not the uncommitted row, don't force the revision details to be refreshed (preserve the view)</li>
+<li>Modify hgsubversion so it flushes output for better UI responsiveness</li>
+<li>Disable the non-'hgext.' version of hgsubversion so it doesn't pick that up from a wider scope</li>
+<li>Remember which ignore list you last added a file to &amp; keep using that by default</li>
+<li>Using the 'revision' option in Mercurial push was not always getting picked up unless you tabbed out of the field.</li>
+<li>Fix origin / default remotes not showing as re-selected by default on the 2nd use of push/pull/fetch sheets</li>
+<li>In the log view, preserve the state of multiple row selections between refreshes (diff between arbitrary log points)</li>
+<li>Fix misidentification of clone source when the url is prefixed with whitespace</li>
+<li>Fix missing lines in file log in git repositories (because git log --follow just doesn't work right now)</li>
+<li>Naming consistency on toolbar - History -> Log</li>
+<li>Fix time style in commit details view in some locale</li>
+<li>Always open ignore files with TextEdit, in case user has default application for this file type set to something like Terminal</li>
+</ul>
+
+
+
+<a name="version-1.1.6.1"/>
+<h2>Changes in version 1.1.6.1:</h2>
+<ul>
+<li>Fix git launching external diff when a merge commit or range of commits is 
+selected and users .gitconfig is configured to diff externally all the time</li>
+<li>Fix 'Open' button on bookmarks when repository folder has been deleted / moved</li>
+<li>Fix 'Repository Moved or Deleted' text disappearing after that row has been selected.</li>
+</ul>
+
+<a name="version-1.1.6"/>
+<h2>Changes in version 1.1.6:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>Viewing differences between 2 arbitrary commits/revisions is now supported. Simply select more than one entry in the log view
+ with Cmd-Click, Shift-Click or Shift-Up/Down and SourceTree will show you the difference between
+ the outer range of the rows selected.</li>
+<li>Viewing  differences between both sides of a merge is now supported. When viewing a merge commit or the 
+working folder when a merge is outstanding, the 'Compare to:' option on the diff pane allows you to 
+choose which side of the merge to compare with.</li>
+<li>The Resolve Conflicts page has been redesigned and is now more detailed; you can see diffs in-place, and can also 
+choose to resolve a file conflict using the unmodified content from each side of the merge; 
+this is especially important for binary conflicts.</li>
+<li>When deleting repository bookmarks, you now have the option of moving the underlying folder to the trash at the same time.</li>
+<li>When a bookmarked repository has been deleted or moved in Finder, it is identified clearly in the bookmarks
+window and if you try to open it, you are offered the option to remove the bookmark or re-point it to its new location.</li>
+<li>You can now pick the exact point size of the diff font, instead of just the summary sizes (Small, Medium etc). 
+The font size drop-down has been removed from the diff view and instead you should pick the size you want from Preferences. All 
+diff views now change immediately when the font is altered in Preferences so you can see the effect.</li>
+<li>Files with a status of 'Missing' can now be removed directly either via 'Remove', or 'Stage' (in git)</li>
+</ul>
+
+<h3>Bugfixes:</h3>
+<ul>
+<li>Applying patches in git now does 3-way merge as was originally intended</li>
+<li>Limit the diff view to displaying 20 items at once to avoid huge overhead when user selects a very large number of files to perform an operation.</li>
+<li>Fix clearing of new group name when repeatedly adding groups</li>
+<li>Fix tags not being pushed to remote in Git if they are not picked up by another ref</li>
+<li>Fix git checkout with clean option only doing the clean and not the checkout.</li>
+<li>When selecting multiple files in log view working copy and clicking Revert toolbar, pre-select those files.</li>
+<li>Don't prepend 'svn+' to SVN urls when checking out in Mercurial if the url is svn://</li>
+<li>Fix deleting remote branches with embedded '/' characters in git</li>
+<li>Fixed git multi-line commit messages being concatenated without newlines in description pane</li>
+<li>Fix external merge tool usage in hg when files have a space in the path.</li>
+<li>Fix hg merge aborting on a binary file conflict.</li>
+<li>Fix hg performing slower then SourceTree is installed via the App Store</li>
+<li>Validate against cloning into a non-empty directory before calling hg/git so user can correct earlier</li>
+</ul>
+
+<a name="version-1.1.5"/>
+<h2>Changes in version 1.1.5:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>The diff context level selected in the diff view is now saved and used by default.</li>
+<li>Added an 'Ignore whitespace' option to diff view</li>
+<li>Allow the font used in the diff view to be altered (see Preferences)</li>
+<li>Display an icon in the log view jump list indicating whether each entry is a tag or branch (with remote indicators on Git)</li>
+<li>Add option to revert selected files to a specific revision/commit, from any file selection or the file log window (as opposed to updating entire tree to revision)</li>
+<li>Repository windows which are open when you quit now re-open automatically next time (see Preferences to disable)</li>
+<li>Each repository window now remembers its own individual frame (instead of sharing a default frame from your last use of any repository). This means
+when windows re-open at startup they will also be exactly where you put them.</li>
+<li>Add delete remote branch support in Git</li>
+<li>Allow multiple branches to be deleted at once in Git (local or remote) for those that do bulk clean-up</li>
+<li>Add keyboard shortcut for Fetch</li>
+<li>Add a 'Release Notes' option to the SourceTree menu so users can view the changelog (including changes after their current version) more easily.</li>
+</ul>
+
+<h3>Bugfixes:</h3>
+<ul>
+<li>Fix incorrect incrementing of 'Outstanding Push' count when tagging when there is no default remote</li>
+<li>Fix blank log results in Mercurial if a commit description includes the Unicode line separator (U+2028), which Mercurial refuse to support as a first line delimiter.</li>
+<li>The Mac App Store no longer considers SourceTree as obtained direct from sourcetreeapp.com to be an 'Installed' copy of App Store SourceTree product. 
+This previously prevented people buying on the App Store until they had manually deleted the trial version.</li>
+<li>Make sure preferences window cannot be opened multiple times</li>
+<li>Disallow passwords embedded in remote URL settings - very insecure and not supported by SourceTree, use the password prompts &amp; keychain options</li>
+<li>Fix using kdiff3 as external merge tool for Mercurial when spaces are present in the path.</li>
+<li>Always append a completion message to the task output so that tasks which don't write anything to the log confirm one way or the other</li>
+<li>Fix layout under resize in Create Patch sheet</li>
+<li>Fix the browser window rendering incorrectly under some tree expansion conditions</li>
+
+</ul>
+
+
+<a name="version-1.1.4"/>
+<h2>Changes in version 1.1.4:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Eliminate unnecessary refreshes in the Mercurial log window by filtering the kernel file events more aggressively</li>
+<li>File browsing buttons are now regular push buttons instead of disclosure buttons (HCI guidelines)</li>
+<li>Automatically include submodules when cloning a Git repository (Mercurial already cloned subrepos)</li>
+<li>Fix a race condition when cloning which could cause the Add Repository sheet not to close if the clone process exited particularly quickly.</li>
+<li>Prevent user .gitconfig entry for diff.external interfering with the in-app diff functionality</li>
+</ul>
+
+<a name="version-1.1.3.2"/>
+<h2>Changes in version 1.1.3.2:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Fix a couple of diff hunk view clipping issues caused by the font size changes.</li>
+</ul>
+
+<a name="version-1.1.3.1"/>
+<h2>Changes in version 1.1.3.1:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Fix a problem with the preferences dialog.</li>
+</ul>
+
+<a name="version-1.1.3"/>
+<h2>Changes in version 1.1.3:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Deal with a rare case of missing data in the git file status view when 'Clean' option is enabled.</li>
+<li>If an diff / merge configuration is corrupted, fail safely instead of crashing.</li>
+</ul>
+
+<h3>Enhancements:</h3>
+<ul>
+<li>Added a font size option to the diff view for those with high-res monitors and failing eyesight ;)</li>
+</ul>
+
+<a name="version-1.1.2"/>
+<h2>Changes in version 1.1.2:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Fix automatic remote refresh not triggering if push/pull wasn't done within SourceTree.</li>
+<li>Deal with the case where git-svn doesn't pass a default username to manual ssh login to Subversion server</li>
+<li>Unstaging a deleted file in Git now also checks it out again automatically rather than leaving it missing in the working folder.</li>
+</ul>
+
+<h3>Enhancements:</h3>
+<ul>
+<li>TextWrangler and BBEdit are now supported out of the box for external diffs.</li>
+</ul>
+<a name="version-1.1.1"/>
+<h2>Changes in version 1.1.1:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Improve the responsiveness of the push/pull counts when pushing from the commit &amp; tag sheets</li>
+<li>Fix several problems with using Subversion with manual SSH logins (as opposed to https or using SSH keys)</li>
+<li>When looking up keychain items, always filter by protocol and don't fall back on server-only items, since this can cause failures if passwords are different between services.</li>
+<li>Fix pull/push counts getting stuck on Mercurial when there is no remote called 'default'. Now we use the sole remote if there is no 'default', or disable the counts if there are multiple remotes and none are called 'default'</li>
+<li>Clear cached data when a bookmark is removed so that if it is re-added we correctly pick up the new settings.</li>
+<li>Spacebar to Quick Look now working on tree &amp; column views as well as flat view</li>
+<li>Fix display of clean / untracked text files when text encoding is not UTF8</li>
+<li>Fix crash when rendering a branch annotation on the uncommitted changes line (only occurred in Mercurial when there was an uncommitted new branch)</li>
+<li>Disable branch selection &amp; track options when pushing to Subversion from Git since they don't do anything.</li>
+<li>Some fixes and tweaks to the visual rendering of Bookmarks window content</li>
+<li>Disable merge &amp; create patch on the history view context menu when the uncommitted changes line is selected</li>
+<li>Quick Look now tracks the correct files when invoked on nested sheets such as commit, revert, resolve</li>
+<li>Fix revision jump to latest in Mercurial when there's a merge outstanding</li>
+<li>Bookmarks window now saves its toolbar customisations</li>
+<li>Fix an infinite loop in Git push dialog if remote branch contains spaces</li>
+<li>Disable unapproved user extensions in Mercurial to avoid problems when a user extension clashes with our Mercurial version or extensions</li>
+<li>Fix hg blame crash on binary files</li>
+<li>Fix hg blame on repositories converted from Subversion where usernames are generated rather than provided by author map</li>
+</ul>
+
+<h3>Enhancements:</h3>
+<ul>
+<li>Make remote management a bit more intuitive, and include specific options for Mercurial 'default' remote</li>
+<li>Add ability to right-click and tag a previous commit from the history view</li>
+<li>Detect a duplicate tag and give the user the option of moving it interactively rather than failing &mp; requiring user to find the 'force' option.</li>
+<li>Allow removal of local tags in Mercurial</li>
+<li>Added tooltips for toolbar items for people who use icon-only view</li>
+</ul>
+
+<a name="version-1.1.0.2"/>
+<h2>Changes in version 1.1.0.2:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Fix a bug where a clean file with leading blank lines could cause the diff view to never complete &amp; hog CPU</li>
+<li>Fix context level drop-down in diff view on history views</li>
+<li>Fix very long file names getting truncated in diff view</li>
+<li>Make sure revision details get updated after you commit while the 'uncommited changes' log view row is selected</li>
+</ul>
+
+<a name="version-1.1.0.1"/>
+<h2>Changes in version 1.1.0.1:</h2>
+<h3>Bugfixes:</h3>
+<ul>
+<li>Fix a crash bug when a non-text file is selected which Quick Look is unable to generate a valid preview for.</li>
+<li>After pulling / pushing on Mercurial, improve the responsiveness of the update on the incoming / outgoing status markers.</li>
+</ul>
+
+<a name="version-1.1.0"/>
+<h2>Changes in version 1.1.0:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li><b>Brand new diff view</b>
+<ul><li>More user-friendly visualisation of differences</li>
+<li>Discard changes directly from the diff view at file, hunk and even line level</li>
+<li>In Git, stage and unstage changes down to a hunk or line level</li>
+<li>Better binary file handling: inline previews of the before &amp; after states, quickly open both in their native tools</li>
+</ul>
+<li><b>Quick Look Support</b>
+<ul><li>Press space or use the menu options to bring up the traditional Quick Look panel showing the entire file(s) selected.</li>
+<li>It even works in the history views! You get to browse a snapshot of the file at that point in time</li></ul>
+<li><b>Subversion support</b>
+<ul><li>Bi-directional Subversion support via hgsubversion and git-svn</li>
+<li>Clone a Subversion repository as a local Mercurial or Git repository and work on it locally using these more modern tools</li>
+<li>Synchronise with the Subversion server via the familiar push / pull metaphors (some limitations apply around branches and merging, please read the help.</li>
+</ul>
+<li><b>Background checking of remotes for incoming &amp; outgoing changes</b>
+<ul><li>Incoming and outgoing commit counts are displayed in the Bookmarks view and on the Push / Pull toolbar buttons</li>
+<li>These are automatically refreshed in the background at a schedule of your choosing (see Preferences)</li>
+<li>Includes automatic fetching of new commits in Git from branches you're tracking</li>
+<li>You can disable this feature globally in Preferences or individually per repository if you wish</li>
+</ul>
+<li>Other new features:</li>
+<ul><li>Transplant / cherry-pick support</li>
+<li>Cloning is now performed in a separate window instead of a modal sheet. This lets you get on with other things
+while long-running clones are active.</li>
+<li>Instead of assuming that a lack of global ignore files means the user is new to git / hg, ask before adding default ignore settings.</li>
+</ul>
+</ul>
+
+<h3>Bugfixes:</h3>
+<ul>
+<li>Workaround for a Mercurial bug in determining whether an OS is GUI-based, which could cause external merge tools not to work if the user chose not to install X11 when installing Snow Leopard.</li>
+<li>Filter keychain items more specifically on retrieval to deal with the case where a user has different passwords for different protocols or paths on the same server. </li>
+<li>Speed up the analysis of patches which require a base path parameter to apply successfully by an order of magnitude.</li>
+<li>Short-circuit the determination of repository type for a few known single-source hosts like bitbucket, github and gitorious.</li>
+<li>Create Patch from log context now correctly starts on the 'Patch From Commits' tab</li>
+</ul>
+
+
+<a name="version-1.0.9.1"/>
+<h2>Changes in version 1.0.9.1:</h2>
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Better validation on Mercurial push &amp; pull sheets to avoid problems in edge cases such as empty paths and lack of 'default' remote</li>
+<li>Fix drag &amp; drop clone URL not inserting the resulting entry at the correct point in the bookmarks tree (inserted at end)</li>
+<li>Fix jump to annotated tag in log view (Git)</li>
+<li>Default tag type in Git is now annotated and not lightweight as per accepted convention; added more options to tag sheet to control this.</li>
+<li>Fix for thread safety issues in some regexp handling which could cause a crash in rare cases (mostly repeated opening of Mercurial update / merge views)</li>
+</ul>
+
+<a name="version-1.0.9"/>
+<h2>Changes in version 1.0.9:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>32-bit binaries now included as well as 64-bit for those running Snow Leopard on older Macs.</li>
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Fix a rare bug with repositories converted from Subversion where the character encoding cannot be converted to UTF8</li>
+<li>Fix unresponsiveness when external diff is kept in the background</li>
+</ul>
+
+<a name="version-1.0.8"/>
+<h2>Changes in version 1.0.8:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>Split view positions for file status view, log view and search view are now remembered, along with separate split settings for 
+all the other sheets which use these view (such as commit, merge etc). So you can now configure split view setups for
+every view and dialog independently and they will be remembered.</li>
+<li>Multiple file selection is now supported in the log view and search view when reading diffs</li>
+<li>Right-click and double-click now work on the file lists in the log view and search view, allowing access to more functions from there.</li>
+<li>Added an immediate push option to the Add Tag sheet, for convenience</li>
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Fix a bug which caused Mercurial inactive branches (merged with no commits since) to not appear in the log</li>
+<li>Search view diff panel fixes: external diff, context slider are now working</li>
+<li>Fix external diff in log view when uncommitted changes line is selected</li>
+<li>Path column should not have been editable in log / search views</li>
+<li>Commit sheet 'push' option should be disabled if there are no remotes configured</li>
+<li>When committing in Mercurial, pick 'default' remote on opening for immediate push, previously selected the first remote in the list</li>
+</ul>
+
+<a name="version-1.0.7"/>
+<h2>Changes in version 1.0.7:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>You can now drag &amp; drop between panels to stage / unstage files in Git</li>
+<li>The 'progress' window for Mercurial and Git tasks is now less intrusive, opening and closing faster and only displaying the
+full output under error conditions (or if the user chooses to expand it)</li>
+<li>The repository settings panel now includes an option to disable the auto-refresh behaviour for a given repository. 
+If you disable the auto-refresh, you can press Cmd-R to manually refresh views, and there is a Refresh toolbar button available 
+which can be added to the toolbars (Right-click > Customise Toolbar...).</li>
+<li>Allow log view columns to be re-ordered by the user</li>
+<li>When right-clicking &amp; checking out a commit in Git which includes only a remote branch (no local branches), 
+default to checkout new local branch which is what you almost always want.</li>
+<li>Warn user when Git checkout will create a detached HEAD.</li>
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Fix incorrect tooltips being displayed for files in the Git unstaged area</li>
+<li>Fix external diff in Git on machines that had never had Git installed in the root (Perl library path problem)</li>
+<li>Fix crash when repository has been deleted from the filesystem but bookmarks &amp; windows are still tracking them.</li>
+<li>External diff button in diff panel is now disabled when not applicable</li>
+<li>Fix bug in Git pull sheet if you clicked Ok before the branches list was populated</li>
+<li>Fix manual authentication with Git 'Fetch All'</li>
+<li>Fix customised toolbar settings getting mixed up between Mercurial and Git windows</li>
+<li>Fix missing entries in Git log when on a detached HEAD which is unreachable from any other branch / tag</li>
+<li>Implementation of "Reverse Commit" in Git (revert) was missing, now added</li>
+<li>Fix a race condition which could make the wrong diff appear initially in the commit view when committing a subset of the working changes</li>
+</ul>
+
+<a name="version-1.0.6"/>
+<h2>Changes in version 1.0.6:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>Allow multi-selection in bookmarks for delete, drag &amp; drop</li>
+<li>Allow multiple folders to be dragged from Finder into bookmarks at once</li>
+<li>Allow user toolbar customisation</li>
+<li>Add support for DiffFork as external diff tool</li>
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Jump button in log view now includes remote branches in git if being shown</li>
+<li>Fix Mercurial handling of tags &amp; branches with embedded spaces</li>
+<li>If manual password authentication fails due to an expired / changed password, make sure prompt is displayed in Git</li>
+<li>Improved resilience of manual https login with Mercurial</li>
+<li>Prevent crashes under some authentication failure conditions</li>
+<li>Fix layout when resizing repository settings sheet</li>
+<li>Preserve existing Mercurial global ignore settings if ui.ignore.foo style is used instead of simply ui.ignore.</li>
+<li>Place the default global ignore lists in the user home again (hidden) rather than Application Support. Cleanly uninstalling 
+SourceTree could leave hg/git settings pointing at non-existent files otherwise</li>
+<li>Configure required Mercurial extensions through a custom hgrc file instead of altering core .hgrc, 
+in case user has configured their own custom versions of standard extensions.</li>
+<li>Fix a drag/drop validation problem when a folder is dragged into its own grandchildren after first being dragged elsewhere</li>
+<li>Adjust how external diffs are launched to avoid a process race condition which may be stopping external diffs from working in some cases.</li>
+</ul>
+
+<a name="version-1.0.5"/>
+<h2>Changes in version 1.0.5:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>Added 'Merge' context menu option in log view</li>
+<li>Added 'Remotes' view option to log view in Git</li>
+<li>Added 'Delete Branch' option in Git branch sheet</li>
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Fixed a performance problem with very large diffs or other bulk command output</li>
+<li>Don't select a row in the merge view by default if the commit in question is not a valid merge source</li>
+<li>Don't display warning messages on Add Repository sheet when the fields are blank, less intimidating on first opening.</li>
+</ul>
+
+<a name="version-1.0.4.1"/>
+<h2>Changes in version 1.0.4.1:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>Embedded Mercurial upgraded to 1.7. This was necessary because Mercurial 1.7 includes a breaking change which means 
+repositories created with it cannot be opened with previous versions of Mercurial.</li>
+<li>Improved the refresh responsiveness on the Resolve Conflicts and Create Branch actions.</li>
+</ul>
+
+<a name="version-1.0.4"/>
+<h2>Changes in version 1.0.4:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>Many new optimisations keep performance snappy even on extremely large repositories</li>
+<li>Auto-refresh behaviour when app is active is now smarter, eliminating duplicate refreshes and detecting very 
+large numbers of file changes over a sustained period and throttling the refresh behaviour to keep CPU use down.</li>
+<li>New "All Branches" option in log view - uncheck to limit view to just current branch</li>
+<li>New ordering option in Git log view (date order, or ancestors first). The former is now the default since ancestors first (or --topo-order)
+can be up to 5x slower than date order on extremely large repositories, so it's now by request only.</li>
+<li>'Commit' is now split into 'Commit All' (defaults all modified, or staged if Git with staging enabled) and 'Commit Selected' for current selection.
+Keyboard shortcut for the previous 'Commit' is 'Commit All' to preserve previous behaviour.</li>
+
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Merge processes now correctly suspend auto-refreshing until done</li>
+<li>Deal with commits that introduce no file changes correctly (e.g. perfect merges of branches which have no changes in common)</li>
+<li>Fix a few cases where the 'jump' button spins forever</li>
+</ul>
+
+
+<a name="version-1.0.3.1"/>
+<h2>Changes in version 1.0.3.1:</h2>
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Fix a hang that could occur when drawing the log graph on a small number of repositories.</li>
+<li>Some tuning to the auto-refresh behaviour to reduce the number of redundant refreshes.</li>
+</ul>
+
+<a name="version-1.0.3"/>
+<h2>Changes in version 1.0.3:</h2>
+<h3>Enhancements:</h3>
+<ul>
+<li>Improvements to log graph rendering:
+<ul>
+  <li>Use a more 'sloped' style rather than curved right-angles. This looks much better when the graph becomes more complicated.</li>
+  <li>Style change allows the graph lines to be packed closer together, saving space.</li>
+  <li>Graph cells now report their size properly so double-clicking the column divider auto-sizes it correctly</li>
+  <li>Tweak the 'colour uniqueness' check so that graph line / commit colours are more distinct</li>
+</ul>
+<li>Make diff view context slider update interactively which is more intuitive, but clamp to 3-line increments for performance.</li>
+<li>Support external diff button in log history view</li>
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Fix the context slider on the log view diff pane</li>
+<li>When multiple items are selected in the resolve dialog, group warning / confirmation prompts together so user is only prompted once.</li>
+<li>Make it clearer that Subversion is not supported; disallow drag/drop of Subversion working copies &amp; fail gracefully when using a Subversion URL in the clone dialog.</li>
+</ul>
+<a name="version-1.0.2.1"/>
+<h2>Changes in version 1.0.2.1:</h2>
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Automatic updates fixed</li>
+</ul>
+
+<a name="version-1.0.2"/>
+<h2>Changes in version 1.0.2:</h2>
+<h3>New features:</h3>
+<ul>
+<li><a href="http://connectedflow.com/changes/">Changes</a> and <a href="http://www.kaleidoscopeapp.com/">Kaleidoscope</a> are now directly 
+supported as external diff tools so you don't have to use the 'Other' option. 
+Note that they're only available as diff tools, not merge tools since they do not support 3-way merges.</li>
+</ul>
+
+<h3>Bugs fixed:</h3>
+<ul>
+<li>When there are no entries in the log, make sure that the jump button spinner is told to stop.</li>
+<li>Fix the search panel on some locales where the max date supported by Mercurial was different.</li>
+<li>Git search will now find commits on all branches, not just the current one</li>
+<li>Fix display of file changes at a commit in Git when the file name contained spaces</li>
+<li>Fix commit detail reporting on first commit in Git</li>
+<li>Fix problems with UTF8 text support</li>
+<li>When committing a subset of files from the working tree, by default select the first of those files in the commit dialog and not the first file in the list.</li>
+</ul>
+
+<a name="version-1.0.1"/>
+<h2>Changes in version 1.0.1:</h2>
+<h3>Bugs fixed:</h3>
+<ul>
+<li>Fix a bug in per-repository Mercurial hgrc handling that could cause per-repository user settings to be set to null when changing paths.</li>
+<li>Always allow the pushing of new branches in Mercurial</li>
+<li>Default ignore lists for both Mercurial and Git no longer exclude *.pch, that should not have been there.</li>
+</ul>
+
+<a name="version-1.0.0.8"/>
+<h2>Changes in version 1.0:</h2>
+<ul>
+<li>First open public release!</li>
+<li>Online help updates and minor label changes for consistency</li>
+</ul>
+
+
+
+<a name="version-1.0.0.7"/>
+<h2>Changes in version 1.0 RC1:</h2>
+<ul>
+<li>Non-context menu versions of Commit, Revert and Create Patch now default to the selection IF there is more than one file selected.
+If only one file is selected, the default selection is used (since we can't know if this was the intention or not &amp; default is safer)</li>
+<li>Add double-click action to file status view - opens file</li>
+<li>Git was warning twice about adding/removing files (if warning enabled)</li>
+<li>Application now tells trial users about trial period remaining every 3 days</li>
+<li>DiffMerge now supported</li>
+<li>Add support for custom diff &amp; merge commands</li>
+<li>Support ignoring entire folders (pick level from the hierarchy)</li>
+<li>Basic help file configured</li>
+<li>Fix a bug in adding ignore entries to local repository</li>
+<li>Fix a bug with the checkbox state not being preserved across refreshes in file list view (e.g. commit).
+This would usually occur when the system was under heavy load and the time for the refresh was extended, plus the check box state was altered 
+while the refresh was in progress. </li>
+<li>Minor positioning / size issues on the bookmarks window</li>
+<li>Workaround for cases where the open repository button gets chopped off.</li>
+</ul>
+
+<a name="version-1.0.0.6"/>
+<h2>Changes in version 1.0 beta 5:</h2>
+<ul>
+<li>Search view implemented in repository windows</li>
+<li>A number of changes to reduce the resource usage when left open in the background:
+<ul><li>Don't allow the file list view to issue more than one asynchronous refresh at once</li>
+<li>Only process refresh events when SourceTree is the active application; they are queued up otherwise and processed when re-activated</li>
+<li>Increased the latency from kernel events to refresh to 2s instead of 1s</li></ul>
+<li>Default global ignore files are now placed in Application Support instead of user's home directory</li>
+<li>Fix resizing of View tri-button when resizing the window (keep fixed size)</li>
+<li>Added a larger minimum size to the repo windows to prevent cramping of controls</li>
+<li>Custom DMG backdrop added</li>
+<li>Move the open source licensing information into the About box</li>
+</ul>
+
+<a name="version-1.0.0.5"/>
+<h2>Changes in version 1.0 beta 4:</h2>
+<ul>
+<li>Fixed Git 'Fetch All'</li>
+<li>Fixed identification of remote Git repositories in clone tab</li>
+<li>DMG naming convention changed to use external version number instead of internal</li>
+</ul>
+
+<a name="version-1.0.0.4"/>
+<h2>Changes in version 1.0 beta 3:</h2>
+<ul>
+<li>Fixed a startup bug which stopped Bookmarks window loading if Git config had a blank or unknown global ignore file.</li>
+<li>Preserve hg user name on import from hgrc if no email is supplied</li>
+<li>Prompt at startup for user details if unknown from any source (SourceTree, hgrc or gitconfig) instead of waiting for commit</li>
+</ul>
+
+<a name="version-1.0.0.3"/>
+<h2>Changes in version 1.0 beta 2:</h2>
+<ul>
+<li>Automatic updates are now implemented</li>
+<li>Fixed log view containing repeated chunks of entries sometimes</li>
+<li>Bookmarks window rendering fixes in some edge cases; cropping of open button and stale renders under some scroll conditions</li>
+<li>Bookmarks window rename behaviour redesigned to be more appealing</li>
+<li>Fixed Bookmarks window open button hit testing problems</li>
+<li>New keyboard shortcuts on Bookmarks window: Return = open, cmd-i = Rename</li>
+<li>Authentication prompts &amp; keychain support added for HTTPS protocol, and for using SSH without keys</li>
+<li>Remote Git repositories are now validated correctly</li>
+<li>Fixed reporting of outgoing / incoming changes in Hg when there are no changes (hg returns failure)</li>
+<li>Added keyboard shortcuts (cmd-1/2/3) to switch between repository views</li>
+<li>Add newline to when modifying git ignore files</li>
+<li>Missing files can now be reverted / reset</li>
+<li>External diff now correctly supports Git's 3 separate diff modes: tree/repo, tree/index, index/repo</li>
+<li>Added a context slider and external diff button to the diff panel</li>
+<li>Added more detail to the About dialog</li>
+<li>Changed 'modified' icon to replace exclamation mark with pencil (more intuitive)</li>
+<li>Tidied up some unused UI elements &amp; fixed some text messages</li>
+</ul>
+
+</body>
+
+</html>

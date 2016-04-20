@@ -1,0 +1,133 @@
+	
+Install the Transifex client
+----------------------------
+
+Don't use  a separate Python install or pip, it's not needed, use the source build. 
+Although technically you might want to install in virtualenv to avoid problems if the
+OS Python is upgraded or changed, it's really much easier just to reinstall the
+Transifex client in that case than create a whole other Python environment.
+
+   git clone http://code.transifex.com/transifex-client
+   cd transifex-client
+   sudo python setup.py install
+
+Afterwards, run 'tx --version' to confirm that it's available.
+
+
+One-time setup
+--------------
+
+In the root of the SourceTree folder, execute 'tx init' and enter your user/password
+
+Concepts
+--------
+
+TLDR: 
+  * All XIBs in English.lproj will be processed
+  * You should ONLY edit the English version of the xib
+  * The Export strings to Transifex build target exports .strings from English XIBs & uploads
+    them to Transifex for translation
+  * The Import from Transifex build target pulls translated .strings from Transifex, then uses
+    these plus the English XIB to generate 1 XIB per language.
+  * So we still have 1 XIB per language in the project, but you only edit the English one now.
+  * You can get crashes in other languages if you don't perform the 'Import' stage because the 
+    translated XIB might be out of date compared to the English one. So make sure you do it every
+    time you update a XIB. 
+
+Full details:
+
+There are 2 factors when translating interfaces: the actual strings, and the layout changes
+required to accommodate those strings. Up until SourceTree for Mac 1.8 we supported OS X
+10.6, in which the only way to localize a XIB file was to have multiple instances of it, 
+because you had to be able to alter the size of controls based on the language.
+
+From OS X 10.7, Auto Layout became available which allows UI components to adapt based on 
+their contents, under defined constraints, which means once your XIBs are adapted to use it,
+different strings can be plugged in and the XIB doesn't need changing to use them. However, 
+on OS X 10.7 you still can't load .strings files at run time into the single XIB file; instead
+you use ibtool to export the .strings file, then after localisation of this file you use ibtool
+again to create a new XIB file from the original English version and the translated strings. 
+Therefore your deployed app still has separate XIBs per language, but you only need to design
+and maintain the English version.
+
+From OS X 10.8 you can have one XIB file at runtime and the OS will load .strings files on the fly, 
+but right now we only intend to drop 10.6 support, not 10.7 as well, so we won't be using this.
+
+So the process as XIBs get adapted for Auto Layout is to export .strings files and upload these
+to the Transifex project for translation. We've automated this process through a script
+called translate.py in the translations folder.
+
+Each XIB file will become a single resource in Transifex for translation purposes. The translate.py
+script automates the process in both directions, using both the 'tx' tool to push/pull Transifex,
+and 'ibtool' to convert between .strings and .xib files.
+
+IMPORTANT: Right now there is only one set of resources in Transifex. You should never run the 
+   export / import processes in any other branch than default right now; this is because strings
+   may have been removed in one branch and exporting/importing could remove them from the 
+   translation files of other branches, losing the translation. Only run the export / import
+   processes in the default branch for now - this means translation updates will only be
+   available in major versions. We may utilise Transifex's versioning feature in future
+   to address this limitation.
+
+
+Downloading updated translations
+--------------------------------
+
+Xcode needs no language map like Windows does since it uses the same country codes.
+
+In Xcode, change the build scheme to "Import translations from Transifex" and hit Cmd-B to build.
+
+This will automatically overwrite the local translated files with the latest strings from Transifex.
+It then converts these strings files into translated XIBs in the correct location.
+
+If there are no new languages, this is all you need to do and these strings will be included in the
+next build. If there's one or more new languages, please see 'Adding new languages'. Note that it
+will only download strings files which have been translated at least 60%. You can change this
+percentage by adding a parameter --percent=N.
+
+Because the 60% threshold is applied per resource (XIB), you should check after importing to see 
+if there are new XIBs to add for each language. Right-click on each <lang>.lproj folder under
+Resources/translations in the XCode project and Add Files To SourceTree - add any new files
+(those not greyed out) for that language from translations/output/<lang>.lproj
+
+
+Adding new languages
+--------------------
+
+If a new language has been downloaded (easy to spot, they will be a new folder in the folder
+translations/output), you'll need to add these to the SourceTree build.
+
+1. Open XCode and show the project tree (Cmd-0) and go to Resources > Translations. 
+2. Add a new group called <lang>.lproj
+3. Drag & drop the new xibs from translations/output/<lang>.lproj into the folder in XCode. Also drag/drop the Localiable.strings from here. 
+4. Open STPreferencesWindowController.m and find the section which initialises languageNames and languageCodes
+6. Add the new language's name and ISO code into these arrays AT THE SAME INDEX
+7. Remember to add the new xibs and Localizable.strings to source control.
+8. Test with the new language
+
+Uploading changed source strings
+--------------------------------
+If you change strings in the existing files, you need to upload those so that new strings appear 
+for translation. Note that this also REMOVES any strings you deleted, for all languages.
+
+In Xcode, change the build scheme to "Export English strings to Transifex" and build.
+
+IMPORTANT: You should never remove any strings which are currently in use by the stable version.
+
+Adding a new XIB file
+---------------------
+If you add a brand-new XIB file to the configuration there's an extra step. Once you've defined
+the English version, you want to upload the new base XIB using the "Export English strings to Transifex" build.
+
+Transifex will automatically populate translations for 100% matched strings from other XIBs, but 
+there's sometimes a slight delay. So after about 10 minutes, run "Import translations from Transifex"
+to pull in any auto translations. 
+
+After this, add the new translated XIBs to the project from from translations/output/<lang>.lproj
+
+IMPORTANT: Again be very careful about removing strings when you have multiple branches of development.
+In general you only ever want to export strings from a fully integrated branch which includes all the 
+strings you'll need for the next version. Do not do this from the stable and development branch at
+the same time as strings will appear / disappear.
+
+

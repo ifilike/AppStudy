@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Initialising a repository for Git Flow / Hg Flow</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="git flow, hg flow, initialise, init" />
+		<meta name="description" content="Initialising a repository for Git Flow / Hg Flow" />
+		<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../scripts/retina.js"></script>
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<p><a name="flow-init"></a></p>
+
+		<div id="banner">
+			<div id="machelp">
+				<a name="Bookmarks"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Initialising a repository for Git Flow / Hg Flow</h1>
+			</div>
+			
+			<p>Before you can use Git Flow or Hg Flow on a repository, you need to initialise it. This makes sure
+			that the correct branches exist, and that the prefixes to be used for features, releases and hot fixes
+			are defined.</p>
+			<p>Initialising a repository is easy - in fact if you click the 'Git Flow' (or 'Hg Flow') toolbar button
+			it's the default action on a repository that hasn't been initialised. You'll see this dialog:</p>
+			<p style="text-align: center;">
+				<img src="../shrd/flow_init.png" class="hidef" width="433" height="351" alt="git-init" /><br/>
+			</p>
+			<p>The settings should be self-explanatory, please review the descriptions of the various branches in the 
+			<a href="flow_general.html">introductory section</a> if not.</p>
+			<p>What exactly initialisation does differs slightly between <a href="#git">Git</a> and <a href="#hg">Mercurial</a>, 
+			so please refer to the sections below for full details.</p>
+			
+			
+			<a name="git"></a>
+			<h1>Git Flow initialisation</h1>
+			<p>On initialising, Git Flow will ensure that the production branch (e.g. 'master') and the development branch (e.g. 'develop') 
+			already exist. If they don't exist then a warning will appear detailing what needs to be done to proceed. These are local branches right now, and you'll probably want to push them to your remote
+			soon after initialisation, because it's very important that the whole team uses these same branch names.</p>
+			
+			<p>The prefixes for feature, release and hot fix branches are stored inside the .git/config file (local repository settings) and
+			used in future when you start feature development or begin a release / hotfix. Because this configuration is local, it means
+			that <i>every member of the team</i> must run the Git Flow initialisation process locally before they can use it. It's <b>essential</b> 
+			that every team member uses the same settings in the Git Flow initialisation, and for this reason it's <b>highly recommended</b> not
+			to change the defaults in the initialisation dialog, that way it's easy for everyone to be set up the same way.</p>
+			
+			<p>If different developers used different prefixes for feature/release/hotfix branches that wouldn't be such a big deal, but agreeing on 
+			the production and development branches is essential. Of course, you can use different names locally and push to remote branches
+			called something else, but that can get confusing so it not recommended unless you know what you're doing.</p>
+			
+			<a name="hg"></a>
+			<h1>Hg Flow initialisation</h1>
+			<p>When initialised, Hg Flow will perform the following actions:</p>
+			<ol><li>Create the production branch and the development branch, if they don't already exist</li>
+			<li>Commit a file called '.flow' to every open branch, containing the Hg Flow branch configuration</li>
+			</ol>
+			<p>Because these changes are less lightweight than the Git Flow initialisation, SourceTree will ask you confirm that you're happy with this
+			before proceeding from the initialisation panel. While it makes the initialisation a bit more intrusive to your repo, the advantage 
+			is that the Hg Flow configuration file is stored in the repository, meaning that once you synchronise these changes with other team members, 
+			they automatically get the same configuration (unlike <a href="#git">Git Flow</a> where each team member has to initialise the repo locally).</p>
+
+						
+			<p>Once you've initialised your repository, you're ready to start <a href="flow_actions.html">using Flow</a>.</p>
+
+            <p><a href="discover.html">Back Up</a></p>
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<a href="flow_general.html">Introduction to Git Flow / Hg Flow</a><br/>
+						<!-- <a href="flow_init.html">Initialising a repository</a><br/>-->
+						<a href="flow_actions.html">Flow Actions</a><br/>
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

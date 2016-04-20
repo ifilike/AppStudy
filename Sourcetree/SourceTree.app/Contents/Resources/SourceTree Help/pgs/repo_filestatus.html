@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Repository Window: File status</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="File, status, repository" />
+	<meta name="description" content="Using the file status view." />
+	<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+</head>
+<body>
+	<div id="banner">
+		<div id="machelp">
+			<a name="Bookmarks"></a>
+			<!-- Specify a category in the anchor above; then you can
+				link to listings of every topic in a given category. -->
+			<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+			<!-- The above links back to the index page -->
+		</div>
+		<div id="index">
+			<a class="leftborder" href="../index.html">Index</a>
+		</div>
+	</div>
+	<div id="mainbox">
+		<div id="caticon">
+			<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+		</div>
+		<div id="pagetitle">
+			<h1>Repository Window: File status</h1>
+		</div>
+		
+		<p>The default view in the repository window is the File Status View, which 
+		shows you the status of your working copy.<br/><br/> </p>
+
+		<p style="text-align: center;">
+			<img src="../shrd/filestatusview.png" alt="Create repository" /><br/>
+		</p>
+		<p>The file status view has 2 main areas, the file list and differences view. On the left hand side, by default
+		you're shown files in your working copy which have been modified in some way, although you can use the checkboxes at
+		the bottom to filter the statuses that are displayed. Selecting one of these files will display those changes in 
+		the right hand differences pane. </p>
+		
+		<h2>The top bar</h2>
+		<p><img src="../shrd/filestatus_topbar.png" alt="File status"/></p>
+		<p>The bar along the top of the file list allows you to 
+		control aspects of the view. </p>
+		<p><b>File List View Type</b> There are 3 ways for the file list to display its contents - the flat view, the tree view, and the 3-column view. You can switch between them using the view control
+		at the top of the file list, shown on the far left of the bar. Which one you prefer depends on how many files you have modified
+		and your own personal preferences; by default the flat view is used because it is the most compact.</p>
+		<p><b>Status filter</b>  Next on the bar is the status filter, which defaults to 'Show Pending', which means to display all files which you may wish to commit, such as modified, added, removed, or untracked files. You can select different options to display other
+		files or combinations of files.</p>
+		<p><b>Search box</b> If you have a lot of files in the view, you can type a search pattern into this box to quickly narrow down the
+		results. The file list will filter dynamically as you type.</p>
+		
+		<h2>Git Staging</h2>
+		<p>For Mercurial, or Git when the staging view is disabled in the Preferences, there is only
+		one list of files on the left hand side. When you're looking at a Git repository and you 
+		have staging enabled, you the file list is split in two - the upper section lists changes
+		which are staged in the index, and the lower section lists changes to local files which 
+		are not yet staged.</p>
+		<p>To stage files, you can select them in the lower section and click 'Add', or you can
+		drag &amp; drop them from the lower to the upper section (and vice versa). You can also
+		stage/unstage parts of the file by using the buttons in the diff view on the right-hand side when a file is selected.</p>
+
+		<p><a href="discover.html">Back Up</a></p>
+
+		<h2 class="seealso">See also</h2>
+		<p class="seealso">
+		            <a href="repo_toolbar.html">The Toolbar</a><br/>
+		            <a href="repo_sidebarfooter.html">The Sidebar and Footer</a><br/>
+					<!-- <a href="repo_filestatus.html">The File Status View</a><br/> -->
+					<a href="repo_log.html">The Log View</a><br/>
+					<a href="repo_search.html">The Search View</a><br/>
+					<a href="repo_draftcommit.html">Drafting a commit message</a><br/>			
+					<a href="repo_settings.html">Repository Settings</a><br/>
+					<a href="repo_submodules.html">Submodules and Subrepositories</a><br/>
+
+			<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+			<!-- The above tag links to an auto-generated list of pages
+				in the specified category ("SOMECATEGORY"). Categories
+				are signified by an anchor tag (see earlier in this
+				page). -->
+		</p>
+	</div>
+</body>
+</html>

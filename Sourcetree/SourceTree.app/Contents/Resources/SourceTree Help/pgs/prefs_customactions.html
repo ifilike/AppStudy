@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1- transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Preferences: Diff</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Preferences, Custom Actions, user, email" />
+	<meta name="description" content="Custom Actions preferences." />
+	<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+</head>
+<body>
+    <p><a name="preferencescustomactions"></a></p>
+
+	<div id="banner">
+		<div id="machelp">
+			<a name="Bookmarks"></a>
+			<!-- Specify a category in the anchor above; then you can
+				link to listings of every topic in a given category. -->
+			<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+			<!-- The above links back to the index page -->
+		</div>
+		<div id="index">
+			<a class="leftborder" href="../index.html">Index</a>
+		</div>
+	</div>
+	<div id="mainbox">
+		<div id="caticon">
+			<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+		</div>
+		<div id="pagetitle">
+			<h1>Preferences: Custom Actions</h1>
+		</div>
+		<p style="text-align: center;">
+			<img src="../shrd/prefs_customactions.png" alt="Prefs view" /><br />
+		</p>
+		
+		<p>SourceTree allows you to configure your own actions which you can perform through the user interface, meaning that you can expand the functionality of SourceTree with your own scripts / commands if you wish. For example if you have a custom build script, an interface with your continuous integration server, or anything else you can now launch this from inside SourceTree.	</p>
+		<p>The actions you add will appear on various menus in SourceTree under the 'Custom Actions' submenu. Which menus they appear in depends on what parameters you use when setting up the action, see below for details.</p>
+		<p>When you add a new custom action, here are the options:</p>
+		<p style="text-align: left;">
+			<img src="../shrd/prefs_customactions_add.png" alt="Prefs view" /><br />
+		</p>
+		<p><b>Menu Caption:</b> This is the text which will appear as the menu item.</p>
+		<p><b>Open in Separate Window:</b> If unchecked (default), the action will run in a modal sheet on the current repository window, and once complete the repository view will be explicitly refreshed. If checked, the action will run in a separate floating window and no views will be refreshed on completion, unless picked up by the auto-refresh which detects file changes.</p>
+		<p><b>Show Full Output:</b> If checked, the task window will be expanded to show the console output by default, and the window will not close on its own even on successful completion. If unchecked, only a progress bar will be displayed and the window will be closed automatically on completion, unless there is an error.</p>
+		<p><b>Script to Run:</b> Path to the script or command you wish to run. Do not include any parameters in this field. Absolute paths are recommended.</p>
+		<p><b>Parameters:</b> The parameters to pass to the script. You can embed literal parameters or use the macros below. Use of macros will also determine which menus the custom action will appear on; all actions appear in the top-level 'Actions > Custom Actions' menu, but only those which use macros will show up in context menus on files and log entries.</p>
+		<ul>
+			<li>$REPO expands to the path to the repository</li>
+			<li>$FILE expands to the path(s) to the selected file(s) within the repository. Using this macro means the action will appear on the context menu in the File Status view, and also in the file list on the log and search views <i>if</i> the $SHA macro is also used.</li>
+			<li>$SHA expands to the full commit SHA of the selected log entry. Using this macro means the action will appear on <i>either</i> the context menu for a commit (if $FILE isn't used as well), or on the context menu for the file list for a commit within the log/search views if $FILE is used too.</li>
+		</ul>
+		<p>You should not manually quote any of the macros - they will automatically be quoted to deal with spaces in file names etc. You can use quotes otherwise if you need to for manual parameters.</p>
+
+           <p><a href="discover.html">Back Up</a></p>
+
+		<h2 class="seealso">See also</h2>
+		<p class="seealso">
+					<a href="prefs_general.html">General Preferences</a><br />
+					<a href="prefs_diff.html">Diff Preferences</a><br />
+					<a href="prefs_hg.html">Mercurial Preferences</a><br />
+					<a href="prefs_git.html">Git Preferences</a><br />
+					<!-- <a href="prefs_customactions.html">Custom Actions Preferences</a><br/> -->
+					<a href="prefs_update.html">Update Preferences</a><br />
+
+			<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+			<!-- The above tag links to an auto-generated list of pages
+				in the specified category ("SOMECATEGORY"). Categories
+				are signified by an anchor tag (see earlier in this
+				page). -->
+		</p>
+	</div>
+</body>
+</html>

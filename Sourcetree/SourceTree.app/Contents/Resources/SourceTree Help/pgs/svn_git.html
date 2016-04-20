@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Using Git with Subversion</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Subversion, Mercurial, hg" />
+		<meta name="description" content="Subversion with Mercurial principles" />
+		<link media="all" rel="stylesheet" href="../css/topicPage.css" />
+	</head>
+	<body>
+		<p><a name="git-svn"></a></p>
+		<div id="banner">
+			<div id="machelp">
+				<a name="Bookmarks"></a>
+				<!-- Specify a category in the anchor above; then you can
+					link to listings of every topic in a given category. -->
+				<a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+				<!-- The above links back to the index page -->
+			</div>
+			<div id="index">
+				<a class="leftborder" href="../index.html">Index</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<div id="caticon">
+				<img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+			</div>
+			<div id="pagetitle">
+				<h1>Using Git with Subversion</h1>
+			</div>
+			
+			<p>The bridge to Subversion in Git is provided by the in-built git-svn</p>.
+			
+			<div>
+				<h2>Supported Features</h2>
+				<ul>
+					<li>Cloning a Subversion server repository to local Git</li>
+					<li>Fetching new revisions from Subversion and displaying them as if they are a remote branch</li>
+					<li>Progressive pull of new revisions from remote Subversion into local Git commits</li>
+					<li>Progressive push of new local Git commits to remote Subversion server revisions</li>
+					<li>Working within existing Subversion branches</li>
+					<li>Creating new Subversion branches &amp; tags</li>
+				</ul>
+			</div>
+			
+			<h2>Unsupported Features</h2>
+			<p>The following features are <b>not</b> supported by git-svn:</p>
+			<ul>
+			<li>Merging Subversion branches</li>
+			</ul>
+			
+			<h2>Cloning Subversion To Git</h2>
+			<p>When you clone a Subversion URL, you have a choice - you can either clone a single branch of the repository (or the trunk), 
+			represented in Subversion by unique URLs, or you can clone from the root of the repository, and if the repository is
+			in the standard Subversion layout (branches, trunk and tags folders in the root), then the conversion will
+			pick up the branches and tags and convert them appropriately.</p>
+			
+			<h2>Pushing and Pulling</h2>
+			<p>Subversion only allows a linear history, compared to Git which allows parallel development (resolved by rebasing or
+			merging). Therefore when pulling and pushing changesets from/to Subversion, the history has to be 'flattened' in each branch, 
+			which is done via rebase.</p>
+			<p>Only the active branch is pushed or pulled to/from Subversion, and it needs to be a branch which was checked out from 
+			a Subversion branch (which is like a remote branch). In practice, git-svn looks back in the history to the latest commit
+			which has a Subversion revision ID on it (displayed in the commit message), and re-applies your commits against Subversion from there.</p>
+			<p>In git-svn speak, SourceTree maps 'Push' to 'git svn dcommit' when you select the special "Subversion" remote. We do this
+			to retain the usual workflow you're used to.</p>
+			
+			<h2>Merging is not Supported</h2>
+			<p>The git merge information simply cannot be mapped back to Subversion accurately, so in practice you are limited
+			to using Cherry Pick to move changes between branches (or using svn merge elsewhere). You can in theory
+			merge <i>from</i> local Git branches to Subversion branches, you have to be extremely careful not to allow any
+			Subversion commits to become part of a different branch, otherwise chaos will ensue. In practice it's best just to
+			avoid it, and SourceTree warns you to this effect.</p>
+
+			<p>git-svn also does not pick up merge information from merges that have occurred in Subversion already, so the log view will 
+			not show any merges, only branches.</p>
+			
+			<h2>Migrating away from Subversion</h2>
+			<p>One of the side benefits of using the Subversion interoperability is that effectively you've converted your
+			repository to Git just by cloning it. If you wanted to move away from Subversion later, you can use your local
+			Git repository as a base. Just remember that merge information is not present so you may wish to just
+			convert a single branch at an opportune moment in time.</p>
+			<p>If you no longer intend to use Subversion, delete the svn metadata which lives inside the .git/svn folder in 
+			your local repository, and manually delete the 'svn-remote' entry in .git/config. 
+			From that point on, the repository will act like a regular Git repository.</p>
+
+
+			<h2 class="seealso">See also</h2>
+			<p class="seealso">
+						<a href="svn_general.html">Using Subversion: General Principles</a><br/>
+						<a href="svn_hg.html">Using Mercurial with Subversion</a><br/>
+						<!-- <a href="svn_git.html">Using Git with Subversion</a><br/> -->
+
+				<!--<a href="help:topic_list=Bookmarks bookID=SourceTree Help template=css/genlist.html stylesheet=css/genlist_style.css Other=Bookmarks">Bookmarks Topics</a>-->
+				<!-- The above tag links to an auto-generated list of pages
+					in the specified category ("SOMECATEGORY"). Categories
+					are signified by an anchor tag (see earlier in this
+					page). -->
+			</p>
+		</div>
+	</body>
+</html>

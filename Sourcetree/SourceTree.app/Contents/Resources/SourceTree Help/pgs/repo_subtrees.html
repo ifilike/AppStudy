@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Subtrees</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="subtree, subtrees" />
+        <meta name="description" content="Subtree" />
+        <link media="all" rel="stylesheet" href="../css/topicPage.css" />
+        <script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../scripts/retina.js"></script>
+    </head>
+    <body>
+        <p><a id="subtree" name="subtree"></a></p>
+        <div id="banner">
+            <div id="machelp">
+                <a name="Repository"></a>
+                <!-- Specify a category in the anchor above; then you can
+                 link to listings of every topic in a given category. -->
+                <a class="bread" href="help:anchor='access' bookID=SourceTree Help">SourceTree Help</a>
+                <!-- The above links back to the index page -->
+            </div>
+            <div id="index">
+                <a class="leftborder" href="../index.html">Index</a>
+            </div>
+        </div>
+        <div id="mainbox">
+            <div id="caticon">
+                <img class="icon" src="../shrd/sourcetree.png" width="32" height="32" alt="Icon" />
+            </div>
+            <div id="pagetitle">
+                <h1>Subtrees</h1>
+            </div>
+            
+            <p>
+                <span class="quote">
+                    Subtrees allow subprojects to be included within a subdirectory
+                    of the main project, optionally including the subproject's
+                    entire history.
+                    <br /><br />
+                    For more information, see the documentation here: <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt">https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt</a>
+                </span>
+            </p>
+            
+            <p>
+                As of version 1.8, SourceTree now supports the ability to add, pull, and push subtrees in
+                your repositories (note: this is a Git-only feature). SourceTree will track your subtrees
+                on a per-repo basis making future subtree commands easily accessible from the sidebar from
+                previously created subtrees.
+            </p>
+            
+            <h1>Adding/Linking Subtrees</h1>
+            <p>
+                It's important to note the difference between adding and linking subtrees. 'Linking' isn't a
+                subtree concept but instead a SourceTree concept. Linking adds an entry into the SourceTree
+                configuration file to associate a directory in your repository with a remote from which subtree
+                commands can then be issued to pull and push commits. SourceTree can tell the difference based
+                on whether the directory you specify exists or not. If the directory you specify doesn't exist then an 'add'
+                will be performed, otherwise a link will happen (which doesn't make any subtree calls).
+            </p>
+            
+            <p>
+                To add or link a subtree you can either use the sidebar by context-clicking in any space and
+                selecting 'Add/Link Subtree...' or alternatively using the 'Repository' menu.
+            </p>
+            
+            <p>
+                The "Source Path / URL" is the path or URL of the repository for the subtree. "Branch / Commit"
+                is either the branch name or the SHA of the commit you wish to pull in. SourceTree will list
+                the branches of the repository you specify if you have access. The "Local Relative Path" is the
+                path within your repository where the subtree project will be added (or the path to the existing
+                subtree if it hadn't previously been linked in SourceTree).
+            </p>
+            
+            <h1>Pulling Subtrees</h1>
+            <p>
+                When pulling a subtree you can simply context-click on the subtree from the sidebar and click
+                on 'Pull Subtree...'. This will show a confirmation dialog with a 'Squash commits' checkbox
+                that is by default enabled. The 'Squash commits' option will squash all of the remote commits into a single commit locally which is then merged in to your current branch.'
+            </p>
+            
+            <h1>Pushing Subtrees</h1>
+            <p>
+                Much like pulling a subtree, again you can context-click on the subtree from the sidebar and click on 'Push Subtree...'.
+            </p>
+            
+            <h1>Troubleshooting</h1>
+            <h2>Subtree Isn't Working</h2>
+            <p>
+                If subtree isn't working it could be because you're using system Git and haven't got a version installed that comes with subtree. To fix this you can <a href="http://engineeredweb.com/blog/how-to-install-git-subtree/">follow this guide</a>.
+            </p>
+            
+                       
+            <p><a href="discover.html">Back Up</a></p>
+        </div>
+    </body>
+</html>
