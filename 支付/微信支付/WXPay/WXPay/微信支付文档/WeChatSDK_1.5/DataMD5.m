@@ -119,7 +119,7 @@
     //添加商户密钥key字段
 #warning 注意此处一定要添加上商户密钥
 //    [contentString appendFormat:@"key=%@", @"PwAsFHNp20QaoDZZ0t1cP6y6oYMC7x5d"];
-    [contentString appendFormat:@"key=%@", @"QiuxindeTangrenjie11111120160217"];
+    [contentString appendFormat:@"key=%@", WX_PartnerKey];
     //    NSString *signString =[self md5:contentString];
     NSString *result = [self md5:contentString];
     return result;
