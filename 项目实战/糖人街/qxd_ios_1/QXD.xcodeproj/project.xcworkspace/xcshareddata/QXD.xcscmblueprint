@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "fef518d6-cb04-944e-9b65-30e18ad340a2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b0c2e758-9abb-e740-8e7c-617241092511++8665" : {
+
+    },
+    "fef518d6-cb04-944e-9b65-30e18ad340a2" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b0c2e758-9abb-e740-8e7c-617241092511++8665" : 0,
+    "fef518d6-cb04-944e-9b65-30e18ad340a2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BDAFC014-C2FD-4340-8B21-345665CE00E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b0c2e758-9abb-e740-8e7c-617241092511++8665" : "trunk\/",
+    "fef518d6-cb04-944e-9b65-30e18ad340a2" : "data\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QXD",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "qxd_ios_1\/QXD.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.51",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b0c2e758-9abb-e740-8e7c-617241092511++8665"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.51\/qxd\/data",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fef518d6-cb04-944e-9b65-30e18ad340a2"
+    }
+  ]
+}

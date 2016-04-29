@@ -1,0 +1,148 @@
+//
+//  QXD.pch
+//  QXD
+//
+//  Created by ZhangRui on 15/11/10.
+//  Copyright © 2015年 ZhangRui. All rights reserved.
+//
+
+#ifndef QXD_pch
+#define QXD_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define SCREEN_H self.view.frame.size.height//屏幕高
+#define SCREEN_W self.view.frame.size.width//屏幕宽
+#define UMAppKey @"5643f69c67e58e27ac001adc"
+#define XDImageStr @"http://cdn.static.qiuxinde.com/qxd/cms/"//心得图片
+#define TXImageStr @"http://cdn.static.qiuxinde.com/head/"//头像图片
+#define WIDTH [[UIScreen mainScreen] bounds].size.width
+#define PROPORTION_WIDTH [[UIScreen mainScreen] bounds].size.width/375//比例宽度
+
+//////////sina.	5643f69c67e58e27ac001adc
+//umeng///sina.54d19091fd98c55a19000406
+//微信支付商户号
+#define MCH_ID  @"1300181901"
+//开户邮件中的（公众账号APPID或者应用APPID）
+#define WX_AppID @"wx6331e9f3100a2435"
+//#define WX_AppID @"wxb4ba3c02aa476ea1"
+//安全校验码（MD5）密钥，商户平台登录账户和密码登录http://pay.weixin.qq.com 平台设置的“API密钥”，为了安全，请设置为以数字和字母组成的32字符串。
+#define WX_PartnerKey @"QiuxindeTangrenjie11111120160217"
+//获取用户openid，可使用APPID对应的公众平台登录http://mp.weixin.qq.com 的开发者中心获取AppSecret。
+#define WX_AppSecret @"1f4d84cf1aa2892e0940788bd5bcf928"
+
+
+#define AddressDeleteUrl @"http://www.qiuxinde.com/mobile/customer/deleteAddress/"//删除地址
+#define AddressShowList @"http://www.qiuxinde.com/mobile/customer/addressList/"//展示地址
+#define AddressChangeDefault @"http://www.qiuxinde.com/mobile/index/updateAddressDefault/"//改变默认值
+#define AddressSaveList @"http://www.qiuxinde.com/mobile/customer/saveAddress/"//保存地址
+
+#define WishList @"http://www.qiuxinde.com/mobile/customer/showlist"//我的心愿单展示数据
+
+#define OrderList @"http://www.qiuxinde.com/mobile/shopping/shoppinglist"//用户订单展示列表
+
+#define ShopCarList @"http://www.qiuxinde.com/mobile/shopping/shoppingcartlist"//用户购物车展示
+#define ShopCarDelete @"http://www.qiuxinde.com/mobile/shopping/deleteshoppingcart"//用户购物车删除
+
+
+
+#define AddShopping @"http://www.qiuxinde.com/mobile/shopping/addShopping"//用户购物车转化成用户订单 同时删除购物车
+
+#define UpdataCartNum @"http://www.qiuxinde.com/mobile/shopping/updateCartNum"//更改购物的数量
+#define UserLoad @"http://www.qiuxinde.com/mobile/customer/customerLogin"//用户登录
+#define userVip @"http://www.qiuxinde.com/mobile/customer/selectCustomerByVIPId"//查询vip对应的用户
+#define DiscountList @"http://www.qiuxinde.com/mobile/customer/couponList"//优惠卷展示列表
+#define UpdateWithOrder @"http://www.qiuxinde.com/mobile/shopping/updateOrderStatus"//修改订单状态
+
+
+#define OrderDelete @"http://www.qiuxinde.com/mobile/shopping/deleteOrder"//删除订单
+#define OrderEvaluate @"http://www.qiuxinde.com/mobile/shopping/orderProducts" //通过订单id查询相应产品
+#define OrderEvaluateText @"http://www.qiuxinde.com/mobile/product/insertComment"//发送评价内容
+#define OrderEvaluateTextShow @"http://www.qiuxinde.com/sns/mobile/product/orderProductComment"//展示评价内容
+#define OrderDetailList @"http://www.qiuxinde.com/mobile/shopping/orderInfo"//订单详情页
+#define SenerDX @"http://www.qiuxinde.com/mobile/index/senderdx/"//短信验证码接口
+#define Notify @"http://www.qiuxinde.com/mobile/shopping/orderNotice"//通知订单的发送情况
+
+
+#define AddressChange @"http://www.qiuxinde.com/mobile/customer/updateAddress"//修改收获地址
+#define Experience @"http://www.qiuxinde.com/mobile/customer/insertExperienceDivision"//申请魔选师
+#define UpdataApply @"http://www.qiuxinde.com/mobile/customer/upateApply"//更改产品售后状态 可否退货
+
+#define ProductWithId @"http://www.qiuxinde.com/mobile/product/oneProduct"//根据产品id 获取产品所有信息
+#define InsertImage @"http://www.qiuxinde.com/mobile/customer/insertReturn"//提交售后图片
+#define RefundSchedule @"http://www.qiuxinde.com/mobile/customer/refundSchedule"//售后的进度
+
+
+#define addOrder @"http://www.qiuxinde.com/mobile/shopping/addOrder"//如果是立即购买就需要用这个方式生成订单
+#define DeleteRefund @"http://www.qiuxinde.com/mobile/customer/deleteRefund"//撤销申请
+#define OrderTrack @"http://www.qiuxinde.com/mobile/shopping/expressSchedule"//根据订单查询物流
+#define AddOrder @"http://www.qiuxinde.com/mobile/shopping/addOrder"//购物车立即购买
+#define OrderSize @"http://www.qiuxinde.com/mobile/shopping/orderSize"//登录页面 购物车的数量
+#define NewsestTrack @"http://www.qiuxinde.com/mobile/shopping/newestTrack"//最新物流跟踪
+
+#warning addWithDow
+
+
+
+#warning lostHost
+
+//#define AddressDeleteUrl @"http://192.168.1.51:8080/sns/mobile/customer/deleteAddress/"//删除地址
+//#define AddressShowList @"http://192.168.1.51:8080/sns/mobile/customer/addressList/"//展示地址
+//#define AddressChangeDefault @"http://192.168.1.51:8080/sns/mobile/customer/updateAddressDefault/"//改变默认值
+//#define AddressSaveList @"http://192.168.1.51:8080/sns/mobile/customer/saveAddress/"//保存地址
+//
+//#define WishList @"http://192.168.1.51:8080/sns/mobile/customer/showlist"//我的心愿单展示数据
+//
+//#define OrderList @"http://192.168.1.51:8080/sns/mobile/shopping/shoppinglist"//用户订单展示列表  可拼接status来获取待付款
+//
+//#define ShopCarList @"http://192.168.1.51:8080/sns/mobile/shopping/shoppingcartlist"//用户购物车展示
+//#define ShopCarDelete @"http://192.168.1.51:8080/sns/mobile/shopping/deleteshoppingcart"//用户购物车删除
+//#define AddShopping @"http://192.168.1.51:8080/sns/mobile/shopping/addShopping"//用户购物车转化成用户订单 同时删除购物车
+//#define UpdataCartNum @"http://192.168.1.51:8080/sns/mobile/shopping/updateCartNum"//更改购物的数量
+//
+//
+//#define UserLoad @"http://192.168.1.51:8080/sns/mobile/customer/customerLogin"//用户登录
+//
+//#define userVip @"http://192.168.1.51:8080/sns/mobile/customer/selectCustomerByVIPId"//查询vip对应的用户
+//#define DiscountList @"http://192.168.1.51:8080/sns/mobile/customer/couponList"//优惠卷展示列表
+//
+//#define UpdateWithOrder @"http://192.168.1.51:8080/sns/mobile/shopping/updateOrderStatus"//修改订单状态
+//
+//#define OrderDelete @"http://192.168.1.51:8080/sns/mobile/shopping/deleteOrder"//删除订单
+//#define OrderEvaluate @"http://192.168.1.51:8080/sns/mobile/shopping/orderProducts" //通过订单id查询相应产品
+//#define OrderEvaluateText @"http://192.168.1.51:8080/sns/mobile/product/insertComment"//发送评价内容
+//#define OrderEvaluateTextShow @"http://192.168.1.51:8080/sns/mobile/product/orderProductComment"//展示评价内容
+//#define OrderDetailList @"http://192.168.1.51:8080/sns/mobile/shopping/orderInfo"//订单详情页
+//#define SenerDX @"http://192.168.1.51:8080/sns/mobile/index/senderdx/"//短信验证码接口
+//#define Notify @"http://192.168.1.51:8080/sns/mobile/shopping/orderNotice"//通知订单的发送情况
+//
+//
+//#define AddressChange @"http://192.168.1.51:8080/sns/mobile/customer/updateAddress"//修改收获地址
+//#define Experience @"http://192.168.1.51:8080/sns/mobile/customer/insertExperienceDivision"//申请魔选师
+//#define UpdataApply @"http://192.168.1.51:8080/sns/mobile/customer/upateApply"//更改产品售后状态 可否退货
+//
+//#define ProductWithId @"http://192.168.1.51:8080/sns/mobile/product/oneProduct"//根据产品id 获取产品所有信息
+//#define InsertImage @"http://192.168.1.51:8080/sns/mobile/customer/insertReturn"//提交售后图片
+//#define RefundSchedule @"http://192.168.1.51:8080/sns/mobile/customer/refundSchedule"//售后的进度
+//
+//
+//#define addOrder @"http://192.168.1.51:8080/sns/mobile/shopping/addOrder"//如果是立即购买就需要用这个方式生成订单
+//#define DeleteRefund @"http://192.168.1.51:8080/sns/mobile/customer/deleteRefund"//撤销申请
+//#define OrderTrack @"http://192.168.1.51:8080/sns/mobile/shopping/selectOrderTrack"//根据订单查询物流
+//#define AddOrder @"http://192.168.1.51:8080/sns/mobile/shopping/addOrder"//购物车立即购买
+
+#endif
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MJRefresh.h"//第三方刷新
+#import "UIImageView+WebCache.h"//图片下载和缓存
+#import "AFNetworking.h"//下载
+#import "FMDatabase.h"//数据库
+#import "MBProgressHUD.h"//风火轮
+
+#endif /* QXD_pch */
