@@ -1,0 +1,8 @@
+use_frameworks!
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'TTTAttributedLabel'
+pod 'SVProgressHUD'
+pod 'BugHD'
+pod 'CHTCollectionViewWaterfallLayout'
+pod 'BaiduMapKit'

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tqhkxqCell" id="gTV-IL-0wX" customClass="TQHKXQCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="270"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQO-Wx-Q2n">
+                        <rect key="frame" x="144" y="135" width="1" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="DAf-bl-G9b"/>
+                            <constraint firstAttribute="height" constant="1" id="SlD-8H-stG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原月还款额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICu-84-DOi">
+                        <rect key="frame" x="0.0" y="108" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2185.42元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMj-h0-var">
+                        <rect key="frame" x="0.0" y="142" width="288" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ICu-84-DOi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5Pb-MF-Q40"/>
+                <constraint firstItem="jMj-h0-var" firstAttribute="top" secondItem="BQO-Wx-Q2n" secondAttribute="bottom" constant="6" id="ADH-3a-pej"/>
+                <constraint firstItem="BQO-Wx-Q2n" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="B1J-r9-rmb"/>
+                <constraint firstItem="BQO-Wx-Q2n" firstAttribute="top" secondItem="ICu-84-DOi" secondAttribute="bottom" constant="6" id="Csp-Wv-uq7"/>
+                <constraint firstAttribute="trailing" secondItem="ICu-84-DOi" secondAttribute="trailing" id="Hdn-u8-5Y1"/>
+                <constraint firstItem="ICu-84-DOi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PFo-7Q-vp9"/>
+                <constraint firstItem="jMj-h0-var" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Tgl-fG-ZFy"/>
+                <constraint firstItem="jMj-h0-var" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W4J-yM-X5a"/>
+                <constraint firstAttribute="trailing" secondItem="jMj-h0-var" secondAttribute="trailing" id="agc-dn-Th2"/>
+                <constraint firstItem="BQO-Wx-Q2n" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="lFs-In-Ays"/>
+            </constraints>
+            <size key="customSize" width="288" height="270"/>
+            <connections>
+                <outlet property="detailLabel" destination="jMj-h0-var" id="QSb-Qn-wYt"/>
+                <outlet property="titleLabel" destination="ICu-84-DOi" id="SPU-01-jz1"/>
+            </connections>
+            <point key="canvasLocation" x="227" y="254"/>
+        </collectionViewCell>
+    </objects>
+</document>
