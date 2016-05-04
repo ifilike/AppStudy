@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "76E203FD9C3E65EAD4BF598A7450D1DB3C077F5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "76E203FD9C3E65EAD4BF598A7450D1DB3C077F5C" : 0,
+    "7C25AC53B95FE9469712D29C518D4ECD1787C7CD" : 0,
+    "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "41AE118D-EFFC-4480-A897-3A40E27C6C44",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "76E203FD9C3E65EAD4BF598A7450D1DB3C077F5C" : "%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91\/",
+    "7C25AC53B95FE9469712D29C518D4ECD1787C7CD" : "%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91\/%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91\/Classes\/Main(%E4%B8%BB%E8%A6%81)\/Lib\/MJExtension\/",
+    "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8" : "%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91\/%E6%BC%B3%E5%B7%9E%E5%85%AC%E7%A7%AF%E9%87%91\/Classes\/Main(%E4%B8%BB%E8%A6%81)\/Lib\/AFNetworking\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "漳州公积金",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "漳州公积金.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fengwujie\/zzgjj.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76E203FD9C3E65EAD4BF598A7450D1DB3C077F5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CoderMJLee\/MJExtension.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C25AC53B95FE9469712D29C518D4ECD1787C7CD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AFNetworking\/AFNetworking.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8"
+    }
+  ]
+}
