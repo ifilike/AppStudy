@@ -27,6 +27,7 @@ View controller-based status bar appearance 设置为NO;
 1.隐藏导航栏
 在<AppName>-info.plist 文件中加入选项 "Status bar is initially hidden", 值为 YES
 2.显示白色导航栏
+在<AppName>-info.plist 文件中加入选项 "Status bar style", 值为 Transparent black style (alpha of 0.5)
 
 --------------------
 状态栏菊花

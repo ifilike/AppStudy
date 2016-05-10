@@ -9,7 +9,7 @@
 //	[result appendString:@"\n-----END PUBLIC KEY-----\n"];
 [result appendString:@"\n-----END RSA PRIVATE KEY-----"];）
 
-3.注册账号 获取partner seller 提交公钥 拷贝PCKS8私钥
+3.注册账号 获取partner seller（用户注册的支付宝账号） 提交公钥 拷贝PCKS8私钥（填写到代码中的私钥：也是RSA私钥转化的pcks8格式的私钥）
 
 
 （二）提取demo中的ios客户端代码 
