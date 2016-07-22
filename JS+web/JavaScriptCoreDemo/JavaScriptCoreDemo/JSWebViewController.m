@@ -38,7 +38,7 @@
     _webView.delegate = self;
     [self.view addSubview:_webView];
 //    NSURL *url = [[NSBundle mainBundle] URLForResource:@"demo" withExtension:@"html"];
-    NSURL *url = [NSURL URLWithString:@"http://192.168.10.246/h5/test.html"];
+    NSURL *url = [NSURL URLWithString:@"http://192.168.0.12/pet_order/pet/demo.html"];
     [_webView loadRequest:[[NSURLRequest alloc] initWithURL:url]];
 
     //Native -> web
@@ -46,7 +46,7 @@
     btn.frame = CGRectMake(0, 60, 100, 50);
     [btn setTitle:@"js" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(callJs) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:btn];
+    [self.view addSubview:btn];
 
 }
 
